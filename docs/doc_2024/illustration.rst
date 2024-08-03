@@ -1,4 +1,4 @@
-textable_doc_removed.rst**Illustration: mining Humanist**
+**Illustration: mining Humanist**
 =================================
 
 The following example is meant to show *what* Orange Textable typically
@@ -23,58 +23,45 @@ The same experiment can be run with Orange Textable, by building a
     :alt: Mining Humanist with an Orange Textable schema
     :scale: 80%
 
-    Figure 1: Mining Humanist with an Orange Textable schema.
-
-Figure 1: Mining Humanist with an Orange Textable workflow.
+    Figure 1: Mining Humanist with an Orange Textable workflow.
 
 Such a program is called a *workflow*. Its visible part consists of a
 network of interconnected units called *widget instances*. Each instance
 belongs to a type, e.g.
-`URLs <https://orange3-textable.readthedocs.io/en/latest/urls.html#urls>`__,
-`Recode <https://orange3-textable.readthedocs.io/en/latest/recode.html#recode>`__,
-`Segment <https://orange3-textable.readthedocs.io/en/latest/segment.html#segment>`__,
+:ref:`URLs`, :ref:`Recode`, :ref:`Segment`,
 and so on. Widgets are the basic blocks with which a variety of text
 analysis applications can be built. Each corresponds to a fundamental
-operation, such as “import data from an online source”
-(`URLs <https://orange3-textable.readthedocs.io/en/latest/urls.html#urls>`__)
-or “replace specific text patterns with others”
-(`Recode <https://orange3-textable.readthedocs.io/en/latest/recode.html#recode>`__)
+operation, such as “import data from an online source”(:ref:`URLs`)
+or “replace specific text patterns with others”(:ref:`Recode`)
 for example. Connections between instances determine the flow of data in
 the workflow, and thus the order in which operations are carried on.
 Several parallel paths can be constructed, as demonstrated here by the
-`Recode <https://orange3-textable.readthedocs.io/en/latest/recode.html#recode>`__
-instance, which sends data to
-`Segment <https://orange3-textable.readthedocs.io/en/latest/segment.html#segment>`__
-as well as
-`Count <https://orange3-textable.readthedocs.io/en/latest/count.html#count>`__.
+:ref:`Recode` instance, which sends data to :ref:`Segment` as well as
+:ref:`Count`.
 
 Widget instances can be individually parameterized in order to
 “fine-tune” their operation. For example, double-clicking on the
-`Recode <https://orange3-textable.readthedocs.io/en/latest/recode.html#recode>`__
-instance of `figure
-1 <https://orange3-textable.readthedocs.io/en/latest/illustration.html#illustration-fig1>`_
-above displays the interface shown on `figure
-2 <https://orange3-textable.readthedocs.io/en/latest/illustration.html#illustration-fig2>`__
+:ref:`Recode` instance of :ref:`figure 1 <illustration-fig1>`
+above displays the interface shown on :ref:`figure 2 <illustration-fig2>`
 below. What this particular configuration means is that every line
 beginning with symbol \| or >
-(`Regex <https://orange3-textable.readthedocs.io/en/latest/note_regular_expressions.html>`__
-field) should be replaced with an empty string (**Replacement string**):
+(:ref:`Regex <note_regular_expressions>` field) should be replaced with 
+an empty string (**Replacement string**):
 in other words, remove those lines that are marked as being part of a
 reply to another message. There is a fair amount of variation between
 widget interfaces, but regular expressions play an important role in
 several of them and Orange Textable’s flexibility owes a lot to them.
 
-|Interface of Recode widget in the Humanist example|
+.. _illustration_fig2:
 
-Figure 2: Interface of the
-`Recode <https://orange3-textable.readthedocs.io/en/latest/recode.html#recode>`__
-widget.
+.. figure:: figures/mining_humanist_recode.png
+    :align: center
+    :alt: Interface of Recode widget in the Humanist example
 
-After executing the workflow of `figure
-1 <https://orange3-textable.readthedocs.io/en/latest/illustration.html#illustration-fig1>`__
-above, the resulting frequencies can be viewed by double-clicking on the
-**Data Table** instance, whose interface is shown on `figure
-3 <https://orange3-textable.readthedocs.io/en/latest/illustration.html#illustration-fig3>`__
+    Figure 2: Interface of the :ref:`Recode` widget.
+
+After executing the workflow of :ref:`figure 1 <illustration_fig1>` above, the resulting frequencies can be viewed by double-clicking on the
+**Data Table** instance, whose interface is shown on  :ref:`figure 3 <illustration_fig3>`
 below. On the whole, these figures lend themselves to the same
 interpretation as that of Patrik Svensson, but they differ wildly from
 the frequencies he reports. This might be explained by the fact that, in
@@ -87,10 +74,16 @@ instance) to understand exactly the operations that it performs.
 construction of text analysis programs easier; it aims to make
 *communicating* and *understanding* such programs easier.
 
-|Monitoring the frequency of two expressions over time|
 
-Figure 3: Monitoring the frequency of *Humanities Computing* vs.
-*Digital Humanities*.
+.. _illustration_fig3:
+
+.. figure:: figures/mining_humanist_results.png
+    :align: center
+    :alt: Monitoring the frequency of two expressions over time
+
+    Figure 3: Monitoring the frequency of *Humanities Computing* vs.
+    *Digital Humanities*.
+
 
 .. [#] Svensson, P. (2009). Humanities Computing as Digital Humanities.
        *Digital Humanities Quarterly 3(3)*. Available `here
