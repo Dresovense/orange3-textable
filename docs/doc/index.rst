@@ -5,135 +5,124 @@
 .. only:: html
 
     .. image:: figures/banner.jpg
-   
-.. toctree::
-   :maxdepth: 2
 
-=============================
 Orange Textable documentation
 =============================
 
+Welcome to the documentation of Orange Textable.
 
-Introduction
-============
+This documentation is divided into six main sections (see detailed contents below):
 
-This section offers a brief overview of what Orange Textable can do, as well
-as how it should be installed and configured. This is what you should read
-first if you are unsure whether Orange Textable is the right piece of software
-for your needs or how to set it up.
+-  Why you should use Orange Textable offers a brief overview of what Orange Textable can do, as well as how it should be installed and configured. This is what you should read first if you are unsure whether Orange Textable is the right piece of software for your needs or how to set it up.
+
+-  `Textable’s basics <Textable_basics>`_ is a tutorial that introduces the basic concepts underlying Orange Textable and its main usage patterns. This should be your first reading once you’ve determined that Orange Textable can be useful to you.
+
+-  To go further enables the advanced user to benefit from more complex text queries using regular expressions and xml markup. This part implies a solid knowledge of the above Basics section.
+
+-  In the `Cookbook <cookbook>`_, you’ll find a number of concise, illustrated recipes describing how to perform various basic tasks with Orange Textable. When starting a new project, you might want to skim through this section in case some elementary operation you need is listed there.
+
+-  `Case studies <case_studies>`_ consist of several illustrations of the application of Orange Textable to more complex and interesting problems in text data analysis.
+
+-  `Reference <reference>`_ is an exhaustive explanation of the role and effect of every component of Orange Textable’s interface. The purpose of this part of the documentation is to help you find a specific piece of information about Orange Textable’s operation when using it for your own projects.
+
+Contents
+========
 
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 3
 
-    Introduction <introduction>
+   why_use_orange_textable
+   textable_basics
+   advanced_topics
+   cookbook
+   case_studies
+   widget_reference
 
-Getting started
+.. _why_use_orange_textable:
+
+Why you should use Orange Textable
+==================================
+.. toctree::
+   :maxdepth: 1
+
+   features
+   illustration
+   installation
+   configuration
+   credits
+   citing
+
+.. _advanced_topics:
+
+Advanced topics
 ===============
-
-This section is a tutorial that introduces the basic concepts underlying
-Orange Textable and its main usage patterns. This should be your first reading
-once you've determined that Orange Textable can be useful to you and installed
-it.
-
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    Getting started <getting_started>
+   converting_xml_markup_annotations
+   merging_units_annotations
+   note_regular_expressions
+   partitioning_segmentations
+   segmenting_with_regexes
+   xml_annotation_based_selection
+
+.. _cookbook:
 
 Cookbook
 ========
-
-In this section, you'll find a number of concise, illustrated recipes
-describing how to perform various basic tasks with Orange Textable. When
-starting a new project, you might want to skim through this section in case
-some elementary operation you need is listed there.
-
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    Cookbook <cookbook>
+   cookbook#text-input
+   cookbook#text-output
+   cookbook#text-preprocessing-and-recoding
+   cookbook#segmentation-manipulation
+   cookbook#text-analysis
+   cookbook#table-output
+
+.. _case_studies:
 
 Case studies
 ============
-
-This section presents several illustrations of the application of Orange
-Textable to more complex and interesting problems in text data analysis.
-
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    Case studies <case_studies>
+   moby_dick
+   titus_andronicus
 
-.. _widgets:
+.. _widget_reference:
 
-Widgets
-=======
-
-This section is an exhaustive explanation of the role and effect of every
-component of Orange Textable's interface. The purpose of this part of the
-documentation is to help you find a specific piece of information about Orange
-Textable's operation when using it for your own projects.
-
-.. _text_import_widgets:
-
-Text import widgets:
-
+Widget reference
+================
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   Text Field <widgets/text_field>
-   Text Files <widgets/text_files>
-   URLs <widgets/urls>
-  
-
-.. _segmentation_processing_widgets:
-
-Segmentation processing widgets:
-
-.. toctree::
-   :maxdepth: 1
-
-   Preprocess <widgets/preprocess>
-   Recode <widgets/recode>
-   Merge <widgets/merge>
-   Segment <widgets/segment>
-   Select <widgets/select>
-   Intersect <widgets/intersect>
-   Extract XML <widgets/extract_xml>
-   Display <widgets/display>
-
-
-.. _table_construction_widgets:
-
-Table construction widgets:
-
-.. toctree::
-   :maxdepth: 1
-
-   Count <widgets/count>
-   Length <widgets/length>
-   Variety <widgets/variety>
-   Cooccurrence <widgets/cooccurrence>
-   Context <widgets/context>
-   Category <widgets/category>
- 
-
-.. _conversion_export_widgets:
-
-Conversion/export widgets:
-
-.. toctree::
-   :maxdepth: 1
-
-   Convert <widgets/convert>
-   Message <widgets/message>
-
-   
-.. _json_format:
-
-JSON im-/export format:
-
-.. toctree::
-    :maxdepth: 1
-    
-    JSON import/export <json_import_export>
+   text_import_widgets
+   text_field
+   text_files
+   urls
+   segmentation_processing_widgets
+   preprocess
+   recode
+   merge
+   segment
+   select
+   intersect
+   extract_xml
+   display
+   table_construction_widgets
+   count
+   length
+   variety
+   cooccurrence
+   context
+   category
+   conversion_export_widgets
+   convert
+   message
+   json_format
+   json_generalities
+   json_file_list
+   json_url_list
+   json_substitution_list
+   json_regular_expression_list
