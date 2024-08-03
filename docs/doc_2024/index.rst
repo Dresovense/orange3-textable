@@ -4,7 +4,7 @@ Orange Textable documentation
 Welcome to the documentation of Orange Textable.
 
 This documentation is divided in six main sections (see detailed
-`contents <https://orange3-textable.readthedocs.io/en/latest/#contents>`__
+`contents <contents>`
 below):
 
 -  Why you should use Orange Textable offers a brief overview of what
@@ -13,8 +13,7 @@ below):
    whether Orange Textable is the right piece of software for your needs
    or how to set it up.
 
--  `Textable’s
-   basics <https://orange3-textable.readthedocs.io/en/latest/Textable_basics.html>`__
+-  `Textable’s basics <Textable_basics>`
    is a tutorial that introduces the basic concepts underlying Orange
    Textable and its main usage patterns. This should be your first
    reading once you’ve determined that Orange Textable can be useful to
@@ -24,20 +23,18 @@ below):
    text queries using regular expressions and xml markup. This part
    implies a solid knowledge of the above Basics section.
 
--  In the
-   `Cookbook <https://orange3-textable.readthedocs.io/en/latest/cookbook.html>`__,
+-  In the `Cookbook cookbook`,
    you’ll find a number of concise, illustrated recipes describing how
    to perform various basic tasks with Orange Textable. When starting a
    new project, you might want to skim through this section in case some
    elementary operation you need is listed there.
 
--  `Case
-   studies <https://orange3-textable.readthedocs.io/en/latest/case_studies.html>`__
+-  `Case studies <case_studies>`
    consist of several illustrations of the application of Orange
    Textable to more complex and interesting problems in text data
    analysis.
 
--  `Reference <https://orange3-textable.readthedocs.io/en/latest/reference.html>`__
+-  `Reference <reference>`
    is an exhaustive explanation of the role and effect of every
    component of Orange Textable’s interface. The purpose of this part of
    the documentation is to help you find a specific piece of information
@@ -49,23 +46,20 @@ Contents
 
 -  Why you should use Orange Textable
 
-   -  `Features <https://orange3-textable.readthedocs.io/en/latest/features.html>`__
+   -  `Features <features>`
 
-   -  `Illustration: mining
-      Humanist <https://orange3-textable.readthedocs.io/en/latest/illustration.html>`__
+   -  `Illustration: mining Humanist <illustration>`
 
-   -  `Installation <https://orange3-textable.readthedocs.io/en/latest/installation.html>`__
+   -  `Installation <installation>`
 
-   -  `Configuration <https://orange3-textable.readthedocs.io/en/latest/configuration.html>`__
+   -  `Configuration <configuration>`
 
-   -  `Credits <https://orange3-textable.readthedocs.io/en/latest/credits.html>`__
+   -  `Credits <credits>`
 
-   -  `How to cite Orange
-      Textable <https://orange3-textable.readthedocs.io/en/latest/citing.html>`__
+   -  `How to cite Orange Textable <citing>`
 
 
--  `Textable's
-   basics <https://orange3-textable.readthedocs.io/en/latest/Textable_basics.html>`__
+-  `Textable's basics <Textable_basics>`
 
     1. Segmentations
 

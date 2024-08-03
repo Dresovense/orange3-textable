@@ -11,5 +11,4 @@ The installation procedure is slightly different on Windows and MacOS X. [#]_
 
 -  :ref:`MacOS X installation <macosx_installation>`
 
-.. [#] Several users have reported successful installation on Linux but the
-procedure is not documented here.
+.. [#] Several users have reported successful installation on Linux but the procedure is not documented here.
