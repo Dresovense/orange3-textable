@@ -1,47 +1,49 @@
-.. meta::
-   :description: Orange Textable documentation, partitioning segmentations
-   :keywords: Orange, Textable, documentation, partition, filter
+**2. Partitioning segmentations using a regex**
+================================================
 
-Partitioning segmentations
-==========================
+In section :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`,
+we have seen how to use the :doc:`Intersect <widgets/intersect>`
+widget to exclude a specified list of words (so-called “stopwords”) from
+a segmentation. The :doc:`Select <widgets/select>`
+widget is tailored for such tasks.
 
-There are many situations where we might want so selectively in- or exclude
-segments from a segmentation. For instance, a user might be want to exclude
-from a word segmentation all those that are less than 4 letters long. The
-:ref:`Select` widget is tailored for such tasks.
-
-The widget's interface (see :ref:`figure 1 <partitioning_segmentations_fig1>`
-below) offers a choice between two modes: *Include* and *Exclude*. Depending
-on this parameter, incoming segments that satisfy a given condition will be
-either included in or excluded from the output segmentation. By default (i.e.
-when the **Advanced settings** box is unchecked), the condition is specified
-by means of a regex, which will be applied to each incoming segment
-successively. (For now, the option **Annotation key: (none)** can be ignored.)
+The widget’s interface (see :ref:`figure 1 <partitioning_segmentations_fig1>`
+below) offers a choice between two modes: *Include* and *Exclude*.
+Depending on this parameter, incoming segments that satisfy a given
+condition will be either included in or excluded from the output
+segmentation. By default (i.e. when the **Advanced settings** box is
+unchecked), the condition is specified by means of a regex, which will
+be applied to each incoming segment successively. For now, the option
+**Annotation key** can be left to its default setting **(none)**.
 
 .. _partitioning_segmentations_fig1:
 
-.. figure:: figures/select_example.png
+.. figure:: figures/select_annotation_example.png
     :align: center
     :alt: Example usage of widget Select
 
-    Figure 1: Excluding short words with widget :ref:`Select`.
+Figure 1: Excluding short words with widget :doc:`Select <widgets/select>`.
 
-In the example of :ref:`figure 1 <partitioning_segmentations_fig1>`, the
-widget is configured to exclude all incoming segments containing no more than
-3 letters. Note that without the *beginning of segment* and *end of segment*
-anchors (``^`` and ``$``), all words containing *at least* a sequence of 1 to
-3 letters--i.e. all the words--would be excluded.
+In the example of :ref:`figure 1 <partitioning_segmentations_fig1>`,
+the widget is configured to exclude all incoming segments containing no
+more than 3 letters. Note that without the *beginning of segment* and
+*end of segment* anchors (^ and $), all words containing *at least* a
+sequence of 1 to 3 letters–i.e. all the words–would be excluded.
 
-Note that :ref:`Select` automatically emits a second segmentation
-containing all the segments that have been discarded from the main output
-segmentation (in the case of :ref:`figure 1 <partitioning_segmentations_fig1>`
-above, that would be all words less than 4 letters long). This feature is
-useful when both the selected *and* the discarded segments are to be further
-processed on distinct branches. By default, when :ref:`Select` is connected to
-another widget, the main segmentation is being emitted. In order to send the
-segmentation of discarded segments instead, right-click on the outgoing
-connection and select **Reset Signals** (see
-:ref:`figure 2 <partitioning_segmentations_fig2>` below).
+Note that
+:doc:`Select <widgets/select>`
+automatically emits a second segmentation containing all the segments
+that have been discarded from the main output segmentation (in the case
+of :ref:`figure 1 <partitioning_segmentations_fig1>`
+above, that would be all words less than 4 letters long). This feature
+is useful when both the selected *and* the discarded segments are to be
+further processed on distinct branches. By default, when
+:doc:`Select <widgets/select>`
+is connected to another widget, the main segmentation is being emitted.
+In order to send the segmentation of discarded segments instead,
+right-click on the outgoing connection and select **Reset Signals** (see
+:ref:`figure 2 <partitioning_segmentations_fig2>`
+below).
 
 .. _partitioning_segmentations_fig2:
 
@@ -52,12 +54,12 @@ connection and select **Reset Signals** (see
 
     Figure 2: Right-clicking on a connection and requesting to **Reset Signals**.
 
-This opens the dialog shown on
-:ref:`figure 3 <partitioning_segmentations_fig3>` below, where the user can
-"drag-and-drop" from the gray box next to **Discarded data** up to the box
-next to **Segmentation**, thus replacing the existing green connection.
-Clicking **OK** validates the modification and sends the discarded data
-through the connection.
+This opens the dialog shown on :ref:`figure 3 <partitioning_segmentations_fig3>`
+below, where the user can “drag-and-drop” from the gray box next to
+**Discarded data** up to the box next to **Segmentation**, thus
+replacing the existing connection. Clicking **OK** validates the
+modification and enables the discarded data to flow through the
+connection.
 
 .. _partitioning_segmentations_fig3:
 
@@ -69,9 +71,12 @@ through the connection.
     Figure 3: This dialog allows the user to select a non-default connection
     between two widgets.
 
-See also
---------
+**2.1. See also**
+-----------------
 
-* :ref:`Reference: Select widget <Select>`
-* :doc:`Cookbook: Include/exclude segments based on a pattern
-  <include_exclude_based_on_pattern>`
+.. toctree::
+    :maxdepth: 1
+
+    Using a segmentation to filter another <using_segmentation_filter_another>
+    Reference: Select widget <widgets/select>
+    Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>

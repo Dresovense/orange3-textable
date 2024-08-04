@@ -1,0 +1,59 @@
+**4. XML annotation-based selection using a regex**
+===================================================
+
+Another common way of exploiting annotations consists in using them to
+select the segments that will be in-/excluded by an instance of
+:doc:`Select <widgets/select>`
+(see :doc:`Partitioning segmentations <partitioning_segmentations>`)
+or :doc:`Intersect <widgets/intersect>`
+(see :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`).
+Thus, in the case of the XML data example introduced
+:doc:`here <converting_xml_markup_annotations>`
+(and further developed
+:doc:`there <merging_units_annotations.html>`),
+we might insert an instance of
+:doc:`Select <widgets/select>`
+between those of :doc:`Extract XML <widgets/extract_xml>`
+and
+:doc:`Count <widgets/count>`
+(see :ref:`figure 1 <annotation_based_selection_fig1>`
+below) in order to include only “content words”.
+
+.. _annotation_based_selection_fig1:
+
+.. figure:: figures/annotation_based_selection_schema.png
+    :align: center
+    :alt: Inserting an instance of Select to filter a segmentation
+    :scale: 80%
+
+  Figure 1: Inserting an instance of :doc:`Select <widgets/select>` to filter a segmentation.
+
+In this simplified example, the :doc:`Select <widgets/select>`
+instance could thus be parameterized (as indicated on :ref:`figure 2 <annotation_based_selection_fig1>`
+below), so as to exclude (**Mode: Exclude**) those segments whose
+annotation value for key *type* (**Annotation key**: *type*) is *DET* or
+*PREP* (**Regex:** ^(DET|PREP)$).
+
+
+.. _annotation_based_selection_fig2:
+
+.. figure:: figures/select_annotation_key.png
+    :align: center
+    :alt: Excluding segments based on annotation values with Select
+
+  Figure 2: Excluding segments based on annotation values with :doc:`Select <widgets/select>`.
+
+**4.1. See also**
+-----------------
+
+.. toctree::
+  :maxdepth: 1
+
+  Getting started: Partitioning segmentations <partitioning_segmentations>
+  Getting started: Using a segmentation to filter another <using_segmentation_filter_another>
+  Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>
+  Getting started: Merging units with annotations <merging_units_annotations>
+  Reference: Select widget <widgets/select>
+  Reference: Intersect widget <widgets/intersect>
+  Reference: Extract XML widget <widgets/extract_xml>
+  Reference: Count widget <widgets/count>
