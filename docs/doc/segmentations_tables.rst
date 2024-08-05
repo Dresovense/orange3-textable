@@ -63,7 +63,5 @@ specific units and contexts).
 
 **3.1. See also**
 -----------------
-.. toctree::
-    :maxdepth: 1
 
-    Reference: Table construction widgets <table_construction_widgets>
+- :doc:`Reference: Table construction widgets <table_construction_widgets>`

@@ -56,8 +56,5 @@ Figure 3: Annotations imported using :doc:`Extract XML <widgets/extract_xml>`.
 **1.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Reference: Extract XML widget <widgets/extract_xml>
-    Cookbook: Convert XML tags to Orange Textable annotations <convert_xml_tags_annotations>
+- :doc:`Reference: Extract XML widget <widgets/extract_xml>`
+- :doc:`Cookbook: Convert XML tags to Orange Textable annotations <convert_xml_tags_annotations>`

@@ -1,38 +1,31 @@
-.. meta::
-   :description: Orange Textable documentation, cookbook, segment text in
-                 smaller units
-   :keywords: Orange, Textable, documentation, cookbook, segment, text, units,
-              lines, words, letters
+**Segment text in smaller units**
+=================================
 
-Segment text in smaller units
-=============================
-
-Goal
-----
+**Goal**
+--------
 
 Segment text in smaller units (e.g. lines, words, letters, etc.).
 
-Prerequisites
--------------
+**Prerequisites**
+-----------------
 
-Some text has been imported in Orange Textable (see :ref:`Cookbook: Text input
-<cookbook_toc_text_input_ref>`) and possibly further processed (see
-:ref:`Cookbook: Segmentation manipulation
-<cookbook_toc_segmentation_manipulation_ref>`).
+Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) 
+and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-Ingredients
------------
+**Ingredients**
+---------------
+
 
   ==============  =======
-   **Widget**      :ref:`Segment`
+   **Widget**      :doc:`Segment <widgets/segment>`
    **Icon**        |segment_icon|
    **Quantity**    1
   ==============  =======
 
 .. |segment_icon| image:: figures/Segment_36.png
 
-Procedure
----------
+**Procedure**
+-------------
 
 .. _segment_text_fig1:
 
@@ -40,40 +33,30 @@ Procedure
    :align: center
    :alt: Segment text in lines with an instance of Segment
 
-   Figure 1: Segment text in lines with an instance of :ref:`Segment`.
-   
-1. Create an instance of :ref:`Segment` on the canvas.
-2. Drag and drop from the output connection (righthand side) of the widget
-   instance that emits the segmentation to be segmented (e.g.
-   :ref:`Text Field`) to the :ref:`Segment` instance's input connection
-   (lefthand side).
-3. Open the :ref:`Segment` instance's interface by double-clicking on its
-   icon on the canvas.
-4. In the **Regex** section, insert the regular expression describing the
-   units that will be segmented (for example to segment a text in lines use
-   ``.+``, in words ``\w+``, in letters ``\w``, in characters ``.``, and so
-   on) then click on the validation button on the right.
-5. Click the **Send** button (or make sure the **Send automatically**
-   checkbox is selected).
-6. A segmentation containing a segment for each specified unit (e.g. line) is
-   then available on the :ref:`Segment` instance's output connections; to
-   display or export it, see :ref:`Cookbook: Text output
-   <cookbook_toc_text_output_ref>`.
+   Figure 1: Segment text in lines with an instance of :doc:`Segment <widgets/segment>`.
 
-Comment
--------
-* In the **Regex** field you can use all the syntax of Python's regular
-  expression (*cf.* `Python documentation
-  <http://docs.python.org/library/re.html>`_).
+1. Create an instance of :doc:`Segment <widgets/segment>`.
 
-See also
---------
+2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be segmented (here :doc:`Text Field <widgets/text_field>` (*Hamlet*)), to the input of :doc:`Segment <widgets/segment>` (lefthand side).
 
-* :doc:`Getting started: Segmenting data into smaller units
-  <segmenting_data_smaller_units>`
-* :ref:`Reference: Segment widget <Segment>`
-* :ref:`Cookbook: Text input <cookbook_toc_text_input_ref>`
-* :ref:`Cookbook: Segmentation manipulation
-  <cookbook_toc_segmentation_manipulation_ref>`
-* :ref:`Cookbook: Text output <cookbook_toc_text_output_ref>`
+3. Double-click on the icon of :doc:`Segment <widgets/segment>` to open its interface.
 
+4. In the **Segment type** section, you can choose to segment the text into letters, words or lines using the drop-down menu. 
+
+5. Click the **Send** button or tick the **Send automatically** checkbox.
+
+6. A segmentation containing a segment for each specified unit (e.g. line) is then available at the output of :doc:`Segment <widgets/segment>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
+
+**Comment**
+-----------
+
+You can also segment text using any kind of pattern that can be described by Python regular expressions (*cf.* Regular expressions) with the **Use a regular expression** option.
+
+**See also**
+------------
+
+- :doc:`Getting started: Segmenting data into smaller units <segmenting_data_smaller_units>`
+- :doc:`Reference: Segment widget <widgets/segment>`
+- :doc:`Cookbook: Text input <text_input>`
+- :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
+- :doc:`Cookbook: Text output <text_output>`

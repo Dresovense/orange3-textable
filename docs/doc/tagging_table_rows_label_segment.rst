@@ -97,10 +97,7 @@ instances that contain English texts *en_1* and *en_2*).
 **4.1. See also**
 ------------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Getting started: Annotating by merging <annotating_merging>
-    Reference: Merge widget <widgets/merge>
-    Reference: Count widget <widgets/count>
-    Reference: Table construction widgets <table_construction_widgets>
+- :doc:`Getting started: Annotating by merging <annotating_merging>`
+- :doc:`Reference: Merge widget <widgets/merge>`
+- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Reference: Table construction widgets <table_construction_widgets>`

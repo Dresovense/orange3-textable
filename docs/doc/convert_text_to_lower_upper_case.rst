@@ -1,38 +1,30 @@
-.. meta::
-   :description: Orange Textable documentation, cookbook, convert text to
-                 lower or upper case
-   :keywords: Orange, Textable, documentation, cookbook, convert, text,
-              lower case, upper case
+**Convert text to lower or upper case**
+=======================================
 
-Convert text to lower or upper case
-===================================
-
-Goal
-----
+**Goal**
+--------
 
 Convert text to lower or upper case.
 
-Prerequisites
--------------
+**Prerequisites**
+-----------------
 
-Some text has been imported in Orange Textable (see :ref:`Cookbook: Text input
-<cookbook_toc_text_input_ref>`) and possibly further processed (see
-:ref:`Cookbook: Segmentation manipulation
-<cookbook_toc_segmentation_manipulation_ref>`).
+Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
+and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-Ingredients
------------
+**Ingredients**
+---------------
 
   ==============  =======
-   **Widget**      :ref:`Preprocess`
+   **Widget**      :doc:`Preprocess <widgets/preprocess>`
    **Icon**        |preprocess_icon|
    **Quantity**    1
   ==============  =======
 
 .. |preprocess_icon| image:: figures/Preprocess_36.png
 
-Procedure
----------
+**Procedure**
+-------------
 
 .. _convert_text_lower_upper_case_fig1:
 
@@ -41,30 +33,34 @@ Procedure
    :alt: Convert text to lower or upper case with an instance of Preprocess
 
    Figure 1: Convert text to lower or upper case with an instance of 
-   :ref:`Preprocess`.
+   :doc:`Preprocess <widgets/preprocess>`.
 
- 
-1. Create an instance of :ref:`Preprocess` on the canvas.
-2. Drag and drop from the output connection (righthand side) of the widget
-   instance that emits the segmentation to be modified (e.g.
-   :ref:`Text Field`) to the :ref:`Preprocess` instance's input connection
+1. Create an instance of :doc:`Preprocess <widgets/preprocess>`.
+
+2. Drag and drop from the output (righthand side) of the widget that
+   emits the segmentation to be modified (here :doc:`Text Field <widgets/text_field>`
+   (*Hamlet*)), to the input of :doc:`Preprocess <widgets/preprocess>`
    (lefthand side).
-3. Open the :ref:`Preprocess` instance's interface by double-clicking on its
-   icon on the canvas.
+
+3. Double-click on the icon of :doc:`Preprocess <widgets/preprocess>`
+   to open its interface.
+
 4. In the **Processing** section, tick the **Transform case** checkbox.
-5. Choose **to lower** or **to upper** in the drop-down menu on the right.
-6. Click the **Send** button (or make sure the **Send automatically**
-   checkbox is selected).
-7. A segmentation containing the modified text is then available on the
-   :ref:`Preprocess` instance's output connections; to display or export it,
-   see :ref:`Cookbook: Text output <cookbook_toc_text_output_ref>`.
 
-See also
---------
+5. Choose **to lower** or **to upper** in the drop-down menu on the
+   right.
 
-* :ref:`Reference: Preprocess widget <Preprocess>`
-* :ref:`Cookbook: Text input <cookbook_toc_text_input_ref>`
-* :ref:`Cookbook: Segmentation manipulation
-  <cookbook_toc_segmentation_manipulation_ref>`
-* :ref:`Cookbook: Text output <cookbook_toc_text_output_ref>`
+6. Click the **Send** button or tick the **Send automatically**
+   checkbox.
 
+7. A segmentation containing the modified text is then available at the
+   output of :doc:`Preprocess <widgets/preprocess>`;
+   to display or export it, see :doc:`Cookbook: Text output <text_output>`.
+
+**See also**
+------------
+
+- :doc:`Reference: Preprocess widget <widgets/preprocess>`
+- :doc:`Cookbook: Text input <text_input>`
+- :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
+- :doc:`Cookbook: Text output <text_output>`

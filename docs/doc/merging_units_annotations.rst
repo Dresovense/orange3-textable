@@ -48,9 +48,6 @@ simultaneously.
 **2.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>
-    Reference: Extract XML widget <widgets/extract_xml>
-    Reference: Count widget <widgets/count>
+- :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`
+- :doc:`Reference: Extract XML widget <widgets/extract_xml>`
+- :doc:`Reference: Count widget <widgets/count>`

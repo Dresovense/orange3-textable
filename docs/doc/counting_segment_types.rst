@@ -68,9 +68,6 @@ bigrams *as* and *ee* have a nonzero frequency.
 **2.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Reference: Count widget <widgets/count>
-    Reference: Table construction widgets <widgets/table_construction_widgets>
-    Cookbook: Count unit frequency <widgets/count_unit_frequency.html>
+- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Reference: Table construction widgets <widgets/table_construction_widgets>`
+- :doc:`Cookbook: Count unit frequency <widgets/count_unit_frequency.html>`

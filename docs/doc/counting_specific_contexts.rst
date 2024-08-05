@@ -145,10 +145,8 @@ this case (contrary to what can be seen in table 1
 
 **3.1. See also**
 -----------------
-.. toctree::
-    :maxdepth: 1
 
-    Reference: Count widget <widgets/count>
-    Cookbook: Count occurrences of smaller units in larger segments <count_occurrences_smaller_units_larger_segments.html>
-    Cookbook: Count transition frequency between adjacent units <count_transition_frequency_adjacent_units>
-    Cookbook: Examine the evolution of unit frequency along the text <examine_evolution_unit_frequency>
+- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Cookbook: Count occurrences of smaller units in larger segments <count_occurrences_smaller_units_larger_segments>`
+- :doc:`Cookbook: Count transition frequency between adjacent units <count_transition_frequency_adjacent_units>`
+- :doc:`Cookbook: Examine the evolution of unit frequency along the text <examine_evolution_unit_frequency>`

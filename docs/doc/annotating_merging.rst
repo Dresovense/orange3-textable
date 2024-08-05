@@ -78,7 +78,4 @@ segmentation, an annotation value *en* or *fr* associated with key
 **2.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Reference: Merge widget <widgets/merge>
+- :doc:`Reference: Merge widget <widgets/merge>`

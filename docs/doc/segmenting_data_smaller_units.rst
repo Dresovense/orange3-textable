@@ -57,8 +57,5 @@ return to it later in this tutorial..
 **4.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Reference: Segment widget <widgets/segment>
-    Cookbook: Segment text in smaller units <segment_text>
+- :doc:`Reference: Segment widget <widgets/segment>`
+- :doc:`Cookbook: Segment text in smaller units <segment_text>`

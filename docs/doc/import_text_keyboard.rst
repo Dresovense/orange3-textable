@@ -1,31 +1,24 @@
-.. meta::
-   :description: Orange Textable documentation, cookbook, import text from
-                 keyboard
-   :keywords: Orange, Textable, documentation, cookbook, import, text,
-              keyboard
+**Import text from keyboard**
+=============================
 
-Import text from keyboard
-=========================
-
-Goal
-----
+**Goal**
+--------
 
 Input text using keyboard for further processing with Orange Textable.
 
-Ingredients
------------
+**Ingredients**
+---------------
 
   ==============  =======
-   **Widget**      :ref:`Text Field`
+   **Widget**      :doc:`Text Field <widgets/text_field>`
    **Icon**        |text_field_icon|
    **Quantity**    1
   ==============  =======
 
 .. |text_field_icon| image:: figures/TextField_36.png
 
-
-Procedure
----------
+**Procedure**
+-------------
 
 .. _import_text_keyboard_fig1:
 
@@ -33,22 +26,24 @@ Procedure
     :align: center
     :alt: Example usage of widget Text Field
 
-    Figure 1: Importing a string using widget :ref:`Text Field`.
+   Figure 1: Importing a string using widget :doc:`Text Field <widgets/text_field>`.
 
-1. Create an instance of :ref:`Text Field` on the canvas.
-2. Open its interface by double-clicking on the created instance.
-3. Type text in the text field at the top of the interface.
-4. Click the **Send** button (or make sure the **Send automatically**
-   checkbox is selected).
-5. A segmentation covering the input text is then available on the :ref:`Text
-   Field` instance's output connections; to display or export it,
-   see :ref:`Cookbook: Text output <cookbook_toc_text_output_ref>`.
-   
-See also
---------
+1. Create an instance of :doc:`Text Field <widgets/text_field>`.
 
-* :doc:`Getting started: Keyboard input and segmentation display
-  <keyboard_input_segmentation_display>`
-* :ref:`Reference: Text Field widget <Text Field>`
-* :ref:`Cookbook: Text output <cookbook_toc_text_output_ref>`
+2. Double-click on it to open its interface.
 
+3. Type or paste text in the text field.
+
+4. Click the **Send** button or tick the **Send automatically**
+   checkbox.
+
+5. A segmentation covering the input text is then available at the
+   output of :doc:`Text Field <widgets/text_field>`;
+   to display or export it, see :doc:`Cookbook: Text output <text_output>`.
+
+**See also**
+------------
+
+- :doc:`Getting started: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
+- :doc:`Reference: Text Field widget <widgets/text_field>`
+- :doc:`Cookbook: Text output <text_output>`

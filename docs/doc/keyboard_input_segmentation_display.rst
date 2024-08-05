@@ -59,10 +59,8 @@ expected.
 
 **2.1. See also**
 -----------------
-.. toctree::
-    :maxdepth: 1
 
-    Reference: Text field widget <widgets/text_field>
-    Reference: Display widget <widgets/display>
-    Cookbook: Import text from keyboard <import_text_keyboard>
-    Cookbook: Display text content <display_text_content>
+- :doc:`Reference: Text field widget <widgets/text_field>`
+- :doc:`Reference: Display widget <widgets/display>`
+- :doc:`Cookbook: Import text from keyboard <import_text_keyboard>`
+- :doc:`Cookbook: Display text content <display_text_content>`

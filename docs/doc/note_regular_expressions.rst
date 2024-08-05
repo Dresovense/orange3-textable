@@ -16,17 +16,11 @@ features a good `introduction to
 regexes <http://docs.python.org/2/howto/regex.html>`__. A first reading
 might be limited to the following sections:
 
-.. toctree::
-  :maxdepth: 1
-
-  Simple Patterns <http://docs.python.org/2/howto/regex.html#simple-patterns>
-  More Metacharaters <http://docs.python.org/2/howto/regex.html#more-metacharacters>
+- `Simple Patterns <http://docs.python.org/2/howto/regex.html#simple-patterns>`__
+- `More Metacharaters <http://docs.python.org/2/howto/regex.html#more-metacharacters>`__
 
 Also recommended are the following:
 
-.. toctree::
-  :maxdepth: 1
-
-  Compilation Flags <http://docs.python.org/2/howto/regex.html#compilation-flags>
-  Lookahead Assertions <http://docs.python.org/2/howto/regex.html#lookahead-assertions>
-  Greedy versus Non-Greedy <http://docs.python.org/2/howto/regex.html#greedy-versus-non-greedy>
+- `Compilation Flags <http://docs.python.org/2/howto/regex.html#compilation-flags>`__
+- `Lookahead Assertions <http://docs.python.org/2/howto/regex.html#lookahead-assertions>`__
+- `Greedy versus Non-Greedy <http://docs.python.org/2/howto/regex.html#greedy-versus-non-greedy>`__

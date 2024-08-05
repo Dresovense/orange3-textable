@@ -98,8 +98,5 @@ world
 **5.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Reference: Intersect widget <widgets/intersect>
-    Cookbook: Exclude segments based on a stoplist <exclude_segments_based_on_stoplist>
+- :doc:`Reference: Intersect widget <widgets/intersect>`
+- :doc:`Cookbook: Exclude segments based on a stoplist <exclude_segments_based_on_stoplist>`

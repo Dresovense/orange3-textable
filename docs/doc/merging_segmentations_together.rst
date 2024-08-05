@@ -83,9 +83,6 @@ widget? (:ref:`solution <solution_merging_segmentations_together_ex>`)
 
 **3.1 See also**
 -----------------
-
-.. toctree::
-    :maxdepth: 1
-    
-    Reference: Merge widget <widgets/merge>
-    Cookbook: Merge several texts <merge_several_texts>
+   
+- :doc:`Reference: Merge widget <widgets/merge>?`
+- :doc:`Cookbook: Merge several texts <merge_several_texts>`

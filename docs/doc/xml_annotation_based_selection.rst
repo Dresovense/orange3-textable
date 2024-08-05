@@ -46,14 +46,11 @@ annotation value for key *type* (**Annotation key**: *type*) is *DET* or
 **4.1. See also**
 -----------------
 
-.. toctree::
-  :maxdepth: 1
-
-  Getting started: Partitioning segmentations <partitioning_segmentations>
-  Getting started: Using a segmentation to filter another <using_segmentation_filter_another>
-  Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>
-  Getting started: Merging units with annotations <merging_units_annotations>
-  Reference: Select widget <widgets/select>
-  Reference: Intersect widget <widgets/intersect>
-  Reference: Extract XML widget <widgets/extract_xml>
-  Reference: Count widget <widgets/count>
+- :doc:`Getting started: Partitioning segmentations <partitioning_segmentations>`
+- :doc:`Getting started: Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`
+- :doc:`Getting started: Merging units with annotations <merging_units_annotations>`
+- :doc:`Reference: Select widget <widgets/select>`
+- :doc:`Reference: Intersect widget <widgets/intersect>`
+- :doc:`Reference: Extract XML widget <widgets/extract_xml>`
+- :doc:`Reference: Count widget <widgets/count>`

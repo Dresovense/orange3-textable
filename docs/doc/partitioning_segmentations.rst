@@ -74,9 +74,6 @@ connection.
 **2.1. See also**
 -----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    Using a segmentation to filter another <using_segmentation_filter_another>
-    Reference: Select widget <widgets/select>
-    Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>
+- :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Reference: Select widget <widgets/select>`
+- :doc:`Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>`
