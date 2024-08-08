@@ -36,4 +36,4 @@ Contents
    advanced_topics
    cookbook
    case_studies
-   widget_reference
+   reference

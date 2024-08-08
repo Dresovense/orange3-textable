@@ -31,7 +31,7 @@ Description
 
 This widget is designed to import the contents of one or several internet
 locations (URLs) in Orange Canvas. It outputs a segmentation containing a
-potentially annotated) segment for the content of each selected URL. The 
+potentially annotated segment for the content of each selected URL. The 
 imported textual content is normalized in several ways:
 
 * it is systematically converted to Unicode (from the encoding defined by the 
@@ -65,18 +65,18 @@ select the encoding of its content.
 
     Figure 1: **URLs** widget (basic interface).
 
-The **Options** section allows the user to define the label of the output
-segmentation (**Output segmentation label**), here *url_content*.
 
-The **Info** section indicates the  the number of characters in the single
+The **Send** button triggers the emission of a segmentation to the output
+connections. When it is selected, the **Send automatically** checkbox
+disables the button and the widget attempts to automatically emit a
+segmentation at every modification of its interface.
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button, the user finds the number of characters in the single
 segment contained in the output segmentation, or the reasons why no
 segmentation is emitted (inability to retrieve the data, encoding issue,
 etc.).
-
-The **Send** button triggers the emission of a segmentation to the output
-connection(s). When it is selected, the **Send automatically** checkbox
-disables the button and the widget attempts to automatically emit a
-segmentation at every modification of its interface.
 
 Advanced interface
 ~~~~~~~~~~~~~~~~~~
@@ -96,8 +96,8 @@ a segment for the content of each imported URL.
     Figure 2: **URLs** widget (advanced interface).
 
 The advanced interface (see :ref:`figure 2 <URLs_fig2>` above) presents
-similarities with that of the :ref:`Text Files`, :ref:`Recode`, and
-:ref:`Segment` widgets. The **Sources** section  allows the user to specify
+similarities with that of the :doc:`Text Files <text_files>`, :doc:`Recode <recode>`, and
+:doc:`Segment <segment>` widgets. The **Sources** section  allows the user to specify
 the imported URL(s) as well as their content's encoding, to determine the
 order in which they appear in the output segmentation, and optionally to
 assign an annotation. The list of imported URLs appears at the top of the
@@ -117,7 +117,7 @@ and **Move Down**), to delete an URL from the list (**Remove**) or to
 completely empty it (**Clear All**). Except for **Clear All**, all these
 buttons require the user to previously select an entry from the list. **Import
 List** enables the user to import a list of URLs in JSON format (see
-:ref:`JSON im-/export format <json_format>`, :doc:`URL list <../json_url_list>`)
+:doc:`JSON im-/export format <../json_format>`, :doc:`URL list <../json_url_list>`)
 and to add it to the previously selected sources. In the opposite **Export
 List** enables the user to export the source list in a JSON file.
 
@@ -134,9 +134,7 @@ value in the **Annotation value** field. These three parameters (encoding,
 key, value) will be applied to each URL appearing in the **URLs** field
 at the moment of their addition to the list with **Add**.
 
-The **Options** section allows the user to specify the label affected to the
-output segmentation (**Output segmentation label**). The **Import URLs
-with key** checkbox enables the program to create for each imported URL an
+The **Import URLs with key** checkbox enables the program to create for each imported URL an
 annotation whose value is the URL (as displayed in the list) and whose
 key is specified by the user in the text field on the right of the checkbox.
 Similarly the button **Auto-number with key** enables the program to
@@ -148,16 +146,18 @@ In :ref:`figure 2 <URLs_fig2>`, it was thus decided to assign the label
 the annotation key *url*. On the other hand, the auto-numbering option
 has not been enabled.
 
-The **Info** section indicates the length of the output segmentation in
-characters, or the reasons why no segmentation is emitted (inability to
-retrieve the data, encoding issue, etc.). In the example, the two segments
-corresponding to the imported URLs' content thus total up to 1'300'344
-characters.
-
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button, the user finds the length of the output segmentation in
+characters, or the reasons why no segmentation is emitted (inability to
+retrieve the data, encoding issue, etc.). In the example, the two segments
+corresponding to the imported URLs' content thus total up to 1'300'344
+characters.
 
 .. _urls_remote_control_ref:
 
@@ -165,8 +165,8 @@ Remote control
 ~~~~~~~~~~~~~~
 
 **URLs** is one the widgets that can be controlled by means of the
-:ref:`Message` widget. Indeed, it can receive in input a message consisting
-of a URL list in JSON format (see :ref:`JSON im-/export format
+:doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
+of a URL list in JSON format (see :doc:`JSON im-/export format
 <json_format>`, :doc:`URL list <../json_url_list>`), in which case the list
 of URLs specified in this message replaces previously imported sources (if
 any). Note that removing the incoming connection from the **Message** instance
@@ -175,7 +175,7 @@ will not, by itself, remove the list of URLs imported in this way from the
 modified using buttons **Move up/down**, **Remove**, etc. even if the incoming
 connection from the **Message** instance has not been removed. Finally, note
 that if an **URLs** instance has the basic version of its interface activated
-when an incoming connection is created from an instance of :ref:`Message`, it
+when an incoming connection is created from an instance of :doc:`Message <message>`, it
 automatically switches to the advanced interface.
 
 Messages
@@ -184,47 +184,28 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: <n> segments (<m> characters).*
+*<n> segments sent to output (<m> characters).*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
-    Settings and/or input have changed but the **Send automatically** checkbox
-    has not been selected, so the user is prompted to click the **Send**
-    button (or equivalently check the box) in order for computation and data
-    emission to proceed.
-
-*No data sent to output yet: no URL selected.*
-    The widget instance is not able to emit data to output because no input 
-    URL has been selected.
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ and `Errors`_ below).
 
 Warnings
 ~~~~~~~~
 
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
-    
 *No annotation key was provided for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
-    
-*JSON message on input connection doesn't have the right keys and/or values.*
-    The widget instance has received a JSON message on its ``Message`` input
-    channel and the keys and/or values specified in this message do not match
-    those that are expected for this particular widget type (see :ref:`JSON
-    im-/export format <json_format>`, :doc:`File list <../json_file_list>`).
 
-*JSON parsing error.*
-    The widget instance has received data on its ``Message`` input channel and
-    the data couldn't be correctly parsed. Please use a JSON validator to 
-    check the data's well-formedness.
+*Please select source URL.*
+    The widget instance is not able to emit data to output because no url has
+    been selected.
+    
+*Settings were (or Input has) changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically** checkbox has
+    not been selected, so the user is prompted to click the **Send** button (or equivalently check the box)
+    in order for the computation and data emission to proceed.
+
+*Operation cancelled by user*
+    The user has cancelled the operation
 
 Errors
 ~~~~~~
@@ -236,17 +217,24 @@ Errors
 *Encoding error* or *Encoding error: <URL>.*
     An URL couldn't be read with the specified encoding (it must be in another
     encoding).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and the data couldn't
+    be correctly parsed. Please use a JSON validator to check the data's well-formedness
+
+*Please verify keys and values of incoming JSON message.*
+    The widget instance has received a JSON message on its ``Message`` input channel and the keys
+    and/or values specified in this message do not match those that are expected for this particular
+    widget type (see :doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`).
     
 Examples
 --------
 
-* :doc:`Cookbook: Import text from internet location
-  <../import_text_internet_location>`
+* :doc:`Cookbook: Import text from internet location <../import_text_internet_location>`
 
 See also
 --------
 
-* :ref:`Reference: JSON im-/export format <json_format>`, :doc:`URL list
-  <../json_url_list>`
-* :ref:`Reference: Message widget <Message>`
+* :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`URL list <../json_url_list>`
+* :doc:`Reference: Message widget <message>`
 

@@ -9,7 +9,7 @@ Text Field
 
 .. image:: ../figures/TextField_54.png
 
-Import text data from keyboard input.
+Import text data from keyboard.
 
 Signals
 -------
@@ -24,20 +24,19 @@ Outputs:
 
 * ``Text data``
 
-  Segmentation covering the input text
+  Segmentation covering the text displayed in the widget
   
 Description
 -----------
 
-This widget allows the user to import keyboard collected data. It emits a
-segmentation containing a single unannoted segment covering the whole string.
+This widget allows the user to import text from keyboard. It emits a
+segmentation containing a single unannotated segment covering the whole string.
 Secondarily, **Text Field** can be used to manually edit a previously imported
 string.
 
-The interface of the widget is divided in three zones (see :ref:`figure 1
-<text_field_fig1>` below). The upper part is a text field editable by the
-user. The standard editing functions (copy, paste, cancel, etc.) are
-accessible through a right-click on the field.
+The interface of the widget mainly consists in a text field editable by the
+user (see :ref:`figure 1 <text_field_fig1>` below). The standard editing functions (copy, paste, cancel, etc.) are
+accessible through a right-click on the field or keyboard shortcuts.
 
 .. _text_field_fig1:
 
@@ -47,47 +46,37 @@ accessible through a right-click on the field.
 
     Figure 1: Interface of the *Text field* widget.
 
-The **Options** section allows the user to define the label of the output
-segmentation (**Output segmentation label**), here *text_string*.
-
-The **Info** section indicates the length of the output segmentation in
-characters, or the reasons why no segmentation is emitted (in particular if no
-text has been entered in the field). In the example, the single segment
-contained in the output segmentation covers 16 characters.
-
 The **Send** button triggers the emission of a segmentation to the output
-connection(s). When it is selected, the **Send automatically** checkbox
+connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
-segmentation at every modification of its interface (editing of the text or
-label modification).
+segmentation at every modification of its interface.
 
 It should be noted that the text field's content is normalized in three ways:
 
-* it is systematically converted to Unicode
-* it is subjected to the `canonical Unicode decomposition-recomposition 
+- it is systematically converted to Unicode
+- it is subjected to the `canonical Unicode decomposition-recomposition 
   <http://unicode.org/reports/tr15>`_ technique (Unicode sequences such as 
   ``LATIN SMALL LETTER C (U+0063)`` + ``COMBINING CEDILLA (U+0327)`` are 
   systematically replaced by the combined equivalent, e.g. ``LATIN SMALL LETTER 
   C WITH CEDILLA (U+00C7)``)
-* various forms of line endings (in particular ``\r\n`` and ``\r``) are 
+- various forms of line endings (in particular ``\r\n`` and ``\r``) are 
   converted to a single form (namely ``\n``) 
 
-When an instance of **Text Field** receives a segmentation on an incoming
-connection, the contents of all incoming segments are concatenated (without
+When **Text Field** receives a segmentation in input, the contents of all incoming segments are concatenated (without
 adding any delimiters) and the resulting string replaces the current textual
 content of the widget (if any). This allows the user to manually edit text
 that has been previously imported in Orange Textable. Some points are worth
 noting:
 
-* This operation creates a distinct string from the one that has been
+- This operation creates a distinct string from the one that has been
   previously imported: it really amounts to *copying* the original string and
   making the copy available for manual edition. As such, it is prone to a very
   specific and possibly disconcerting type of error, which can be best
   understood by studying the example given in the documentation of
-  :ref:`Preprocess` (section :ref:`anchor_to_caveat`), where what is said
-  about :ref:`Preprocess` also applies to **Text Field**.
+  :doc:`Preprocess <preprocess>` (section :ref:`anchor_to_caveat`), where what is said
+  about :doc:`Preprocess <preprocess>` also applies to **Text Field**.
   
-* Modifications brought from within the interface of **Text Field** to a
+- Modifications brought from within the interface of **Text Field** to a
   string imported in this way will be lost if the **Text Field** instance
   receives a new input on its incoming connection. In particular, this will
   happen if the schema is saved and later re-opened. To avoid any loss of
@@ -103,41 +92,31 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: 1 segment (<n> characters).*
+*1 segment (<n> characters) sent to output.*
     This confirms that the widget has operated properly.
-
-*No data sent to output yet: text field is empty.*
-    The widget instance is not able to emit data to output because no text has
-    been entered in the text field.
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
 
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
+*Please type or paste some text above.*
+    The user should enter text in the field so that a segmentation can be
+    output.
+
+*Settings were changed, please click ‘Send’ when ready.*
+  Settings and/or input have changed but the **Send automatically** checkbox
+  has not been selected, so the user is prompted to click the **Send** button
+  (or equivalently check the box) in order for computation and data
+  emission to proceed.
 
 Examples
 --------
 
-* :doc:`Getting started: Keyboard input and segmentation display
-  <../keyboard_input_segmentation_display>`
-* :doc:`Cookbook: Import text from keyboard <../import_text_keyboard>`
+- :doc:`Getting started: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
+- :doc:`Cookbook: Import text from keyboard <../import_text_keyboard>`
 
 See also
 --------
 
-* :doc:`Getting started: Merging segmentations together
-  <../merging_segmentations_together>`
-* :doc:`Getting started: Annotating by merging <../annotating_merging>`
-* :doc:`Getting started: Converting XML markup to annotations
-  <../converting_xml_markup_annotations>`
-* :ref:`Reference: Preprocess (section "Caveat") <anchor_to_caveat>`
+- :ref:`Reference: Preprocess (section "Caveat") <anchor_to_caveat>`
 
 

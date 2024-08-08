@@ -96,7 +96,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 -  In the **Regex** field of the
    :doc:`Segment <widgets/segment>`
    widget you can use all the syntax of Python’s regular expression
-   (*cf.* Regular expressions); for instance, if you wish to restrict
+   (*cf.* :doc:`Regular expressions <note_regular_expressions>`); for instance, if you wish to restrict
    your search to entire words, you might frame the query string with
    word boundary anchors \\b (in our example \\bhobbit\\b).
 
