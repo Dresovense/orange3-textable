@@ -13,7 +13,7 @@ To benefit from the whole potential of Textable, you'll need to learn how to man
 
 .. toctree::
     :maxdepth: 2
-    :numbered:
+    :numbered: 2
 	
 	XML <xml>
 	Regular expressions <regular_expressions>

@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Segmentation`` (multiple)
+- ``Segmentation`` (multiple)
 
   Any number of segmentations that should be merged together
 
 Outputs:
 
-* ``Merged data``
+- ``Merged data``
 
   Merged segmentation
 
@@ -63,7 +63,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds the number of segments in the output
 segmentation, or the reasons why no segmentation is emitted (no input data,
@@ -81,23 +81,23 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*Please enter an annotation key for imported labels.*
-    The **Import labels with key** checkbox has been selected and an annotation
+*Please enter an annotation key for auto-numbering.*
+    The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
 
-*Please enter an annotation key for auto-numbering.*
-    The **Auto-number with key** checkbox has been selected and an annotation
+*Please enter an annotation key for imported labels.*
+    The **Import labels with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
 
@@ -108,14 +108,14 @@ Warnings
 Examples
 --------
 
-* :doc:`Getting started: Merging segmentations together <../merging_segmentations_together>`
-* :doc:`Getting started: Annotating by merging <../annotating_merging>`
-* :doc:`Cookbook: Merge several texts <../merge_several_texts>`
+- :doc:`Textable's Basics: Merging segmentations together <../merging_segmentations_together>`
+- :doc:`Textable's Basics: Annotating by merging <../annotating_merging>`
+- :doc:`Cookbook: Merge several texts <../merge_several_texts>`
 
 See also
 --------
 
-* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
+- :doc:`Textable's Basics: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
 
 Footnotes
 ---------

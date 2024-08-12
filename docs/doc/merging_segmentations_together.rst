@@ -84,5 +84,5 @@ widget? (:ref:`solution <solution_merging_segmentations_together_ex>`)
 See also
 -----------------
    
-- :doc:`Reference: Merge widget <widgets/merge>?`
+- :doc:`Reference: Merge widget <widgets/merge>`
 - :doc:`Cookbook: Merge several texts <merge_several_texts>`

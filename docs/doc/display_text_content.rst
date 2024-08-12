@@ -59,7 +59,7 @@ Comment
 See also
 ------------
 
-- :doc:`Getting started: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
 - :doc:`Reference: Display widget <widgets/display>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

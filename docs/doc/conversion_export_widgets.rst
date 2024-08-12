@@ -12,7 +12,7 @@ appropriate for further processing within Orange Canvas; :doc:`Convert <widgets/
 makes it possible to apply various standard transforms to a table, such as
 sorting, normalizing, etc., as well as to export its contents in tab-delimited
 text format. :doc:`Message <widgets/message>` takes as input a segmentation containing data in
-a specific JSON format (see :doc:`Reference: JSON im-/export format <json_format>`)
+a specific JSON format (see :doc:`Reference: JSON im-/export format <json_import_export>`)
 and converts them to a "message" that can be used to control
 the behavior of other widgets.
 

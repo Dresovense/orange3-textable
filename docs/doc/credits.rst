@@ -15,7 +15,7 @@ Textable’s development has continued between 2012 and 2013, still
 carried on by `LangTech Sàrl <http://langtech.ch>`_, while the program
 was being gradually integrated to courses taught at Unil’s department of
 `SLI <http://www.unil.ch/sli>`_ (where most of the tutorials that would
-later become the Getting started section of this documentation have been
+later become the Textable's Basics and Advanced Topics sections of this documentation have been
 created).
 
 In automn 2013, Textable became a registered Orange Canvas add-on and

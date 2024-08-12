@@ -74,6 +74,6 @@ connection.
 See also
 -----------------
 
-- :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Textable's Basics: Using a segmentation to filter another <using_segmentation_filter_another>`
 - :doc:`Reference: Select widget <widgets/select>`
 - :doc:`Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>`

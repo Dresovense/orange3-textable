@@ -16,14 +16,14 @@ Signals
 
 Inputs:
 
-* ``Segmentation`` (multiple)
+- ``Segmentation`` (multiple)
 
   Segmentation whose segments constitute the basis for category extraction.
   
 
 Outputs:
 
-* ``Textable table``
+- ``Textable table``
 
   Table displaying the extracted categories
 
@@ -178,7 +178,7 @@ to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 The informations generated below the **Send** button indicate if a table has been correctly emitted, or the
 reasons why no table is emitted (no input data, typically).
@@ -195,15 +195,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** 
     checkbox has not been selected, so the user is prompted to click the 
     **Send** button (or equivalently check the box) in order for computation 
     and data emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -215,7 +215,7 @@ Warnings
     :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
     
 *Operation cancelled by user.*
-    The user has cancelled the operation.
+    The user has stopped the widget from working.
         
 Footnotes
 ---------

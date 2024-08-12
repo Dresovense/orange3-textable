@@ -44,6 +44,6 @@ Procedure
 See also
 ------------
 
-- :doc:`Getting started: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
 - :doc:`Reference: Text Field widget <widgets/text_field>`
 - :doc:`Cookbook: Text output <text_output>`

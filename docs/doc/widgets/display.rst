@@ -16,18 +16,18 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation to be displayed or exported.
 
 
 Outputs:
 
-* ``Bypassed segmentation`` (default)
+- ``Bypassed segmentation`` (default)
 
   Exact copy of the input segmentation
 
-* ``Displayed segmentation``
+- ``Displayed segmentation``
 
   Segmentation covering the entire string displayed in the widget's interface
 
@@ -160,11 +160,11 @@ of the string *a simple example* [#]_:
 
 By entering:
 
-* ``<word>\n`` in the **header** field,
-* ``<letter pos="%(__num__)i" type="%(letter category)s">%(__content__)s</letter>``
+- ``<word>\n`` in the **header** field,
+- ``<letter pos="%(__num__)i" type="%(letter category)s">%(__content__)s</letter>``
   in the **format** field,
-* ``\n`` in the **segment delimiter** field, and
-* ``\n</word>`` in the **footer** field,
+- ``\n`` in the **segment delimiter** field, and
+- ``\n</word>`` in the **footer** field,
 
 we obtain the following formatting:
 
@@ -211,15 +211,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 Errors
 ~~~~~~
@@ -245,7 +245,7 @@ Errors
 Examples
 --------
 
-- :doc:`Getting started: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
 - :doc:`Cookbook: Display text content <../display_text_content>`
 - :doc:`Cookbook: Export text content (and/or change text encoding) <../export_text_content_change_encoding>`
 

@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Message``
+- ``Message``
 
   JSON Message controlling the list of imported text files
 
 Outputs:
 
-* ``Text data``
+- ``Text data``
 
   Segmentation covering the content of imported text files
 
@@ -73,7 +73,7 @@ connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 The text below the **Send** button indicates the number of characters in
 the single segment contained in the output segmentation, or the reasons
@@ -115,7 +115,7 @@ and **Move Down**), to delete a file from the list (**Remove**) or to
 completely empty it (**Clear All**). Except for **Clear All**, all these
 buttons require the user to previously select an entry from the list. **Import
 List** enables the user to import a file list in JSON format (see
-:doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`) and to add it to the previously selected sources. In the
+:doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`) and to add it to the previously selected sources. In the
 opposite **Export List** enables the user to export the source list in a JSON
 file.
 
@@ -154,7 +154,7 @@ connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 The text below the **Send** button indicates the length of the output segmentation in characters, 
 or the reasons why no segmentation is emitted (no input data, encoding issue, etc.). In the example,
@@ -167,7 +167,7 @@ Remote control
 
 **Text Files** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
-of a file list in JSON format (see :doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`), in which case the list
+of a file list in JSON format (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`), in which case the list
 of files specified in this message replaces previously imported sources (if
 any). Note that removing the incoming connection from the **Message** instance
 will not, by itself, remove the list of files imported in this way from the
@@ -189,20 +189,20 @@ Information
 
 Warnings
 ~~~~~~~~
-    
-*Please enter an annotation key for auto-numbering.*
-    The **Auto-number with key** checkbox has been selected and an annotation
-    key must be specified in the text field on the right in order for
-    computation and data emission to proceed.
-    
-*Please select input file.*
-    The widget instance is not able to emit data to output because no input file has
-    been selected.
 
 *Settings were (or Input has) changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox has
     not been selected, so the user is prompted to click the **Send** button (or equivalently check the box)
     in order for the computation and data emission to proceed.
+    
+*Please select input file.*
+    The widget instance is not able to emit data to output because no input file has
+    been selected.
+    
+*Please enter an annotation key for auto-numbering.*
+    The **Auto-number with key** checkbox has been selected and an annotation
+    key must be specified in the text field on the right in order for
+    computation and data emission to proceed.
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
@@ -218,14 +218,14 @@ Errors
     A file couldn't be read with the specified encoding (it must be in another
     encoding).
 
-*Please make sure that incoming message is valid JSON.*
-    The widget instance has received data on its ``Message`` input channel and the data couldn't
-    be correctly parsed. Please use a JSON validator to check the data's well-formedness
-
 *Please verify keys and values of incoming JSON message.*
     The widget instance has received a JSON message on its ``Message`` input channel and the keys
     and/or values specified in this message do not match those that are expected for this particular
-    widget type (see :doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`).
+    widget type (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and the data couldn't
+    be correctly parsed. Please use a JSON validator to check the data's well-formedness
     
 Examples
 --------
@@ -235,6 +235,6 @@ Examples
 See also
 --------
 
-- :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`
+- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`
 - :doc:`Reference: Message widget <message>`
 

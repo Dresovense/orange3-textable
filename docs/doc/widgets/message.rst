@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation containing a single segment with the JSON data to be parsed
 
 Outputs:
 
-* ``Message``
+- ``Message``
 
   *JSONMessage* object that can be sent to other widgets
 
@@ -33,7 +33,7 @@ This widget inputs a segmentation containing a single segment whose content
 is in `JSON <http://www.json.org/>`_ format. After validation, the data is
 converted to a *JSONMessage* object and emitted to the widget's
 output connections. Provided that the data conforms to one of the formats
-described in section :doc:`JSON im-/export format <../json_format>`, the
+described in section :doc:`JSON im-/export format <../json_import_export>`, the
 *JSONMessage* object can be sent to an instance of the corresponding widget
 (either :doc:`Text Files <text_files>`, :doc:`urls`, :doc:`Recode <recode>`, or :doc:`Segment <segment>`) and
 used to control its behavior remotely.
@@ -73,15 +73,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Please make sure that input contains only one segment.*
     The input segmentation must contain exactly 1 segment.
@@ -100,4 +100,4 @@ See also
 - :doc:`Reference: URLs widget <urls>`, :ref:`urls_remote_control_ref`
 - :doc:`Reference: Segment widget <segment>`, :ref:`segment_remote_control_ref`
 - :doc:`Reference: Recode widget <recode>`, :ref:`recode_remote_control_ref`
-- :doc:`Reference: JSON im-/export format <../json_format>`
+- :doc:`Reference: JSON im-/export format <../json_import_export>`

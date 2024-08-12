@@ -16,17 +16,17 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation that should be further segmented
 
-* ``Message``
+- ``Message``
 
   JSON Message controlling the list of regular expressions
 
 Outputs:
 
-* ``Segmented data``
+- ``Segmented data``
 
   Segmentation containing the newly created segments
 
@@ -78,7 +78,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button the user finds all the indications regarding the current status of the
 widget instance (see `Messages`_ below).
@@ -142,7 +142,7 @@ an expression from the list (**Remove**) or to empty it entirely (**Clear
 All**). Except for **Clear All**, all of these buttons require the selection
 of an entry in the list beforehand. **Import List** enables the user to import
 a list of regular expressions in JSON format
-(see :doc:`JSON im-/export format <../json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`)
+(see :doc:`JSON im-/export format <../json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`)
 and to add them to those already selected. **Export List** enables the user on
 the contrary to export the list of regular expressions in a JSON file.
 
@@ -171,7 +171,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds indications regarding the current status of the
 widget instance (see `Messages`_ below).
@@ -184,7 +184,7 @@ Remote control
 **Segment** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
 of a regular expression list in JSON format
-(see :doc:`JSON im-/export format <../ json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`),
+(see :doc:`JSON im-/export format <../ json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`),
 in which case the list of regular
 expressions specified in this message replaces those previously specified
 (if any). Note that removing the incoming connection from the **Message**
@@ -207,6 +207,10 @@ Information
 
 Warnings
 ~~~~~~~~
+    
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -223,28 +227,12 @@ Warnings
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
-    
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
 
 Errors
 ~~~~~~
-
-*Please verify keys and values of incoming JSON message.*
-    The widget instance has received a JSON message on its ``Message`` input
-    channel and the keys and/or values specified in this message do not match
-    those that are expected for this particular widget type
-    (see :doc:`JSON im-/export format <../json_format>`,
-    :doc:`Regular expression list <../json_regular_expression_list>`).
-
-*Please make sure that incoming message is valid JSON.*
-    The widget instance has received data on its ``Message`` input channel and
-    the data couldn't be correctly parsed. Please use a JSON validator to 
-    check the data's well-formedness.
 
 *Please enter a valid regex (<error_message>).*
     The regular expression entered in the **Regex** field is invalid.
@@ -257,18 +245,30 @@ Errors
     an annotation key--value pair and in at least one of these terms reference
     is made to a numbered variable (``&1``, ``&2``, ...) which turns out to
     not always have a matching element.
+
+*Please verify keys and values of incoming JSON message.*
+    The widget instance has received a JSON message on its ``Message`` input
+    channel and the keys and/or values specified in this message do not match
+    those that are expected for this particular widget type
+    (see :doc:`JSON im-/export format <../json_import_export>`,
+    :doc:`Regular expression list <../json_regular_expression_list>`).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and
+    the data couldn't be correctly parsed. Please use a JSON validator to 
+    check the data's well-formedness.
     
 Examples
 --------
 
-- :doc:`Getting started: Segmenting data into smaller units <../segmenting_data_smaller_units>`
+- :doc:`Textable's Basics: Segmenting data into smaller units <../segmenting_data_smaller_units>`
 - :doc:`Cookbook: Segment text in smaller units <../segment_text>`
 
 See also
 --------
-* :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`
-* :doc:`Reference: Message widget <message>`
-* :doc:`Getting started: A note on regular expressions <../note_regular_expressions>`
+- :doc:`Advanced Topics: A note on regular expressions <../note_regular_expressions>`
+- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`
+- :doc:`Reference: Message widget <message>`
 
 Footnotes
 ---------

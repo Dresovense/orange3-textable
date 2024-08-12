@@ -69,7 +69,7 @@ Stopword lists for various languages can be found `here <http://members.unine.ch
 See also
 ------------
 
-- :doc:`Getting started: Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Textable's Basics: Using a segmentation to filter another <using_segmentation_filter_another>`
 - :doc:`Reference: Intersect widget <widgets/intersect>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segment text in smaller units <segment_text>`

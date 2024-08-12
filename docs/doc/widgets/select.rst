@@ -16,17 +16,17 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation out of which a subset of segments should be selected
 
 Outputs:
 
-* ``Selected data`` (default)
+- ``Selected data`` (default)
 
   Segmentation containing the selected segments
 
-* ``Discarded data``
+- ``Discarded data``
 
   Segmentation containing the discarded segments
 
@@ -175,7 +175,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, some indications are given about the number of segments in the output
 segmentation, or the reasons why no segmentation is emitted (no input data,
@@ -193,15 +193,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Please enter a regex.*
     A regular expression must be entered in the **Regex** field in order for
@@ -227,8 +227,8 @@ Errors
 Examples
 --------
 
-- :doc:`Getting started: Partitioning segmentations <../partitioning_segmentations>`
-- :doc:`Getting started: Annotation-based selection <../xml_annotation_based_selection>`
+- :doc:`Advanced Topics: Partitioning segmentations <../partitioning_segmentations>`
+- :doc:`Advanced Topics: Annotation-based selection <../xml_annotation_based_selection>`
 - :doc:`Cookbook: Include/exclude segments based on a pattern <../include_exclude_based_on_pattern>`
 - :doc:`Cookbook: Filter segments based on their frequency <../filter_segments_based_on_frequency>`
 - :doc:`Cookbook: Create a random selection or sample of segments <../random_sample>`

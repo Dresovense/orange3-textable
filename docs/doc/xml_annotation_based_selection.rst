@@ -32,7 +32,7 @@ In this simplified example, the :doc:`Select <widgets/select>`
 instance could thus be parameterized (as indicated on :ref:`figure 2 <annotation_based_selection_fig1>`
 below), so as to exclude (**Mode: Exclude**) those segments whose
 annotation value for key *type* (**Annotation key**: *type*) is *DET* or
-*PREP* (**Regex:** ^(DET|PREP)$).
+*PREP* (**Regex:** ``^(DET|PREP)$``).
 
 
 .. _annotation_based_selection_fig2:
@@ -46,10 +46,10 @@ annotation value for key *type* (**Annotation key**: *type*) is *DET* or
 See also
 -----------------
 
-- :doc:`Getting started: Partitioning segmentations <partitioning_segmentations>`
-- :doc:`Getting started: Using a segmentation to filter another <using_segmentation_filter_another>`
-- :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`
-- :doc:`Getting started: Merging units with annotations <merging_units_annotations>`
+- :doc:`Textable's Basics: Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Advanced Topics: Converting XML markup to annotations <converting_xml_markup_annotations>`
+- :doc:`Advanced Topics: Merging units with annotations <merging_units_annotations>`
+- :doc:`Advanced Topics: Partitioning segmentations <partitioning_segmentations>`
 - :doc:`Reference: Select widget <widgets/select>`
 - :doc:`Reference: Intersect widget <widgets/intersect>`
 - :doc:`Reference: Extract XML widget <widgets/extract_xml>`

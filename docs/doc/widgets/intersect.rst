@@ -16,7 +16,7 @@ Signals
 
 Inputs:
 
-* ``Segmentation`` (multiple)
+- ``Segmentation`` (multiple)
 
   Segmentation out of which a subset of segments should be selected
   ("source" segmentation), or containing the segments that will be
@@ -24,11 +24,11 @@ Inputs:
 
 Outputs:
 
-* ``Selected data`` (default)
+- ``Selected data`` (default)
 
   Segmentation containing the selected segments
 
-* ``Discarded data``
+- ``Discarded data``
 
   Segmentation containing the discarded segments
 
@@ -79,7 +79,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the number of segments in the output
 segmentation are indicated, or the reasons why no segmentation is emitted (no input data,
@@ -123,16 +123,16 @@ Information
 
 Warnings
 ~~~~~~~~
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
     
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
   
 *Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
@@ -145,8 +145,8 @@ Warnings
 Examples
 --------
 
-* :doc:`Getting started: Using a segmentation to filter another <../using_segmentation_filter_another>`
-* :doc:`Cookbook: Exclude segments based on a stoplist <../exclude_segments_based_on_stoplist>`
+- :doc:`Textable's Basics: Using a segmentation to filter another <../using_segmentation_filter_another>`
+- :doc:`Cookbook: Exclude segments based on a stoplist <../exclude_segments_based_on_stoplist>`
 
 Footnotes
 ---------

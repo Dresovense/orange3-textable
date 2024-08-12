@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Text data``
+- ``Text data``
 
   Segmentation containing text to be edited
 
 Outputs:
 
-* ``Text data``
+- ``Text data``
 
   Segmentation covering the text displayed in the widget
   
@@ -98,20 +98,20 @@ Information
 Warnings
 ~~~~~~~~
 
-*Please type or paste some text above.*
-    The user should enter text in the field so that a segmentation can be
-    output.
-
 *Settings were changed, please click ‘Send’ when ready.*
   Settings and/or input have changed but the **Send automatically** checkbox
   has not been selected, so the user is prompted to click the **Send** button
   (or equivalently check the box) in order for computation and data
   emission to proceed.
 
+*Please type or paste some text above.*
+    The user should enter text in the field so that a segmentation can be
+    output.
+
 Examples
 --------
 
-- :doc:`Getting started: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
 - :doc:`Cookbook: Import text from keyboard <../import_text_keyboard>`
 
 See also

@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Message``
+- ``Message``
 
   JSON Message controlling the list of imported URLs
 
 Outputs:
 
-* ``Text data``
+- ``Text data``
 
   Segmentation covering the content of imported URLs
 
@@ -34,16 +34,16 @@ locations (URLs) in Orange Canvas. It outputs a segmentation containing a
 potentially annotated segment for the content of each selected URL. The 
 imported textual content is normalized in several ways:
 
-* it is systematically converted to Unicode (from the encoding defined by the 
+- it is systematically converted to Unicode (from the encoding defined by the 
   user)
-* it is subjected to the `canonical Unicode decomposition-recomposition 
+- it is subjected to the `canonical Unicode decomposition-recomposition 
   <http://unicode.org/reports/tr15>`_ technique (Unicode sequences such as 
   ``LATIN SMALL LETTER C (U+0063)`` + ``COMBINING CEDILLA (U+0327)`` are 
   systematically replaced by the combined equivalent, e.g. ``LATIN SMALL LETTER 
   C WITH CEDILLA (U+00C7)``)
-* it is stripped from the `utf8 byte-order mark 
+- it is stripped from the `utf8 byte-order mark 
   <https://en.wikipedia.org/wiki/Byte_order_mark#UTF-8>`_ (if any)
-* various forms of line endings (in particular ``\r\n`` and ``\r``) are 
+- various forms of line endings (in particular ``\r\n`` and ``\r``) are 
   converted to a single form (namely ``\n``)
   
 The interface of **URLs** is available in two versions, according to whether or
@@ -71,7 +71,7 @@ connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds the number of characters in the single
 segment contained in the output segmentation, or the reasons why no
@@ -117,7 +117,7 @@ and **Move Down**), to delete an URL from the list (**Remove**) or to
 completely empty it (**Clear All**). Except for **Clear All**, all these
 buttons require the user to previously select an entry from the list. **Import
 List** enables the user to import a list of URLs in JSON format (see
-:doc:`JSON im-/export format <../json_format>`, :doc:`URL list <../json_url_list>`)
+:doc:`JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`)
 and to add it to the previously selected sources. In the opposite **Export
 List** enables the user to export the source list in a JSON file.
 
@@ -151,7 +151,7 @@ connection(s). When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds the length of the output segmentation in
 characters, or the reasons why no segmentation is emitted (inability to
@@ -166,8 +166,7 @@ Remote control
 
 **URLs** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
-of a URL list in JSON format (see :doc:`JSON im-/export format
-<json_format>`, :doc:`URL list <../json_url_list>`), in which case the list
+of a URL list in JSON format (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`), in which case the list
 of URLs specified in this message replaces previously imported sources (if
 any). Note that removing the incoming connection from the **Message** instance
 will not, by itself, remove the list of URLs imported in this way from the
@@ -189,20 +188,20 @@ Information
 
 Warnings
 ~~~~~~~~
-
-*Please enter an annotation key for auto-numbering.*
-    The **Auto-number with key** checkbox has been selected and an annotation
-    key must be specified in the text field on the right in order for
-    computation and data emission to proceed.
-
-*Please select source URL.*
-    The widget instance is not able to emit data to output because no url has
-    been selected.
     
 *Settings were (or Input has) changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox has
     not been selected, so the user is prompted to click the **Send** button (or equivalently check the box)
     in order for the computation and data emission to proceed.
+
+*Please select source URL.*
+    The widget instance is not able to emit data to output because no url has
+    been selected.
+
+*Please enter an annotation key for auto-numbering.*
+    The **Auto-number with key** checkbox has been selected and an annotation
+    key must be specified in the text field on the right in order for
+    computation and data emission to proceed.
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
@@ -218,23 +217,23 @@ Errors
     An URL couldn't be read with the specified encoding (it must be in another
     encoding).
 
-*Please make sure that incoming message is valid JSON.*
-    The widget instance has received data on its ``Message`` input channel and the data couldn't
-    be correctly parsed. Please use a JSON validator to check the data's well-formedness
-
 *Please verify keys and values of incoming JSON message.*
     The widget instance has received a JSON message on its ``Message`` input channel and the keys
     and/or values specified in this message do not match those that are expected for this particular
-    widget type (see :doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`).
+    widget type (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and the data couldn't
+    be correctly parsed. Please use a JSON validator to check the data's well-formedness
     
 Examples
 --------
 
-* :doc:`Cookbook: Import text from internet location <../import_text_internet_location>`
+- :doc:`Cookbook: Import text from internet location <../import_text_internet_location>`
 
 See also
 --------
 
-* :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`URL list <../json_url_list>`
-* :doc:`Reference: Message widget <message>`
+- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`
+- :doc:`Reference: Message widget <message>`
 

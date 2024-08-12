@@ -69,5 +69,5 @@ See also
 -----------------
 
 - :doc:`Reference: Count widget <widgets/count>`
-- :doc:`Reference: Table construction widgets <widgets/table_construction_widgets>`
-- :doc:`Cookbook: Count unit frequency <widgets/count_unit_frequency.html>`
+- :doc:`Reference: Table construction widgets <table_construction_widgets>`
+- :doc:`Cookbook: Count unit frequency <count_unit_frequency>`

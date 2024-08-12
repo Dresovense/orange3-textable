@@ -49,7 +49,7 @@ Procedure
 See also
 ------------
 
-- :doc:`Getting started: Merging segmentations together`
+- :doc:`Textable's Basics: Merging segmentations together <merging_segmentations_together>`
 - :doc:`Reference: Merge widget <widgets/merge>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

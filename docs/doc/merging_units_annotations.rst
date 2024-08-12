@@ -48,6 +48,6 @@ simultaneously.
 See also
 -----------------
 
-- :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`
+- :doc:`Advanced Topics: Converting XML markup to annotations <converting_xml_markup_annotations>`
 - :doc:`Reference: Extract XML widget <widgets/extract_xml>`
 - :doc:`Reference: Count widget <widgets/count>`

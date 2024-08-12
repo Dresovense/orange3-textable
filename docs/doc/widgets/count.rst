@@ -16,14 +16,14 @@ Signals
 
 Inputs:
 
-* ``Segmentation`` (multiple)
+- ``Segmentation`` (multiple)
 
   Segmentation whose segments constitute the units to be counted or
   the contexts in which the units will be counted
 
 Outputs:
 
-* ``Pivot Crosstab``
+- ``Pivot Crosstab``
 
   Table displaying the absolute frequency of units
 
@@ -304,7 +304,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send button**, the user finds indications such as the sum of frequencies in the output table, or
 the reasons why not table is emitted (no input data or total frequency is
@@ -322,15 +322,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -342,13 +342,13 @@ Warnings
     :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
 
 *Operation cancelled by user.*
-    The user has cancelled the operation.
+    The user has stopped the widget from working.
 
 Examples
 --------
 
-- :doc:`Getting started: Counting segment types <../counting_segment_types>`
-- :doc:`Getting started: Counting in specific contexts <../counting_specific_contexts>`
+- :doc:`Textable's Basics: Counting segment types <../counting_segment_types>`
+- :doc:`Textable's Basics: Counting in specific contexts <../counting_specific_contexts>`
 - :doc:`Cookbook: Count unit frequency <../count_unit_frequency>`
 - :doc:`Cookbook: Count occurrences of smaller units in larger segments <../count_occurrences_smaller_units_larger_segments>`
 - :doc:`Cookbook: Count transition frequency between adjacent units <../count_transition_frequency_adjacent_units>`

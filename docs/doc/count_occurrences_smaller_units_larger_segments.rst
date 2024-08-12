@@ -88,7 +88,7 @@ Comment
 See also
 ------------
 
--  :doc:`Getting started: Counting in specific contexts <counting_specific_contexts>`
+-  :doc:`Textable's Basics: Counting in specific contexts <counting_specific_contexts>`
 -  :doc:`Reference: Count widget <widgets/count>`
 -  :doc:`Cookbook: Text input <text_input>`
 -  :doc:`Cookbook: Segment text in smaller units <segment_text>`

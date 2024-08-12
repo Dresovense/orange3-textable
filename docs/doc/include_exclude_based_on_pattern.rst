@@ -60,7 +60,7 @@ The :doc:`Select <widgets/select>` widget emits on a second output connection (n
 See also
 ------------
 
-- :doc:`Getting started: Partitioning segmentations <partitioning_segmentations>`
+- :doc:`Advanced Topics: Partitioning segmentations <partitioning_segmentations>`
 - :doc:`Reference: Select widget <widgets/select>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segment text in smaller units <segment_text>`

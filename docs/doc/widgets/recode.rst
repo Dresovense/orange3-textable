@@ -16,17 +16,17 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation covering the text that should be recoded
 
-* ``Message``
+- ``Message``
 
   JSON Message controlling the list of substitutions
 
 Outputs:
 
-* ``Recoded text data``
+- ``Recoded text data``
 
   Segmentation covering the recoded text
 
@@ -80,7 +80,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds all the indications regarding the current status of the
 widget instance (see `Messages`_ below).
@@ -147,7 +147,7 @@ input segmentation (**Move Up** and **Move Down**), to delete a substitution
 from the list (**Remove**) or to empty it entirely (**Clear All**). Except for
 **Clear All**, all of these buttons require the selection of an entry in the
 list beforehand. **Import List** enables the user to import a list of
-substitutions in JSON format (see :doc:`JSON im-/export format <../json_format>`,
+substitutions in JSON format (see :doc:`JSON im-/export format <../json_import_export>`,
 :doc:`Substitution list <../json_substitution_list>`) and to add them to those
 already selected. **Export List** enables the user on the contrary to export
 the list of substitutions in a JSON format file.
@@ -173,7 +173,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds all the indications regarding the current status of the
 widget instance (see `Messages`_ below).
@@ -185,7 +185,7 @@ Remote control
 
 **Recode** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
-of a substitution list in JSON format (see :doc:`JSON im-/export format <../json_format>`,
+of a substitution list in JSON format (see :doc:`JSON im-/export format <../json_import_export>`,
 :doc:`Substitution list <../json_substitution_list>`), in which
 case the list of substitutions specified in this message replaces those
 previously specified (if any). Note that removing the incoming connection from
@@ -220,15 +220,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
@@ -247,19 +247,19 @@ Errors
     numbered variable (``&1``, ``&2``, ...) which turns out to not always have
     a matching element.
 
-*Please verify keys and values of incoming JSON message.*
-    The widget instance has received a JSON message on its ``Message`` input channel and the keys
-    and/or values specified in this message do not match those that are expected for this particular
-    widget type (see :doc:`JSON im-/export format <../json_format>`, :doc:`File list <../json_file_list>`).
-
-*Please make sure that incoming message is valid JSON.*
-    The widget instance has received data on its ``Message`` input channel and the data couldn't
-    be correctly parsed. Please use a JSON validator to check the data's well-formedness
-
 *Please make sure that input segments are not overlapping.*
     At least two of the input segments cover the same substring, which this
     widget cannot handle. Make sure every input segment covers a distinct 
     substring.
+
+*Please verify keys and values of incoming JSON message.*
+    The widget instance has received a JSON message on its ``Message`` input channel and the keys
+    and/or values specified in this message do not match those that are expected for this particular
+    widget type (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and the data couldn't
+    be correctly parsed. Please use a JSON validator to check the data's well-formedness
 
 Examples
 --------
@@ -269,10 +269,10 @@ Examples
 See also
 --------
 
-- :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`Substitution list <../json_substitution_list>`
+- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`Substitution list <../json_substitution_list>`
 - :doc:`Reference: Message widget <message>`
 - :ref:`Reference: Preprocess (section "Caveat") <anchor_to_caveat>`
-- :doc:`Getting started: A note on regular expressions <../note_regular_expressions>`
+- :doc:`Advanced Topics: A note on regular expressions <../note_regular_expressions>`
 
 Footnotes
 ---------

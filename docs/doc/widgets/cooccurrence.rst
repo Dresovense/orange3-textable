@@ -16,7 +16,7 @@ Signals
 
 Inputs:
 
-* ``Segmentation`` (multiple)
+- ``Segmentation`` (multiple)
 
   Segmentation whose segments constitute the units subject to measurement of
   their cooccurrence or the contexts in which unit cooccurrence will be
@@ -24,7 +24,7 @@ Inputs:
 
 Outputs:
 
-* ``Pivot Crosstab``
+- ``Pivot Crosstab``
 
   Table displaying the cooccurrence of units in the defined context
 
@@ -313,7 +313,7 @@ to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 The informations given below the **Send** button indicate whether or not the data is correctly sent to the
 output table. If not, the respective error message will be given.
@@ -330,15 +330,15 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically**
     checkbox has not been selected, so the user is prompted to click the
     **Send** button (or equivalently check the box) in order for computation
     and data emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -350,12 +350,12 @@ Warnings
     :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
 
 *Operation cancelled by user.*
-    The user has cancelled the operation.
+    The user has stopped the widget from working.
 
 See also
 --------
 
-* :ref:`Reference: Convert widget (section "Table formats")
+- :ref:`Reference: Convert widget (section "Table formats")
   <anchor_to_table_formats>`
 
 Footnotes

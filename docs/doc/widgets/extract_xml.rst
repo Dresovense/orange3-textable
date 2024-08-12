@@ -85,7 +85,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below, the **Send** button, the user finds indications such as the number of segments in the output
 segmentation, or the reasons why no segmentation is emitted (no input data,
@@ -203,7 +203,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds some indications such as the number of segments in the output
 segmentation, or the reasons why no segmentation is emitted (no input data,
@@ -221,29 +221,29 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
 *Please type an XML element.*
     The name of an XML element must be entered in the **XML element** field in 
     order for computation and data emission to proceed.
-    
-*Please enter an annotation key for element import.*
-    In the advanced settings, the **Import element with key** checkbox has been 
-    selected and an annotation key must be specified in the text field on the 
-    right in order for computation and data emission to proceed.
     
 *Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
+    
+*Please enter an annotation key for element import.*
+    In the advanced settings, the **Import element with key** checkbox has been 
+    selected and an annotation key must be specified in the text field on the 
+    right in order for computation and data emission to proceed.
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
@@ -262,7 +262,7 @@ Errors
 Examples
 --------
 
-- :doc:`Getting started: Converting XML markup to annotations <../converting_xml_markup_annotations>`
+- :doc:`Advanced Topics: Converting XML markup to annotations <../converting_xml_markup_annotations>`
 - :doc:`Cookbook: Convert XML tags to Orange Textable annotations <../convert_xml_tags_annotations>`
 
 Footnotes

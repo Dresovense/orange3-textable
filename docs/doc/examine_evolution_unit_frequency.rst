@@ -86,4 +86,4 @@ See also
 
 -  :doc:`Reference: Count widget <widgets/count>`
 -  :doc:`Cookbook: Segment text <segment_text>`
--  :doc:`Cookbook: Display table <widgets/display_table>`
+-  :doc:`Cookbook: Display table <display_table>`

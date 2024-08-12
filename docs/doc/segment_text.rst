@@ -55,7 +55,7 @@ You can also segment text using any kind of pattern that can be described by Pyt
 See also
 ------------
 
-- :doc:`Getting started: Segmenting data into smaller units <segmenting_data_smaller_units>`
+- :doc:`Textable's Basics: Segmenting data into smaller units <segmenting_data_smaller_units>`
 - :doc:`Reference: Segment widget <widgets/segment>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

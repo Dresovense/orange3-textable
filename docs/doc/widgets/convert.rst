@@ -16,21 +16,21 @@ Signals
 
 Inputs:
 
-* ``Textable Table``
+- ``Textable Table``
 
   Table in the internal format of Orange Textable.
 
 Outputs:
 
-* ``Orange Table`` (default)
+- ``Orange Table`` (default)
 
   Data in the standard *Table* format of Orange Canvas (possibly transformed).
 
-* ``Textable Table``
+- ``Textable Table``
 
   Table in the internal format of Orange Textable (possibly transformed).
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation containing the output table in tab-delimited format.
 
@@ -229,7 +229,7 @@ Three more operations (which are not usually classified as normalizations in
 the strict sense of the term) can be selected in the drop-down menu, each of
 which deactivates the **Norm** drop-down menu on the right:
 
-* In **quotients** mode, the count stored in each cell of a contingency table
+- In **quotients** mode, the count stored in each cell of a contingency table
   (of *PivotCrosstab* type) is divided by the corresponding "theoretical"
   count under the hypothesis of independence between table rows and columns.
   This quotient is superior to 1 if the row and the column in question are in
@@ -237,12 +237,12 @@ which deactivates the **Norm** drop-down menu on the right:
   row and the column, finally equal to 1 if the row and column do not repulse
   nor attract each other particularly.
 
-* In **TF--IDF** mode, the count stored in each cell of a contingency table
+- In **TF--IDF** mode, the count stored in each cell of a contingency table
   (of *PivotCrosstab* type) is multiplied by the natural log of the ratio of
   the number of rows (i.e. contexts) having nonzero frequency for this column
   (i.e. unit) to the total number of rows.
   
-* In **presence/absence** mode, counts greater than 1 are replaced by the
+- In **presence/absence** mode, counts greater than 1 are replaced by the
   value 1, so that the resulting table can contain only 0's and 1's.
   
 The common property of all operations available in the **Normalize** drop-down
@@ -251,12 +251,12 @@ table. On the contrary, the **Convert to** checkbox (only applicable for
 *PivotCrosstab* type tables) allows the user to trigger the application of
 transforms which actually modify the dimensionality of the table :
 
-* In **document frequency** mode, a new contingency table is created, which
+- In **document frequency** mode, a new contingency table is created, which
   giver, for each column (i.e. unit) the number of distinct rows (i.e.
   contexts) that have nonzero frequency (hence the resulting table contains
   a single row).
   
-* In **association matrix** mode, a new symmetric table is constructed, where
+- In **association matrix** mode, a new symmetric table is constructed, where
   each cell gives a measure of the (Markov) associativity between a pair of
   columns (i.e. units) in the original contigency table: two columns are thus
   strongly associated if they have similar profiles of attraction/repulsion
@@ -300,7 +300,7 @@ data at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 The informations generated below the **Send** button indicate the number of lines and columns in the output
 table, or the reasons why no table is emitted (no input data).
@@ -317,24 +317,24 @@ Information
 Warnings
 ~~~~~~~~
 
+*Widget needs input*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*Widget needs input*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
 *Operation cancelled by user.*
-    The user has cancelled the operation.
+    The user has stopped the widget from working.
 
 See also
 --------
 
-* :doc:`Cookbook: Display table <../display_table>`
-* :doc:`Cookbook: Export table <../export_table>`
+- :doc:`Cookbook: Display table <../display_table>`
+- :doc:`Cookbook: Export table <../export_table>`
 
 Footnotes
 ---------

@@ -68,5 +68,5 @@ the merged segmentation, an annotation value *en* or *fr* associated with key
 See also
 --------
 
-* :ref:`Reference: Text Field widget <Text Field>`
-* :ref:`Reference: Merge widget <Merge>`
+- :ref:`Reference: Text Field widget <Text Field>`
+- :ref:`Reference: Merge widget <Merge>`

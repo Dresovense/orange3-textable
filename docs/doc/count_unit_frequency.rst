@@ -78,7 +78,7 @@ Comment
 See also
 ------------
 
--  :doc:`Getting started: Counting segment types <counting_segment_types>`
+-  :doc:`Textable's Basics : Counting segment types <counting_segment_types>`
 -  :doc:`Reference: Count widget <widgets/count>`
 -  :doc:`Cookbook: Text input <text_input>`
 -  :doc:`Cookbook: Segment text in smaller units <segment_text>`

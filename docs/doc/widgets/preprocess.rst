@@ -16,13 +16,13 @@ Signals
 
 Inputs:
 
-* ``Segmentation``
+- ``Segmentation``
 
   Segmentation covering the text that should be preprocessed
 
 Outputs:
 
-* ``Text data``
+- ``Text data``
 
   Segmentation covering the modified text
 
@@ -62,7 +62,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its inital state.
+The **Cancel** button stops the widget from working and returns it to its previous state.
 
 Below the **Send** button, the user finds the number of segments present in the output
 segmentation, or the reasons why no segmentation is emitted (no input data,
@@ -144,16 +144,16 @@ Information
 
 Warnings
 ~~~~~~~~
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
     
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
     has not been selected, so the user is prompted to click the **Send**
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
-
-*Widget needs input.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
 
 *Operation cancelled by user.*
     The user has cancelled the operation.
@@ -169,20 +169,20 @@ Errors
 Examples
 --------
 
-* :doc:`Getting started: Merging segmentations together <../merging_segmentations_together>`
-* :doc:`Getting started: Annotating by merging <../annotating_merging>`
-* :doc:`Cookbook: Merge several texts <../merge_several_texts>`
-* :doc:`Cookbook: Convert text to lower or upper case <../convert_text_to_lower_upper_case>`
-* :doc:`Cookbook: Remove accents from text <../remove_accents_from_text>`
+- :doc:`Textable's Basics: Merging segmentations together <../merging_segmentations_together>`
+- :doc:`Textable's Basics: Annotating by merging <../annotating_merging>`
+- :doc:`Cookbook: Merge several texts <../merge_several_texts>`
+- :doc:`Cookbook: Convert text to lower or upper case <../convert_text_to_lower_upper_case>`
+- :doc:`Cookbook: Remove accents from text <../remove_accents_from_text>`
 
 
 See also
 --------
 
-* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
-* :doc:`Getting started: Counting in specific contexts <../counting_specific_contexts>`
-* :doc:`Reference: Text Field widget <text_field>`
-* :doc:`Reference: Merge widget <merge>`
-* :doc:`Reference: Segment widget <segment>`
-* :doc:`Reference: Count widget <count>`
+- :doc:`Textable's Basics: Counting in specific contexts <../counting_specific_contexts>`
+- :doc:`Textable's Basics: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
+- :doc:`Reference: Text Field widget <text_field>`
+- :doc:`Reference: Merge widget <merge>`
+- :doc:`Reference: Segment widget <segment>`
+- :doc:`Reference: Count widget <count>`
 
