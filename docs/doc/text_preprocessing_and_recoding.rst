@@ -1,4 +1,4 @@
-**Text preprocessing and recoding**
+Text preprocessing and recoding
 ===============
 
 In this section, you will learn how to modify and replace elements in

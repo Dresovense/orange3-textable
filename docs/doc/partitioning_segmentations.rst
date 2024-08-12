@@ -1,4 +1,4 @@
-**2. Partitioning segmentations using a regex**
+Partitioning segmentations using a regex
 ================================================
 
 In section :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`,
@@ -71,7 +71,7 @@ connection.
     Figure 3: This dialog allows the user to select a non-default connection
     between two widgets.
 
-**2.1. See also**
+See also
 -----------------
 
 - :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`

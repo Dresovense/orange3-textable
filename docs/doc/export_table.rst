@@ -1,12 +1,12 @@
-**Export table**
+Export table
 ================
 
-**Goal**
+Goal
 --------
 
 Export an Orange Textable table in a text file in order to later import it in another program (e.g. spreadsheet software).
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 
@@ -15,7 +15,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 A table has been created by means of one of Orange Textable’s :doc:`table construction widgets <table_construction_widgets>`
 (see :doc:`Cookbook: Text analysis <text_analysis>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  ================
@@ -26,7 +26,7 @@ A table has been created by means of one of Orange Textable’s :doc:`table cons
 
 .. |convert_icon| image:: figures/Convert_36.png
 
-**Procedure**
+Procedure
 -------------
 
 
@@ -51,14 +51,14 @@ A table has been created by means of one of Orange Textable’s :doc:`table cons
 
 6. Select the location you want to export your file to and close the file selection dialog by clicking on **Ok**.
 
-**Comment**
+Comment
 -----------
 
 - If you rather want to *copy* the text content in order to later paste it in another program, click on **Copy to clipboard**; note that in this case, the encoding is by default utf8 and cannot be changed.
 
 - The default column delimiter is \\t but this can be modified to either comma (,) or semi-colon (;) by ticking the **Advanced settings** checkbox in the :doc:`Convert <widgets/convert>` instance’s interface, then selecting the desired delimiter in the **Column delimiter** drop-down menu (**Export** section).
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Convert widget <widgets/convert>`

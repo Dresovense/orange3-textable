@@ -1,17 +1,17 @@
-**Convert XML tags into Orange Textable annotations**
+Convert XML tags into Orange Textable annotations
 =====================================================
 
-**Goal**
+Goal
 --------
 
 Convert XML markup into Orange Textable data structures such as segments and their annotations.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text containing XML markup has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
 
@@ -23,7 +23,7 @@ Some text containing XML markup has been imported in Orange Textable (see :doc:`
 
 .. |extract_xml_icon| image:: figures/ExtractXML_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _convert_XML_tags_into_Orange_Textable_annotations_fig1:
@@ -49,7 +49,7 @@ Some text containing XML markup has been imported in Orange Textable (see :doc:`
 
 6. A segmentation containing a segment for each occurrence of the specified tag is then available at the output of :doc:`Segment <widgets/segment>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Comment**
+Comment
 -----------
 
 - The XML tags that have been retrieved are actually discarded from the resulting segmentation: only their content is included in the output.
@@ -57,7 +57,7 @@ Some text containing XML markup has been imported in Orange Textable (see :doc:`
 - Note that it is only possible to extract instances of a single XML element type at a time (here w).
 - However, it is possible to chain several :doc:`Extract XML <widgets/extract_xml>` instances in order to successively extract instances of different XML elements. For example, a first instance to extract div type elements, a second to extract w type elements, and so on. In this case, it is important to make sure that the **Remove markup** option is *not* selected.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`

@@ -1,4 +1,4 @@
-**1. Strings, segments, and segmentations**
+Strings, segments, and segmentations
 ===========================================
 
 The main purpose of Orange Textable is to go from text strings to data

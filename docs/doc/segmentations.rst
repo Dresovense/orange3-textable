@@ -1,4 +1,4 @@
-1. Segmentations
+Segmentations
 ===========
 
 Add text here?

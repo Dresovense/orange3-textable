@@ -1,4 +1,4 @@
-**2. Merging units with XML annotations**
+Merging units with XML annotations
 =========================================
 
 Annotations can also be used for merging units during counting
@@ -45,7 +45,7 @@ Of course, annotations may be used to merge units *and* contexts
 simultaneously.
 
 
-**2.1. See also**
+See also
 -----------------
 
 - :doc:`Getting started: Converting XML markup to annotations <converting_xml_markup_annotations>`

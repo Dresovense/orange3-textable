@@ -1,4 +1,4 @@
-**Stylometric analysis of Shakespeare’s Titus Andronicus**
+Stylometric analysis of Shakespeare’s Titus Andronicus
 ==========================================================
 
 (This use case was designed with the help of `Douglas

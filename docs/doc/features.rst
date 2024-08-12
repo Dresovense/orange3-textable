@@ -1,9 +1,9 @@
-**Features**
+Features
 ============
 
 Orange Textable offers the following features:
 
-**Basic text analysis**
+Basic text analysis
 -----------------------
 
 -  use regular expressions to segment letters, words, sentences, etc. or
@@ -19,7 +19,7 @@ Orange Textable offers the following features:
 
 -  easily generate random text samples
 
-**Advanced text analysis**
+Advanced text analysis
 --------------------------
 
 -  concordances and collocations, also based on annotations
@@ -36,7 +36,7 @@ Orange Textable offers the following features:
 -  many advanced data mining algorithms: clustering, classification,
    factor analyses, etc.
 
-**Text recoding**
+Text recoding
 -----------------
 
 -  Unicode-aware preprocessing functions, e.g. remove accents from
@@ -44,7 +44,7 @@ Orange Textable offers the following features:
 
 -  recode and restructure texts using regexes, e.g. rewrite CSV as XML
 
-**Extensibility**
+Extensibility
 -----------------
 
 -  handles hundreds of text files
@@ -52,7 +52,7 @@ Orange Textable offers the following features:
 -  use Python script for custom text processing or to access external
    tools: NLTK, Pattern, GenSim, etc.
 
-**Interoperability**
+Interoperability
 --------------------
 
 -  import text from keyboard, files, or URLs
@@ -65,7 +65,7 @@ Orange Textable offers the following features:
 
 -  easy interfacing with Orange's Text Mining add-on
 
-**Ease of access**
+Ease of access
 ------------------
 
 -  user-friendly visual interface

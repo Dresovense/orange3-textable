@@ -1,18 +1,18 @@
-**Count unit frequency**
+Count unit frequency
 ========================
 
-**Goal**
+Goal
 --------
 
 Count the frequency of each segment type that appears in a segmentation.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -23,7 +23,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
 
 .. |count_icon| image:: figures/Count_36.png
 
-**Procedure**
+Procedure
 -------------
 
 
@@ -57,7 +57,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    :doc:`Count <widgets/count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
-**Comment**
+Comment
 -----------
 
 -  The total number of segments in your segmentation appears at the
@@ -75,7 +75,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    which can enhance their readability. The default is # but you can
    change it to the delimiter of your choice.
 
-**See also**
+See also
 ------------
 
 -  :doc:`Getting started: Counting segment types <counting_segment_types>`

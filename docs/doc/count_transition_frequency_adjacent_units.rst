@@ -1,19 +1,19 @@
-**Count transition frequency between adjacent units**
+Count transition frequency between adjacent units
 ======================================================
 
-**Goal**
+Goal
 --------
 
 Count the frequency of transitions between adjacent segment types in a
 text.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -24,7 +24,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
 
 .. |count_icon| image:: figures/Count_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _count_transition_frequency_between_adjacent_units_fig1:
@@ -63,7 +63,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    :doc:`Count <widgets/count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
-**Comment**
+Comment
 -----------
 
 -  It is also possible to define units as segment pairs (*bigrams*),
@@ -85,7 +85,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    separation between left and right contexts sides. The default is \_
    but you can change it to the marker of your choice.
 
-**See also**
+See also
 ------------
 
 -  :doc:`Reference: Count widget <widgets/count>`

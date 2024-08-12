@@ -1,4 +1,4 @@
-**1. Converting XML markup to annotations**
+Converting XML markup to annotations
 ===========================================
 
 Often, the best way (and sometimes the only way) to add a specific type
@@ -53,7 +53,7 @@ automatically converted to a *{key: value}* annotation.
 
 Figure 3: Annotations imported using :doc:`Extract XML <widgets/extract_xml>`.
 
-**1.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Extract XML widget <widgets/extract_xml>`

@@ -1,4 +1,4 @@
-**Term frequency comparison in Melville’s Moby Dick**
+Term frequency comparison in Melville’s Moby Dick
 =====================================================
 
 (This use case was designed with the help of `Douglas

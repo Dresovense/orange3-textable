@@ -2,7 +2,7 @@
    :description: Orange Textable documentation, annotations
    :keywords: Orange, Textable, documentation, annotations
 
-2. Annotations
+Annotations
 ===========
 
 Annotations let you go beyond what's in the text, and extend Orange Textable's

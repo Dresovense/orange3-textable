@@ -1,20 +1,20 @@
-**Replace all occurrences of a string/pattern**
+Replace all occurrences of a string/pattern
 ===============================================
 
-**Goal**
+Goal
 --------
 
 Replace all occurrences of a string (or pattern) in a text with another
 string.
 
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -25,7 +25,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 .. |recode_icon| image:: figures/Recode_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _replace_all_occurrences_of_string_pattern_fig1:
@@ -58,7 +58,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    output of :doc:`Recode <widgets/recode>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Comment**
+Comment
 -----------
 
 -  In the **Regex** field you can use all the syntax of Python’s regular
@@ -67,11 +67,11 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 -  In our example, we choose to replace all occurrences of British
    *-our* with American *-or* (for example, from *colour* to *color*);
    unless otherwise specified (typically using word boundary “anchor”
-   \\b), replacements will also occur within words, i.e. *coloured* to
+   ``\b``), replacements will also occur within words, i.e. *coloured* to
    *colored*.
 
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Recode widget <widgets/recode>`

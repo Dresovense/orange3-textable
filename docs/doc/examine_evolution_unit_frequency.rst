@@ -1,19 +1,19 @@
-**Examine the evolution of unit frequency along the text**
+Examine the evolution of unit frequency along the text
 ==========================================================
 
-**Goal**
+Goal
 --------
 
 Examine how the frequency of segment types evolves from the beginning to
 the end of a segmentation.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -24,7 +24,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
 
 .. |count_icon| image:: figures/Count_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _examine_evolution_unit_frequency_along_text_fig1:
@@ -68,7 +68,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    :doc:`Count <widgets/count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
-**Comment**
+Comment
 -----------
 
 -  It is also possible to define units as segment pairs (*bigrams*),
@@ -81,7 +81,7 @@ and it has been segmented in smaller units (see :doc:`Cookbook: Segment text in 
    which can enhance their readability. The default is # but you can
    change it to the delimiter of your choice.
 
-**See also**
+See also
 ------------
 
 -  :doc:`Reference: Count widget <widgets/count>`

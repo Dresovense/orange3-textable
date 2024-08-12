@@ -1,4 +1,4 @@
-**1. The uses of annotating segments**
+The uses of annotating segments
 ======================================
 
 Annotations are bits of information attached to text segments. They let

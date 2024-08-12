@@ -1,18 +1,18 @@
-**Convert text to lower or upper case**
+Convert text to lower or upper case
 =======================================
 
-**Goal**
+Goal
 --------
 
 Convert text to lower or upper case.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -23,7 +23,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 .. |preprocess_icon| image:: figures/Preprocess_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _convert_text_lower_upper_case_fig1:
@@ -57,7 +57,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    output of :doc:`Preprocess <widgets/preprocess>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Preprocess widget <widgets/preprocess>`

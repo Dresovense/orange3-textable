@@ -1,4 +1,4 @@
-**Cookbook**
+Cookbook
 ============
 
 This section describes how to get a number of basic tasks done with

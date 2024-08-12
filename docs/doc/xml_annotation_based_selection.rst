@@ -1,4 +1,4 @@
-**4. XML annotation-based selection using a regex**
+XML annotation-based selection using a regex
 ===================================================
 
 Another common way of exploiting annotations consists in using them to
@@ -43,7 +43,7 @@ annotation value for key *type* (**Annotation key**: *type*) is *DET* or
 
   Figure 2: Excluding segments based on annotation values with :doc:`Select <widgets/select>`.
 
-**4.1. See also**
+See also
 -----------------
 
 - :doc:`Getting started: Partitioning segmentations <partitioning_segmentations>`

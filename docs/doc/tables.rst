@@ -2,7 +2,7 @@
    :description: Orange Textable documentation, tables
    :keywords: Orange, Textable, documentation, tables
 
-3. Tables
+Tables
 ======
 
 Segmentations are to tables what a means is to an end. In this section, you

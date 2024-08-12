@@ -1,17 +1,17 @@
-**Filter segments based on their frequency**
+Filter segments based on their frequency
 ============================================
 
-**Goal**
+Goal
 --------
 
 Filter out the most rare and/or frequent segments of a segmentation.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) and in all likelihood it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  ============== 
@@ -22,7 +22,7 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 
 .. |select_icon| image:: figures/Select_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _filter_segments_based_on_frequency_fig1:
@@ -54,12 +54,12 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 
 10. A segmentation containing the selected segments is then available at the output of :doc:`Select <widgets/select>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Comment**
+Comment
 -----------
 
 The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected.
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Select widget <widgets/select>`

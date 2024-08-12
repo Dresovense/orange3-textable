@@ -1,4 +1,4 @@
-**2. Counting segment types**
+Counting segment types
 =============================
 
 Widget :doc:`Count <widgets/count>`
@@ -65,7 +65,7 @@ bigrams *as* and *ee* have a nonzero frequency.
     1,   1,   1,   2,   2,   2,   1,  1,   1,   1
 
 
-**2.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Count widget <widgets/count>`

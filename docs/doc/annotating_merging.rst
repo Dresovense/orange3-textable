@@ -1,4 +1,4 @@
-**2. Annotating by merging**
+Annotating by merging
 ============================
 
 Widget
@@ -75,7 +75,7 @@ segmentation, an annotation value *en* or *fr* associated with key
     Figure 4: Annotations created with :doc:`Merge <widgets/merge>`.
 
 
-**2.1. See also**
+2.1. See also
 -----------------
 
 - :doc:`Reference: Merge widget <widgets/merge>`

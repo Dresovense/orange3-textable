@@ -1,4 +1,4 @@
-**Text input**
+Text input
 ===============
 
 This section will help you do the first step of using the program. It

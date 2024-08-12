@@ -1,17 +1,17 @@
-**Include/exclude segments based on a pattern**
+Include/exclude segments based on a pattern
 ===============================================
 
-**Goal**
+Goal
 --------
 
 Include or exclude segments from a segmentation using a regular expression
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) and in all likelihood it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  ================  
@@ -22,7 +22,7 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 
 .. |select_icon| image:: figures/Select_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _include_exclude_units_based_on_pattern_fig1:
@@ -50,14 +50,14 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 7. A segmentation containing the selected segments is then available at the output of :doc:`Select <widgets/select>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 
-**Comment**
+Comment
 -----------
 
 In the **Regex** field you can use all the syntax of Python’s regular expression (*cf.* :doc:`Regular expressions <note_regular_expressions>`).
 
 The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected (see :doc:`Partitioning segmentations using a regex <partitioning_segmentations>` for instructions on how to access this other output segmentation).
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Partitioning segmentations <partitioning_segmentations>`

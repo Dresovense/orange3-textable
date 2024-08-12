@@ -1,4 +1,4 @@
-**Case studies**
+Case studies
 ================
 
 This section aims to provide a repository of use cases illustrating the

@@ -1,4 +1,4 @@
-**4. Tagging table rows with annotations**
+Tagging table rows with annotations
 ===========================================
 
 There are several situations in which annotations attached to a segment
@@ -94,7 +94,7 @@ annotation values to the contexts that must be kept separated (e.g. by
 labelling the :doc:`Text Field <widgets/text_field>`
 instances that contain English texts *en_1* and *en_2*).
 
-**4.1. See also**
+See also
 ------------------
 
 - :doc:`Getting started: Annotating by merging <annotating_merging>`

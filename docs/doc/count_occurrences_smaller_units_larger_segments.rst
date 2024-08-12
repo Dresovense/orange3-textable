@@ -1,7 +1,7 @@
-**Count occurrences of smaller units in larger segments**
+Count occurrences of smaller units in larger segments
 =========================================================
 
-**Goal**
+Goal
 --------
 
 Count the occurrences of smaller units (for instance letters) in larger
@@ -9,14 +9,14 @@ segments (for instance words), and report the results by means of a
 two-dimensional contingency table (e.g. with words in rows and letters
 in columns).
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and it has been segmented in at least two hierarchical levels, e.g.
 words and letters (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =============
@@ -27,7 +27,7 @@ words and letters (see :doc:`Cookbook: Segment text in smaller units <segment_te
 
 .. |count_icon| image:: figures/Count_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _count_occurrences_smaller_units_in_larger_segments_fig1:
@@ -67,7 +67,7 @@ words and letters (see :doc:`Cookbook: Segment text in smaller units <segment_te
 8. A table showing the results is then available at the output of :doc:`Count <widgets/count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
-**Comment**
+Comment
 -----------
 
 -  The total number of segments in your segmentation appears at the
@@ -85,7 +85,7 @@ words and letters (see :doc:`Cookbook: Segment text in smaller units <segment_te
    which can enhance their readability. The default is # but you can
    change it to the delimiter of your choice.
 
-**See also**
+See also
 ------------
 
 -  :doc:`Getting started: Counting in specific contexts <counting_specific_contexts>`

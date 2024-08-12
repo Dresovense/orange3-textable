@@ -1,4 +1,4 @@
-**Text analysis**
+Text analysis
 ===============
 
 This section will show you how to apply quantitative analysis methods to

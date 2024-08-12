@@ -1,5 +1,5 @@
 Introduction
-=================================
+==============
 
 Orange Textable is an open-source add-on bringing advanced
 text-analytical functionalities to the `Orange Canvas <http://orange.biolab.si/>`_ data mining software (itself

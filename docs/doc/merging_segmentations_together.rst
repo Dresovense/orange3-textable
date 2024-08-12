@@ -1,4 +1,4 @@
-**3. Merging segmentations together**
+Merging segmentations together
 =====================================
 
 Computerized text analysis often implies consolidating various text
@@ -81,7 +81,7 @@ widget? (:ref:`solution <solution_merging_segmentations_together_ex>`)
 
 
 
-**3.1 See also**
+See also
 -----------------
    
 - :doc:`Reference: Merge widget <widgets/merge>?`

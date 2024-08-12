@@ -1,5 +1,5 @@
-**3. Counting in specific contexts**
-===============================================================================================================================================================
+Counting in specific contexts
+===============================
 
 Section **Contexts** of widget :doc:`Count <widgets/count>`’s
 interface lets the user define the *contexts* in which units should be
@@ -143,7 +143,7 @@ because those bigrams that straddle a word boundary will be excluded in
 this case (contrary to what can be seen in table 1
 :ref:`here <counting_segment_types_table1>`).
 
-**3.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Count widget <widgets/count>`

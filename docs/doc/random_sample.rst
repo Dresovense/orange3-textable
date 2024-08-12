@@ -1,17 +1,17 @@
-**Create a random selection or sample of segments**
+Create a random selection or sample of segments
 ===================================================
 
-**Goal**
+Goal
 --------
 
 Create a random sample of segments.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) and in all likelihood it has been segmented in smaller units (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  ==============
@@ -22,7 +22,7 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 
 .. |select_icon| image:: figures/Select_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _create_random_selection_sample_of_segments_fig1:
@@ -53,12 +53,12 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 
 9. A segmentation containing the sampled segments is then available at the output of :doc:`Select <widgets/select>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Comment**
+Comment
 -----------
 
 The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected.
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Select widget <widgets/select>`

@@ -1,4 +1,4 @@
-**4. Segmenting data into smaller units**
+Segmenting data into smaller units
 =========================================
 
 We have seen previously how to combine several segmentations into a
@@ -54,7 +54,7 @@ The option of using a regular expression is quite powerful and we will
 return to it later in this tutorial..
 
 
-**4.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Segment widget <widgets/segment>`

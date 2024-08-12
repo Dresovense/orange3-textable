@@ -1,4 +1,4 @@
-**Table output**
+Table output
 ===============
 
 In this section, you will learn how to output tables containing the results of previous quantitative analyses.

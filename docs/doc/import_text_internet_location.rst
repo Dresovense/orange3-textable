@@ -1,7 +1,7 @@
-**Import text from internet location**
+Import text from internet location
 ======================================
 
-**Goal**
+Goal
 --------
 
 Import text content located at one or more URLs for further processing
@@ -18,10 +18,10 @@ with Orange Textable.
 
 .. |urls_icon| image:: figures/URLs_36.png
 
-**Procedure**
+Procedure
 -------------
 
-**Single URL**
+Single URL
 ~~~~~~~~~~~~~~
 
 .. _import_text_internet_location_fig1:
@@ -53,7 +53,7 @@ with Orange Textable.
    :doc:`URLs <widgets/urls>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Multiple URLs**
+Multiple URLs
 ~~~~~~~~~~~~~~~~~
 
 .. _import_text_internet_location_fig2:
@@ -97,7 +97,7 @@ with Orange Textable.
     :doc:`URLs <widgets/urls>`;
     to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: URLs widget <widgets/urls>`

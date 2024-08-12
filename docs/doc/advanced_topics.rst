@@ -2,7 +2,7 @@
    :description: Orange Textable documentation, Advanced topics
    :keywords: Orange, Textable, documentation, advanced, tutorial, regex, xml
    
-**Advanced topics**
+Advanced topics
 ===================
 
 Doing text mining and working on text statistics softwares require the knowledge of various textual formalisms. 

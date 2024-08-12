@@ -1,18 +1,18 @@
-**Segment text in smaller units**
+Segment text in smaller units
 =================================
 
-**Goal**
+Goal
 --------
 
 Segment text in smaller units (e.g. lines, words, letters, etc.).
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) 
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
 
@@ -24,7 +24,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 .. |segment_icon| image:: figures/Segment_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _segment_text_fig1:
@@ -47,12 +47,12 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 6. A segmentation containing a segment for each specified unit (e.g. line) is then available at the output of :doc:`Segment <widgets/segment>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Comment**
+Comment
 -----------
 
 You can also segment text using any kind of pattern that can be described by Python regular expressions (*cf.* Regular expressions) with the **Use a regular expression** option.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Segmenting data into smaller units <segmenting_data_smaller_units>`

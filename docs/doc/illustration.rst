@@ -1,4 +1,4 @@
-**Illustration: mining Humanist**
+Illustration: mining Humanist
 =================================
 
 The following example is meant to show *what* Orange Textable typically

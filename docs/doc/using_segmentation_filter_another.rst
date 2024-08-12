@@ -1,4 +1,4 @@
-**5. Using a segmentation to filter another**
+Using a segmentation to filter another
 =============================================
 
 There are many situations where we might want to select or exclude
@@ -95,7 +95,7 @@ world
 ...
 
 
-**5.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Intersect widget <widgets/intersect>`

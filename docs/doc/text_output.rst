@@ -1,4 +1,4 @@
-**Text output**
+Text output
 ===============
 
 You learned how to import text into Orange Textable with Text input,

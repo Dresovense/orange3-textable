@@ -1,19 +1,19 @@
-**Build a concordance (aka “keyword in context”)**
+Build a concordance (aka “keyword in context”)
 ==================================================
 
-**Goal**
+Goal
 --------
 
 Build a concordance to examine the context of occurrence of a given
 query string.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
  ==============   =================================  =================================
@@ -25,7 +25,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 .. |segment_icon| image:: figures/Segment_36.png
 .. |context_icon| image:: figures/Context_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _build_concordance_fig1:
@@ -90,17 +90,17 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
     :doc:`Context <widgets/context>`;
     to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
-**Comment**
------------
+Comment
+----------
 
 -  In the **Regex** field of the
    :doc:`Segment <widgets/segment>`
    widget you can use all the syntax of Python’s regular expression
    (*cf.* :doc:`Regular expressions <note_regular_expressions>`); for instance, if you wish to restrict
    your search to entire words, you might frame the query string with
-   word boundary anchors \\b (in our example \\bhobbit\\b).
+   word boundary anchors ``\b`` (in our example ``\bhobbit\b``).
 
-**See also**
+See also
 ------------
 
 -  :doc:`Reference: Segment widget <widgets/segment>`

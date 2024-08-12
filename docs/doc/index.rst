@@ -30,11 +30,31 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    Why you should use Orange Textable <introduction>
+
+.. toctree::
+   :maxdepth: 3
+
    textable_basics
+
+.. toctree::
+   :maxdepth: 3
+
    advanced_topics
+
+.. toctree::
+   :maxdepth: 2
+
    cookbook
+
+.. toctree::
+   :maxdepth: 3
+
    case_studies
-   reference
+
+.. toctree::
+   :maxdepth: 3
+
+   Widget Reference <reference>

@@ -1,4 +1,4 @@
-**2. Regular Expressions**
+Regular Expressions
 ===============
 
 (Add Text Here?)

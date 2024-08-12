@@ -1,4 +1,4 @@
-**How to cite Orange Textable**
+How to cite Orange Textable
 ===========
 
 If Orange Textable has been useful in preparing a scientific publication

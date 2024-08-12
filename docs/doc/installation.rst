@@ -1,4 +1,4 @@
-**Installation**
+Installation
 ================
 
 Python 3.x and Orange Canvas 3.x must imperatively be installed *before*

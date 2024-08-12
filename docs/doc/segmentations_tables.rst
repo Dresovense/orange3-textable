@@ -1,4 +1,4 @@
-**1. From segmentations to tables**
+From segmentations to tables
 ===================================
 
 The main purpose of Orange Textable is to build tables based on texts.
@@ -61,7 +61,7 @@ distribution of units depend on contexts”) or a graphical representation
 (making it possible to visualize the attraction or repulsion between
 specific units and contexts).
 
-**3.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`

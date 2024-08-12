@@ -1,13 +1,13 @@
-**Import text from file**
+Import text from file
 =========================
 
-**Goal**
---------
+Goal
+-------
 
 Import the content of one or more raw text files for further processing
 with Orange Textable.
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -18,10 +18,10 @@ with Orange Textable.
 
 .. |text_files_icon| image:: figures/TextFiles_36.png
 
-**Procedure**
+Procedure
 -------------
 
-**Single file**
+Single file
 ~~~~~~~~~~~~~~~
 
 .. _import_text_file_fig1:
@@ -54,7 +54,7 @@ with Orange Textable.
    output of :doc:`Text Files <widgets/text_files>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**Multiple files**
+Multiple files
 ~~~~~~~~~~~~~~~~~~
 
 .. _import_text_file_fig2:
@@ -93,7 +93,7 @@ with Orange Textable.
     content is then available at the output of :doc:`Text Files <widgets/text_files>`;
     to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Text Files widget <widgets/text_files>`

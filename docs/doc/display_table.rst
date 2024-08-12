@@ -1,12 +1,12 @@
-**Display table**
+Display table
 =================
 
-**Goal**
+Goal
 --------
 
 Display an Orange Textable table.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
@@ -14,7 +14,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 A table has been created by means of one of Orange Textable’s :doc:`table construction widgets <table_construction_widgets>`
 (see :doc:`Cookbook: Text analysis <text_analysis>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =================================  =================
@@ -26,7 +26,7 @@ A table has been created by means of one of Orange Textable’s :doc:`table cons
 .. |convert_icon| image:: figures/Convert_36.png
 .. |datatable_icon| image:: figures/DataTable.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _display_table_fig1:
@@ -47,7 +47,7 @@ A table has been created by means of one of Orange Textable’s :doc:`table cons
 
 4. Double-click on the icon of **Data Table** to open its interface and display the table.
  
-**Comment**
+Comment
 -----------
 
 - If the table is a document-term frequency table, you may want to change its default orientation to make it easier to read. To that effect, open the :doc:`Convert <widgets/convert>` instance’s interface, tick the **Advanced settings** checkbox, and in the **Transform** section, tick the **transpose** checkbox.
@@ -61,7 +61,7 @@ A table has been created by means of one of Orange Textable’s :doc:`table cons
    Figure 2: Change the orientation of an Orange Textable frequency table
    using an instance of :doc:`Convert <widgets/convert>`.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Converting between table formats`

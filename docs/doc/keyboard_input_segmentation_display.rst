@@ -1,4 +1,4 @@
-**2. Keyboard input, widget labelling and segmentation display**
+Keyboard input, widget labelling and segmentation display
 ================================================================
 
 Typing or pasting text in a :doc:`Text Field <widgets/text_field>`
@@ -57,7 +57,7 @@ is very useful for viewing intermediate results in an Orange Textable
 workflow and making sure that other widgets have processed data as
 expected.
 
-**2.1. See also**
+See also
 -----------------
 
 - :doc:`Reference: Text field widget <widgets/text_field>`

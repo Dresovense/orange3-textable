@@ -1,4 +1,4 @@
-**1. A note on regular expressions**
+A note on regular expressions
 ====================================
 
 Orange Textable widgets rely heavily on *regular expressions* (or

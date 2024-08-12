@@ -1,18 +1,18 @@
-**Exclude segments based on a stoplist**
+Exclude segments based on a stoplist
 ========================================
 
-**Goal**
+Goal
 --------
 
 Filter out segments based on a stoplist.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) and it has been segmented into words (see :doc:`Cookbook: Segment text in smaller units <segment_text>`).
 
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  ========================================  =================================  ===================================
@@ -25,7 +25,7 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 .. |segment_icon| image:: figures/Segment_36.png
 .. |intersect_icon| image:: figures/intersect_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _exclude_segments_based_on_stoplist_fig1:
@@ -61,12 +61,12 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 10. A segmentation containing the filtered segmentation is then available at the output of :doc:`Intersect <widgets/intersect>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 
-**Comment**
+Comment
 -----------
 
 Stopword lists for various languages can be found `here <http://members.unine.ch/jacques.savoy/clef/>`__.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Using a segmentation to filter another <using_segmentation_filter_another>`

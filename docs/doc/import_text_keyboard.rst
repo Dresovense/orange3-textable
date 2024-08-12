@@ -1,12 +1,12 @@
-**Import text from keyboard**
+Import text from keyboard
 =============================
 
-**Goal**
+Goal
 --------
 
 Input text using keyboard for further processing with Orange Textable.
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -17,7 +17,7 @@ Input text using keyboard for further processing with Orange Textable.
 
 .. |text_field_icon| image:: figures/TextField_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _import_text_keyboard_fig1:
@@ -41,7 +41,7 @@ Input text using keyboard for further processing with Orange Textable.
    output of :doc:`Text Field <widgets/text_field>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Keyboard input and segmentation display <keyboard_input_segmentation_display>`

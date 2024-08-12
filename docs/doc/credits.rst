@@ -1,4 +1,4 @@
-**Credits**
+Credits
 ===========
 
 Textable was initially designed and implemented by `LangTech

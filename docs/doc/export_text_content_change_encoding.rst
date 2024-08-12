@@ -1,18 +1,18 @@
-**Export text content (and/or change text encoding)**
+Export text content (and/or change text encoding)
 =====================================================
 
-**Goal**
+Goal
 --------
 
 Export the content of a text (segmentation).
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -23,7 +23,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 .. |display_icon| image:: figures/Display_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _export_text_content_fig1:
@@ -55,7 +55,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    file selection dialog by clicking on **Ok**.
 
 
-**Comment**
+Comment
 -----------
 
 -  The default output encoding is utf8; it can be changed by ticking the
@@ -74,7 +74,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    ticking the **Advanced settings** checkbox.
 
 
-**See also**
+See also
 ------------
 
 - :doc:`Reference: Display widget <widgets/display>`

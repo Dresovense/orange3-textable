@@ -1,4 +1,4 @@
-**TEXTABLE’S BASICS**
+TEXTABLE’S BASICS
 ======================
 
 This part of the documentation is a tutorial that introduces the basic
@@ -9,6 +9,7 @@ you with the necessary background.
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    segmentations
    annotations

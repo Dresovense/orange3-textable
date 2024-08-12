@@ -1,4 +1,4 @@
-**3. Segmenting with regexes**
+Segmenting with regexes
 ==============================
 
 This tutorial has already shown how to use the :doc:`Segment <widgets/segment>`
@@ -17,20 +17,20 @@ drop-down menu options.
 As a matter of fact, these options in the interface of
 :doc:`Segment <widgets/segment>`
 rely on the use of regular expressions within the widget’s structure.
-For instance, the regex \\w+ is used underlying the **Segment into
+For instance, the regex ``\w+`` is used underlying the **Segment into
 words** choice. It divides each incoming segment into sequences of
 alphanumeric characters (and underscores)–which in our case amounts to
 segmenting *a simple example* into three words. A similar operation is
-launched with the \\w regex to obtain a segmentation into letters (or to
+launched with the ``\w`` regex to obtain a segmentation into letters (or to
 be precise, alphanumeric characters or underscores).
 
 With some knowledge about regular expressions, you can exploit the **Use
 a regular expression** option in the drop-down menu to do more specific
 queries. If the relevant unit is the word, regexes will often use the
-\\b *anchor*, which represents a word boundary. For instance, words that
-contain less than 4 characters can be retrieved with \\b\\w{1,3}\\b,
-those ending in *-tion* with \\b\\w+tion\\b, and the inflected forms of
-*retrieve* with \\bretriev(e|es|ed|ing)\\b.
+``\b`` *anchor*, which represents a word boundary. For instance, words that
+contain less than 4 characters can be retrieved with ``\b\w{1,3}\b``,
+those ending in *-tion* with ``\b\w+tion\b``, and the inflected forms of
+*retrieve* with ``\bretriev(e|es|ed|ing)\b``.
 
 In these examples, the same result can be achieved by first using the
 built-in **Segment into words** option and filtering the result with the

@@ -1,18 +1,18 @@
-**Merge several texts**
+Merge several texts
 =======================
 
-**Goal**
+Goal
 --------
 
 Merge several texts together so they can be further processed as a whole.
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Two or more texts have been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`) 
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
 
@@ -24,7 +24,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
   
 .. |merge_icon| image:: figures/Merge_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _merge_several_texts_fig1:
@@ -46,7 +46,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 5. A segmentation containing all input data merged together is then available at the output of :doc:`Merge <widgets/merge>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Merging segmentations together`

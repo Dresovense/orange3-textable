@@ -1,18 +1,18 @@
-**Display text content**
+Display text content
 ========================
 
-**Goal**
+Goal
 --------
 
 Display the content of a text (segmentation).
 
-**Prerequisites**
+Prerequisites
 -----------------
 
 Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <text_input>`)
 and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`).
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -23,7 +23,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
 
 .. |display_icon| image:: figures/Display_36.png
 
-**Procedure**
+Procedure
 -------------
 
 .. _display_text_content_fig1:
@@ -46,7 +46,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    to view the text content. You can show the segmentation in HTML
    format if you check the option (Figure 1)
 
-**Comment**
+Comment
 -----------
 
 -  If the input segmentation is large (>1000 segments), the time
@@ -56,7 +56,7 @@ and possibly further processed (see :doc:`Cookbook: Segmentation manipulation <s
    nevertheless, tick the **Advanced Settings** checkbox then uncheck
    **Limit number of displayed segments**.
 
-**See also**
+See also
 ------------
 
 - :doc:`Getting started: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
