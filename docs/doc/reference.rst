@@ -18,6 +18,6 @@ for the configuration of some of Orange Textable’s widgets.
     Segmentation processing widgets <segmentation_processing_widgets>
     Table construction widgets <table_construction_widgets>
     Conversion/export widgets <conversion_export_widgets>
-    JSON im-/export format <json_format>
+    JSON im-/export format <json_import_export>
 
 

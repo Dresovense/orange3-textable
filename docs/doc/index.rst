@@ -11,7 +11,7 @@ Orange Textable documentation
 
 Welcome to the documentation of Orange Textable.
 
-This documentation is divided into six main sections (see detailed contents below):
+This documentation is divided into six main sections (see detailed `contents`_ below):
 
 -  Why you should use Orange Textable offers a brief overview of what Orange Textable can do, as well as how it should be installed and configured. This is what you should read first if you are unsure whether Orange Textable is the right piece of software for your needs or how to set it up.
 
@@ -25,13 +25,14 @@ This documentation is divided into six main sections (see detailed contents belo
 
 -  :doc:`Reference <reference>` is an exhaustive explanation of the role and effect of every component of Orange Textable’s interface. The purpose of this part of the documentation is to help you find a specific piece of information about Orange Textable’s operation when using it for your own projects.
 
+
 Contents
 ========
 
 .. toctree::
    :maxdepth: 3
 
-   why_use_orange_textable
+   Why you should use Orange Textable <introduction>
    textable_basics
    advanced_topics
    cookbook
