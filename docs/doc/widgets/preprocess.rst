@@ -179,7 +179,7 @@ Examples
 See also
 --------
 
-* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_annotations>`
+* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
 * :doc:`Getting started: Counting in specific contexts <../counting_specific_contexts>`
 * :doc:`Reference: Text Field widget <text_field>`
 * :doc:`Reference: Merge widget <merge>`

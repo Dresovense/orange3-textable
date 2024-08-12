@@ -15,7 +15,7 @@ three texts into letters with
 (*Letters*), as in the workflow shown on :ref:`figure 1 <tagging_table_rows_annotations_fig1>`
 below; both segmentations (*texts* and *letters*) can then be sent to an
 instance of
-:doc:`Count <widgets/count>`
+:doc:`Count <widgets/count>` 
 for building a table with the frequency of each letter in each text.
 
 .. _tagging_table_rows_annotations_fig1:

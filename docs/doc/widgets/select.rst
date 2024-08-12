@@ -228,7 +228,7 @@ Examples
 --------
 
 - :doc:`Getting started: Partitioning segmentations <../partitioning_segmentations>`
-- :doc:`Getting started: Annotation-based selection <../annotation_based_selection>`
+- :doc:`Getting started: Annotation-based selection <../xml_annotation_based_selection>`
 - :doc:`Cookbook: Include/exclude segments based on a pattern <../include_exclude_based_on_pattern>`
 - :doc:`Cookbook: Filter segments based on their frequency <../filter_segments_based_on_frequency>`
 - :doc:`Cookbook: Create a random selection or sample of segments <../random_sample>`

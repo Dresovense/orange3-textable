@@ -115,7 +115,7 @@ Examples
 See also
 --------
 
-* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_annotations>`
+* :doc:`Getting started: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
 
 Footnotes
 ---------
