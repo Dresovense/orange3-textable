@@ -204,8 +204,8 @@ Warnings
     not been selected, so the user is prompted to click the **Send** button (or equivalently check the box)
     in order for the computation and data emission to proceed.
 
-*Operation cancelled by user*
-    The user has cancelled the operation
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 Errors
 ~~~~~~

@@ -178,7 +178,7 @@ mode. Firstly, the resulting table now has a fixed width [#]_ of 5 columns:
 *__id__* and *__key_segment__* have the same function as before; *__pos__*
 indicates the position of the context segment that contains each key segment
 (which allows the user to find and view the context in question with the
-:ref:`Display` widget); finally the columns *__left__* and *__right__*
+:doc:`Display <display>` widget); finally the columns *__left__* and *__right__*
 respectively give the left and right part of each context segment containing a
 key segment.
 
@@ -299,9 +299,11 @@ user to indicate if a limit should be set to the number of neighboring
 segments shown for each key segment and where it is set (**Max. distance**).
 The **Use collocation format** button is used to format the result as a
 collocation list (rather than a concordance); when it is selected, the
-**Min. frequency** drop-down menu allows the user to specify the (global)
+**Min. frequency** cursor allows the user to specify the (global)
 minimal frequency that the segment type must reach in order to appear in the
-list.
+list. Checking the **Treat distinct strings as contiguous** box permits to treat 
+separate strings as if they were contiguous, so that the end of each string is a
+djacent to the beginning of the next string.
 
 .. _context_fig2:
 
@@ -315,15 +317,17 @@ In **Containing segmentation mode** (see :ref:`figure 2 <context_fig2>`), the
 **Contexts** section allows the user to specify the maximal number of
 characters that appear in the right and left context of the pivot.
 
-The **Info** section indicates if a table was correctly emitted, or
-the reasons why no table is emitted (typically, because it is empty).
-
-The **Compute** button triggers the emission of a table in the internal format
+The **Send** button triggers the emission of a table in the internal format
 of Orange Textable, to the output connection(s). When it is selected, the
-**Compute automatically** checkbox disables the button and the widget attempts
+**Send automatically** checkbox disables the button and the widget attempts
 to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+The informations generated below the **Send** button indicate if a table was correctly emitted, or
+the reasons why no table is emitted (typically, because it is empty).
 
 Messages
 --------
@@ -331,27 +335,21 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output.*
+*Table sent to output.*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Compute' when ready.*
-    Settings and/or input have changed but the **Compute automatically** 
-    checkbox has not been selected, so the user is prompted to click the 
-    **Compute** button (or equivalently check the box) in order for computation 
-    and data emission to proceed.
-
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
+
+*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically** 
+    checkbox has not been selected, so the user is prompted to click the 
+    **Send** button (or equivalently check the box) in order for computation 
+    and data emission to proceed.
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -359,9 +357,12 @@ Warnings
     problem (when using the **Containing segmentation** mode) is that the unit
     and context segmentations do not refer to the same strings, so that the 
     units are in effect *not* contained in the contexts. This is typically a
-    consequence of the improper use of widgets :ref:`Preprocess` and/or
-    :ref:`Recode` (see :ref:`anchor_to_caveat`).
+    consequence of the improper use of widgets :doc:`Preprocess <preprocess>` and/or
+    :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
         
+*Operation cancelled by user.*
+    The user has cancelled the operation.
+
 See also
 --------
 
@@ -376,7 +377,7 @@ Footnotes
        readability, we do indicate the content of each segment, though it is
        not formally part of the segmentation (but rather of the string to
        which the segmentation refers).
-.. [#] It is typically by means of the :ref:`Select` widget that we could
+.. [#] It is typically by means of the :doc:`Select <select>` widget that we could
        produce such a segmentation.
 .. [#] Except in the "pathological" case where no key segment is contained
        in the context segment.

@@ -190,7 +190,7 @@ Information
 Warnings
 ~~~~~~~~
 
-*No annotation key was provided for auto-numbering.*
+*Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
@@ -204,8 +204,8 @@ Warnings
     not been selected, so the user is prompted to click the **Send** button (or equivalently check the box)
     in order for the computation and data emission to proceed.
 
-*Operation cancelled by user*
-    The user has cancelled the operation
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 Errors
 ~~~~~~
@@ -214,7 +214,7 @@ Errors
     An URL couldn't be retrieved and read, possibly because it is incorrect, or
     because the internet connexion has not been working properly.
 
-*Encoding error* or *Encoding error: <URL>.*
+*Please select another enconding for URL <URL>*
     An URL couldn't be read with the specified encoding (it must be in another
     encoding).
 

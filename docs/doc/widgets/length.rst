@@ -41,7 +41,7 @@ segmentation.
 
 The tables produced by the **Length** widget have at least 2 columns, and at
 most 4. The first column contains the headers corresponding to the contexts --
-which are essentially defined in the same way as in the :ref:`Count` widget.
+which are essentially defined in the same way as in the :doc:`Count <count>` widget.
 The second column gives the length indications (in which case the header is
 *__length__*) or the average length (header *__length_average__*). In the
 latter case, the third column may then contain the corresponding standard
@@ -225,12 +225,6 @@ segments), set by means of the **Window size** cursor.
 
 .. _length_fig3:
 
-.. figure:: ../figures/count_mode_containing_segmentation.png
-    :align: center
-    :alt: Length widget in mode "Containing segmentation"
-
-    Figure 3: **Length** widget (**Containing segmentation** mode).
-
 Finally, the **Containing segmentation** mode (see :ref:`figure 3
 <length_fig3>`) corresponds to the case where the contexts are defined by the
 segment types appearing in a segmentation (that will most often be distinct
@@ -244,15 +238,23 @@ selected, the *content* of the segments will be used. The **Merge contexts**
 checkbox allows the user to measure the length or to calculate the average
 length globally in the entire segmentation that defined the contexts.
 
-The **Info** section indicates if a table has been correctly emitted, or the
-reasons why no table is emitted (no input data).
+.. figure:: ../figures/count_mode_containing_segmentation.png
+    :align: center
+    :alt: Length widget in mode "Containing segmentation"
 
-The **Compute** button triggers the emission of a table in the internal format
+    Figure 3: **Length** widget (**Containing segmentation** mode).
+
+The **Send** button triggers the emission of a table in the internal format
 of Orange Textable to the output connection(s). When it is selected, the
-**Compute automatically** checkbox disables the button and the widget attempts
+**Send automatically** checkbox disables the button and the widget attempts
 to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+The informations below the **Send** button indicate if a table has been correctly emitted, or the
+reasons why no table is emitted (no input data).
 
 Messages
 --------
@@ -260,27 +262,17 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output.*
+*Table sent to output.*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Compute' when ready.*
-    Settings and/or input have changed but the **Compute automatically** 
-    checkbox has not been selected, so the user is prompted to click the 
-    **Compute** button (or equivalently check the box) in order for computation 
-    and data emission to proceed.
-
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
+
+*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically** 
+    checkbox has not been selected, so the user is prompted to click the 
+    **Send** button (or equivalently check the box) in order for computation 
+    and data emission to proceed.
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -288,8 +280,15 @@ Warnings
     problem (when using the **Containing segmentation** mode) is that the unit
     and context segmentations do not refer to the same strings, so that the 
     units are in effect *not* contained in the contexts. This is typically a
-    consequence of the improper use of widgets :ref:`Preprocess` and/or
-    :ref:`Recode` (see :ref:`anchor_to_caveat`).
+    consequence of the improper use of widgets :doc:`Preprocess <preprocess>` and/or
+    :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
         
 Footnotes
 ---------

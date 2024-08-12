@@ -101,7 +101,7 @@ application of the corresponding options to this expression.
 In the example of :ref:`figure 2 <select_fig2>` above, the widget is
 configured to include (**Mode: Include**) from the input segmentation the
 segments whose annotation value for key *category* (**Annotation key:**
-*category*) is either *noun* or *verb* (**Regex:** ``^(noun|verb)$``).
+*category*) is either *noun* or *verb* (**Regex:** ``^(noun|verb)$``). (CHECK BASED ON IMAGE !!)
 
 Method: Sample
 **************
@@ -159,20 +159,14 @@ In the :ref:`figure 4 <select_fig4>` example, the widget is configured to
 retain only the segments whose annotation value for the key *category*
 (**Annotation key**) has a relative frequency (**Threshold expressed as:
 Proportion**) comprised between 5% (**Min. proportion (%)**) and 10% (**Max.
-proportion (%)**) in the input segmentation.
+proportion (%)**) in the input segmentation. (CHECK BASED ON IMAGE !!)
 
 The elements of the **Options** section of the widget interface are common to
-the three selection methods presented above. The **Output segmentation label**
-field enables the user to specify the label assigned to the output
-segmentation.  [#]_ The **Auto-number with key** checkbox enables the program
+the three selection methods presented above. The **Auto-number with key** checkbox enables the program
 to automatically number the segments of the output segmentation and to
 associate the number to the annotation key specified in the text field on the
 right. The **Copy annotations** checkbox copies every annotation of the input
 segmentation to the output segmentation.
-
-The **Info** section indicates the number of segments in the output
-segmentation, or the reasons why no segmentation is emitted (no input data,
-no selected input segment, etc.).
 
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
@@ -181,14 +175,23 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button, some indications are given about the number of segments in the output
+segmentation, or the reasons why no segmentation is emitted (no input data,
+no selected input segment, etc.).
+
 Messages
 --------
 
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: <n> segments.*
+*<n> segments sent to output.*
     This confirms that the widget has operated properly.
+
+Warnings
+~~~~~~~~
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -196,55 +199,36 @@ Information
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*No data sent to output yet: no input segmentation.*
+*Widget needs input.*
     The widget instance is not able to emit data to output because it receives
     none on its input channel(s).
 
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ and `Errors`_ below).
-
-Warnings
-~~~~~~~~
-
-*No regex defined.*
+*Please enter a regex.*
     A regular expression must be entered in the **Regex** field in order for
     computation and data emission to proceed.
 
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
-    
-*No annotation key was provided for auto-numbering.*
+*Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
     
 Errors
 ~~~~~~
 
-*Regex error: <error_message>.*
+*Please enter a valid regex (<error_message>).*
     The regular expression entered in the **Regex** field is invalid.
+
+*Please enter a larger sample size.*
+    The segmentation provided on input does not have enough elements.
     
 Examples
 --------
 
-* :doc:`Getting started: Partitioning segmentations
-  <../partitioning_segmentations>`
-* :doc:`Getting started: Annotation-based selection
-  <../annotation_based_selection>`
-* :doc:`Cookbook: Include/exclude segments based on a pattern
-  <../include_exclude_based_on_pattern>`
-* :doc:`Cookbook: Filter segments based on their frequency
-  <../filter_segments_based_on_frequency>`
-* :doc:`Cookbook: Create a random selection or sample of segments
-  <../random_sample>`
-
-Footnotes
----------
-
-.. [#] Here it concerns the segmentation containing the selected segments and
-       emitted on the default output channel; the segmentation containing the
-       discarded segments receives the same label prepended with *NEG\_*.
+- :doc:`Getting started: Partitioning segmentations <../partitioning_segmentations>`
+- :doc:`Getting started: Annotation-based selection <../annotation_based_selection>`
+- :doc:`Cookbook: Include/exclude segments based on a pattern <../include_exclude_based_on_pattern>`
+- :doc:`Cookbook: Filter segments based on their frequency <../filter_segments_based_on_frequency>`
+- :doc:`Cookbook: Create a random selection or sample of segments <../random_sample>`

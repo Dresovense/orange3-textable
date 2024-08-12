@@ -54,21 +54,21 @@ compatibility issues with Unicode encoded data. Since this encoding is
 emerging as the most widely used standard for languages of the world, Orange
 Textable provides its own Unicode-friendly table representation format.
 
-Widgets :ref:`Count`, :ref:`Length`, :ref:`Variety`, :ref:`Category`, and
-:ref:`Context`) thus produce tables in Orange Textable format. In order to be
+Widgets :doc:`Count <count>`, :doc:`Length <length>`, :doc:`Variety <variety>`, :doc:`Category <category>`, and
+:doc:`Context <context>`) thus produce tables in Orange Textable format. In order to be
 manipulated by the numerous tabulated data processing widgets offered by
 Orange Canvas, these data must be converted to the standard *Table* format of
 Orange Canvas (and to an encoding supported by this latter format).
 
 Note that the internal Orange Textable *Table* type subdivides in several
-subtypes. In particular, the contingency tables (see :ref:`Count` widget)
+subtypes. In particular, the contingency tables (see :doc:`Count <count>` widget)
 belong to the *Crosstab* subtype which itself subdivides in *PivotCrosstab*,
 *FlatCrosstab*, and *WeightedFlatCrosstab*. These three subtypes are
 equivalent with regard to the information they allow the user to store, and
 the easiest way to understand what differentiates them is to see an example.
 
 Consider the following contingency table, of *IntPivotCrosstab* [#]_ type
-(such as produced by the :ref:`Count` widget):
+(such as produced by the :doc:`Count <count>` widget):
 
 .. csv-table::
     :header: *__context__*, *unit1*, *unit2*
@@ -125,22 +125,22 @@ Regardless of the selected output table format (or the transforms that have
 been applied to the data, see `Advanced interface`_ below), the **Convert**
 widget emits data on three distinct output channels:
 
-* The default output channel (*Orange Table*) emits data converted to
+- The default output channel (*Orange Table*) emits data converted to
   standard *Table* format of Orange Canvas; it will typically be used for
   passing them to built-in Orange Canvas table processing widgets.
 
-* The *Textable Table* channel outputs a table in the internal format of
+- The *Textable Table* channel outputs a table in the internal format of
   Orange Textable (usually after applying some set of transforms); it can then
   be sent to another instance of **Convert** (in cases where it is useful to
   apply transforms in distinct steps) or to an instance of the built-in
   **Python script** widget of Orange Canvas, for accessing the content of the
   table in a programmatic fashion.
 
-* The *Segmentation* channel emits a segmentation with a single segment
+- The *Segmentation* channel emits a segmentation with a single segment
   enclosing a version of the (possibly transformed) table in tab-delimited
   text format (in utf-8 encoding), which is suitable for further textual
-  processing using Orange Textable widgets such as :ref:`Recode` or
-  :ref:`Segment` for instance.
+  processing using Orange Textable widgets such as :doc:`Recode <recode>` or
+  :doc:`Segment <segment>` for instance.
 
 
 Basic interface
@@ -148,9 +148,7 @@ Basic interface
 
 The basic version of the widget (see :ref:`figure 1 <convert_fig1>` below) is
 essentially limited to the **Encoding** section, which allows the user to
-select an encoding for the output data. This can be done separately for the
-data emitted in Orange Canvas *Table* format on the default output channel
-(**Orange table** drop-down menu) and for the data possibly exported to a text
+select an encoding for the output data. This can be done for the data possibly exported to a text
 file in tab-delimited format (**Output File**). If certain characters cannot
 be converted to the specified encoding (for example accentuated characters in
 the ASCII encoding), they are automatically replaced by corresponding HTML
@@ -211,7 +209,7 @@ sort the columns based on the header row, you must select the first option in
 the **Sort columns by row** drop-down menu in the right. It will typically
 contain a name predefined by Orange Textable but which does not appear in the
 table (*__unit__* if it is a contingency table of *PivotCrosstab* type such as
-produced by the :ref:`Count` widget, and the generic header *__col__* in 
+produced by the :doc:`Count <count>` widget, and the generic header *__col__* in 
 every other case).
 
 The **Transpose** checkbox allows the user to transpose the table, which 
@@ -287,16 +285,13 @@ version of the **Export** section offers two extra controls. The **Column
 delimiter** drop-down menu allows the user to select the column separator that
 will be inserted between cell values when exporting a table in text format;
 possible choices are *tabulation (\t)*, *comma (,)*, and *semi-colon (;)*.
-The **Output Orange headers** checkbox allows the user to indicate if the
+The **Include Orange headers** checkbox allows the user to indicate if the
 output should include every header line of the format *.tab* specific to
-Orange Canvas (**Output Orange headers**)--which is useful only for
+Orange Canvas -- which is useful only for
 re-importing the exported table using the built-in **File** widget of Orange
 Canvas (and in fact often necessary in that case). Both parameters (**Column
-delimiter** and **Output Orange headers** also apply to the data sent on the
+delimiter** and **Include Orange headers** also apply to the data sent on the
 *Segmentation* output channel)
-
-The **Info** section indicates the number of lines and columns in the output
-table, or the reasons why no table is emitted (no input data).
 
 The **Send** button triggers data emission to the output connection(s) (see
 `Output channels`_ above). When it is selected, the **Send automatically**
@@ -305,14 +300,22 @@ data at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+The informations generated below the **Send** button indicate the number of lines and columns in the output
+table, or the reasons why no table is emitted (no input data).
+
 Messages
 --------
 
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: table has <n> and <m> columns.*
+*Table with <n> rows and <m> columns sent to output.*
     This confirms that the widget has operated properly.
+
+Warnings
+~~~~~~~~
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -320,15 +323,16 @@ Information
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*No data sent to output yet: no input table.*
+*Widget needs input*
     The widget instance is not able to emit data to output because it receives
     none on its input channel(s).
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 See also
 --------
 
-* :doc:`Getting started: Converting between table formats
-  <../converting_table_formats>`
 * :doc:`Cookbook: Display table <../display_table>`
 * :doc:`Cookbook: Export table <../export_table>`
 

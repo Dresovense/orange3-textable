@@ -71,19 +71,12 @@ this element, including those embedded in other occurrences of the same type.
 
     Figure 1: **Extract XML** widget (basic interface).
     
-The **Remove markup** checkbox triggers the deletion of  XML tags embedded
+The **Remove markup** checkbox triggers the deletion of XML tags embedded
 within the extracted XML elements, if any. An important consequence of the
 use of this option is that the extracted elements will potentially be
 decomposed in several segments corresponding to portions  of their content
 which are separated by the deleted XML tags (see `Advanced interface`_ for an
 example of this mechanism [#]_).
-
-The **Options** section limits itself to the output segmentation label choice.
-By default, the input segment annotations are copied in the output segments.
-
-The **Info** section indicates the number of segments in the output
-segmentation, or the reasons why no segmentation is emitted (no input data,
-no output segment created, etc.).
 
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
@@ -91,6 +84,12 @@ disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below, the **Send** button, the user finds indications such as the number of segments in the output
+segmentation, or the reasons why no segmentation is emitted (no input data,
+no output segment created, etc.).
 
 Advanced interface
 ~~~~~~~~~~~~~~~~~~
@@ -173,12 +172,12 @@ list appearing at the top of this subsection, the columns indicate (a) the
 concerned attribute, (b) the corresponding regular expression, and (c) the
 options associated to this expression. [#]_
 
-In :ref:`figure 2 <extract_xml_fig2>` above), we have thus limited the
+In :ref:`figure 2 <extract_xml_fig2>` above, we have thus limited the
 extraction only to the *<div>* elements that have a type attribute whose value
 is *poem*. If several conditions were defined, they would all have to be
 fulfilled for an element to be extracted. The buttons on the right enable the
 user to delete the selected condition (**Remove**) or to empty the list
-completely (**Clear All**).
+completely (**Clear All**). (CHECK BASED ON IMAGE!!)
 
 The remaining part of the **Conditions** subsection allows the user to add new
 conditions to the list. To do so, the attribute in question (**Attribute**)
@@ -188,19 +187,14 @@ matches all (s)** checkboxes manage the application of the corresponding
 options to the regular expression. Adding the new condition to the list is
 finally carried out by clicking on the **Add** button.
 
-The **Options** section allows the user to specify the output segmentation
-label. The **Auto-number with key** checkbox enables the program to
+Through the **Options** section the **Auto-number with key** checkbox enables the program to
 automatically number the segments of the output segmentation and to associate
 the number to the annotation key specified in the text field on the right. The
 **Import annotations** checkbox copies in each output segment every annotation
-associated to the corresponding segment of the input segmentation. The **Merge
-duplicate segments** checkbox enables the program to fuse distinct segments
+associated to the corresponding segment of the input segmentation. The **Fuse duplicates**
+checkbox enables the program to fuse distinct segments
 whose addresses are the same in a single segment; the annotations associated
 to the fused segments are copied in the single resulting segment. [#]_
-
-The **Info** section indicates the number of segments in the output
-segmentation, or the reasons why no segmentation is emitted (no input data,
-no output segment created, etc.).
 
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
@@ -209,14 +203,23 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button, the user finds some indications such as the number of segments in the output
+segmentation, or the reasons why no segmentation is emitted (no input data,
+no output segment created, etc.).
+
 Messages
 --------
 
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: <n> segments.*
+*<n> segments sent to output.*
     This confirms that the widget has operated properly.
+
+Warnings
+~~~~~~~~
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -224,55 +227,43 @@ Information
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*No data sent to output yet: no input segmentation.*
+*Widget needs input.*
     The widget instance is not able to emit data to output because it receives
     none on its input channel(s).
 
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ and `Errors`_ below).
-
-Warnings
-~~~~~~~~
-
-*No XML element was specified.*
+*Please type an XML element.*
     The name of an XML element must be entered in the **XML element** field in 
     order for computation and data emission to proceed.
-
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
     
-*No annotation key was provided for element import.*
+*Please enter an annotation key for element import.*
     In the advanced settings, the **Import element with key** checkbox has been 
     selected and an annotation key must be specified in the text field on the 
     right in order for computation and data emission to proceed.
     
-*No annotation key was provided for auto-numbering.*
+*Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
     
 Errors
 ~~~~~~
 
-*Regex error: <error_message> (condition #<n>).*
+*Please enter a valid regex (<error_message>, condition #<n>).*
     The regular expression in the *n*-th line of the **Conditions** list is 
     invalid.
     
-*XML parsing error (missing closing tag / orphan closing tag).*
+*Please make sure that input is well-formed XML.*
     The input XML data couldn't be correctly parsed. Please use an XML
     validator to check the data's well-formedness.
     
 Examples
 --------
 
-* :doc:`Getting started: Converting XML markup to annotations
-  <../converting_xml_markup_annotations>`
-* :doc:`Cookbook: Convert XML tags to Orange Textable annotations
-  <../convert_xml_tags_annotations>`
+- :doc:`Getting started: Converting XML markup to annotations <../converting_xml_markup_annotations>`
+- :doc:`Cookbook: Convert XML tags to Orange Textable annotations <../convert_xml_tags_annotations>`
 
 Footnotes
 ---------

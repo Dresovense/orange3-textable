@@ -42,8 +42,8 @@ average value on a number of subsamples of fixed size.
 
 The tables produced by the **Variety** widget have at least 2 columns, and at
 most 4. The first column contains the headers corresponding to the contexts
--- which are essentially defined in the same way as in the :ref:`Count` and
-:ref:`Length` widgets. The second column gives the variety measures and its
+-- which are essentially defined in the same way as in the :doc:`Count <count>` and
+:doc:`Length <length>` widgets. The second column gives the variety measures and its
 header is *__variety__*, unless resampling has been applied (in which case the
 header will be *__variety_average__*). In the latter case, the third column
 will contain the corresponding standard deviation (header
@@ -152,7 +152,7 @@ calculate the average variety/perplexity per category, it is possible to weigh
 
 The different variety measures presented above can then be combined with the
 same *context* (i.e. table rows) specification modes as in the
-:ref:`Length` widget: the first mode consists in defining the contexts based
+:doc:`Length <length>` widget: the first mode consists in defining the contexts based
 on the content or the annotations of a given segmentation; the second lies on
 the concept of a "window" of *n* segments that we progressively "slide" from
 the beginning to the end of the segmentation.
@@ -217,14 +217,16 @@ will be used. The **Sequence length** drop-down menu allows the user to
 indicate if the widget should consider the isolated segments or the
 *n--grams*. Finally, the **Weigh by frequency** checkbox allows the user to
 enable the weighing of the units by their frequency (thus the perplexity
-measure rather than the variety).
+measure rather than the variety). 
 
 In the **Categories** section, the **Measure diversity per category** checkbox
 triggers the calculation of the average diversity by category. The
 **Annotation key** drop-down menu allows the user to select the annotation
 key whose values will be used for the category definitions. The **Weigh by
 frequency** checkbox allows the user to enable the weighing by the category
-frequency.
+frequency. Checking the **Dynamically adjust subsample size** box 
+permits a more robust variety estimation. This calculation uses the RMSP subsample size 
+adjustment method described in Xanthos and Guex 2015. (ADD LINK TO PAPER?? OR FOOTNOTE?)
 
 The **Contexts** section is available in several variants depending on the
 value selected in the **Mode** drop-down menu. The latter allows the user to
@@ -246,14 +248,6 @@ parameter is the window size (in number of segments), set by means of the
 
     Figure 2: **Variety** widget (**Sliding window** mode).
 
-.. _variety_fig3:
-
-.. figure:: ../figures/count_mode_containing_segmentation.png
-    :align: center
-    :alt: Variety widget in mode "Containing segmentation"
-
-    Figure 3: **Variety** widget (**Containing segmentation** mode).
-
 Finally, the **Containing segmentation** mode (see :ref:`figure 3
 <variety_fig3>`) corresponds to the case where the contexts are defined by the
 segment types appearing in a given segmentation. This segmentation is selected
@@ -265,21 +259,31 @@ value *(none)* is selected, the *content* of the segments will be used. The
 **Merge contexts** checkbox allows the user to measure the variety globally in
 the entire segmentation that defines the contexts.
 
+.. _variety_fig3:
+
+.. figure:: ../figures/count_mode_containing_segmentation.png
+    :align: center
+    :alt: Variety widget in mode "Containing segmentation"
+
+    Figure 3: **Variety** widget (**Containing segmentation** mode).
+
 In the **Resampling** section, the **Apply resampling** checkbox allows the
 user to enable the calculation of the average diversity in subsamples of
 fixed size. The number of segments by subsample is determined by the
 **Subsample size** cursor, and the number of subsamples with
 **Number of subsamples**.
 
-The **Info** section indicates if a table has been correctly emitted, or the
-reasons why no table is emitted (no input data, typically).
-
-The **Compute** button triggers the emission of a table in the internal format
+The **Send** button triggers the emission of a table in the internal format
 of Orange Textable, to the output connection(s). When it is selected, the
-**Compute automatically** checkbox disables the button and the widget attempts
+**Send automatically** checkbox disables the button and the widget attempts
 to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+The informations given under the **Send** button indicate if a table has been correctly emitted, or the
+reasons why no table is emitted (no input data, typically).
 
 Messages
 --------
@@ -287,27 +291,21 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output.*
+*Table sent to output.*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Compute' when ready.*
-    Settings and/or input have changed but the **Compute automatically** 
-    checkbox has not been selected, so the user is prompted to click the 
-    **Compute** button (or equivalently check the box) in order for computation 
-    and data emission to proceed.
-
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
+
+*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically** 
+    checkbox has not been selected, so the user is prompted to click the 
+    **Send** button (or equivalently check the box) in order for computation 
+    and data emission to proceed.
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -315,8 +313,11 @@ Warnings
     problem (when using the **Containing segmentation** mode) is that the unit
     and context segmentations do not refer to the same strings, so that the 
     units are in effect *not* contained in the contexts. This is typically a
-    consequence of the improper use of widgets :ref:`Preprocess` and/or
-    :ref:`Recode` (see :ref:`anchor_to_caveat`).
+    consequence of the improper use of widgets :doc:`Preprocess <preprocess>` and/or
+    :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
         
 Footnotes
 ---------

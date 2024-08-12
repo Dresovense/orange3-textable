@@ -53,10 +53,12 @@ overflow occurs, the problem normally solves itself after a few moments.
 Basic interface
 ~~~~~~~~~~~~~~~
 
-In its basic version, the widget formats the input segmentation in HTML and
-displays for each segment its number, its complete address (string index,
+In its basic version, the input segmentation is formatted in HTML, displaying
+for each segment its number, its complete address (string index,
 start and end positions) as well as its annotations (see
-:ref:`figure 1 <display_fig1>`). The **Navigation** section enables the
+:ref:`figure 1 <display_fig1>`). This can be changed by unchecking **Display
+segmentation in rich text format (HTML)**, contained in the **Format** section.
+The **Navigation** section enables the
 program to directly show a particular segment using **Go to segment**.
 
 .. _display_fig1:
@@ -67,9 +69,13 @@ program to directly show a particular segment using **Go to segment**.
 
     Figure 1: **Display** widget (basic interface).
 
+The **Export** section enables the user to export the data shown in the widget.
+The **Save to file** button opens a file selection dialog, letting the user choose the directory
+where the data will be saved. The user can also copy the whole data using the **Copy to clipboard**
+button.
+
 It can be noted that the basic interface of **Display** is more sober than
-those of the other widgets of Orange Textable: it does not include an **Info**
-section, neither a **Send** button nor a **Send automatically** checkbox.
+those of the other widgets of Orange Textable: it does not include a **Send** button nor a **Send automatically** checkbox.
 What motivates this design is the will to emphasize the fundamental
 functionality of visualization of the input segmentation content and
 annotations -- main reason for the use of **Display** in most cases. In this
@@ -78,10 +84,8 @@ context, by default, data are automatically sent on output connections.
 Advanced interface
 ~~~~~~~~~~~~~~~~~~
 
-The widget's advanced interface (see :ref:`figure 2 <display_fig2>`) restores
-the **Info** section which indicates the number of segments in the input
-segmentation or the reasons why no segmentation is emitted (for example
-no input data). The **Send** button triggers the emission of a segmentation to
+The widget's advanced interface (see :ref:`figure 2 <display_fig2>`) restores the **Send** button.
+The latter triggers the emission of a segmentation to
 the output connection(s). When it is selected, the **Send automatically**
 checkbox disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface or when its input data are
@@ -95,6 +99,11 @@ received through an existing connection).
     :alt: Advanced interface of the Display widget
 
     Figure 2: **Display** widget (advanced interface).
+
+The **Limit number of displayed segments** checkbox limits the number of displayed segments
+for performance reasons. If unchecked, the widget will display all the segments, but
+execution time can become prohibitively long for segmentations with more than a few
+thousand segments.
 
 The **Apply custom formatting** button enables the program to produce a
 personalized rendering. In this mode, the formatting of each segment is
@@ -180,7 +189,7 @@ we obtain the following formatting:
 
 The **Export** section of the widget interface also allows the user to export
 the displayed segmentation (standard HTML or user-defined format) in a file.
-The encoding can be selected (**Encoding**) then click on **Export** to open
+The encoding can be selected (**File encoding**) then click on **Export to file** to open
 a file selection dialog. By clicking the **Copy to clipboard** button, the
 user may also to copy the displayed segmentation in order to paste it in
 another application for instance; in this case, the utf-8 encoding is used by
@@ -196,8 +205,11 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: <n> segments.*
+*<n> segments sent to output.*
     This confirms that the widget has operated properly.
+
+Warnings
+~~~~~~~~
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -205,39 +217,27 @@ Information
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*No data sent to output yet: no input segmentation.*
+*Widget needs input.*
     The widget instance is not able to emit data to output because it receives
     none on its input channel(s).
-
-*No data sent to 'Displayed segmentation' channel, see 'Widget state' below.*
-    A problem with the 'Format' parameter prevents this widget instance
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see and `Errors`_ below).
 
 Errors
 ~~~~~~
 
-*Format mismatch error: a <variable_type> is required.*
+*Please enter a valid format (type error).*
     In the advanced interface, the string entered in the **Format** field 
     indicates that a variable of a certain type (e.g. float) is expected,
     but in at least one case, the corresponding value is of another type 
     (e.g. string). The string type (e.g. ``%(__content__)s``) is usually the 
     safest bet.
 
-*Format mismatch error: not enough arguments for format string.*
-    In the advanced interface, the string entered in the **Format** field 
-    indicates that a variable is expected but in at least one case, there is
-    no corresponding value. Make sure that no placeholder is used without an 
-    explicit name (always use e.g. ``%(__content__)s``, and never ``%s``).
-
-*Format error: missing variable type.*
+*Please enter a valid format (error: missing variable type).*
     In the advanced interface, a variable type indication is missing in the 
     string entered in the **Format** field. Make sure that no placeholder is 
     used without a variable type indication (always use e.g. 
     ``%(__content__)s``, and never ``%(__content__)``).
 
-*Format error: missing name.*
+*Please enter a valid format (error: missing name).*
     In the advanced interface, a variable name is missing in the string entered 
     in the **Format** field. Make sure that no placeholder is used without a 
     variable name (always use e.g. ``%(__content__)s``, and never ``%()s``).
@@ -245,11 +245,9 @@ Errors
 Examples
 --------
 
-* :doc:`Getting started: Keyboard input and segmentation display
-  <../keyboard_input_segmentation_display>`
-* :doc:`Cookbook: Display text content <../display_text_content>`
-* :doc:`Cookbook: Export text content (and/or change text encoding)
-  <../export_text_content_change_encoding>`
+- :doc:`Getting started: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
+- :doc:`Cookbook: Display text content <../display_text_content>`
+- :doc:`Cookbook: Export text content (and/or change text encoding) <../export_text_content_change_encoding>`
 
 Footnotes
 ---------

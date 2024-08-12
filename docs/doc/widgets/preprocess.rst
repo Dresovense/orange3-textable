@@ -40,7 +40,7 @@ the replacing of accentuated characters by their non-accentuated equivalents.
     :align: center
     :alt: Interface of the Preprocess widget
 
-    Figure 1: Interface of the **Preprocess** widget.
+    Figure 1: Interface of the **Preprocess** widget. 
 
 Note that **Preprocess** creates a copy of each modified segment, which
 increases the program's memory footprint; moreover this widget can only work
@@ -144,10 +144,6 @@ Information
 
 Warnings
 ~~~~~~~~
-
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
     
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -159,16 +155,13 @@ Warnings
     The widget instance is not able to emit data to output because it receives
     none on its input channel(s).
 
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 Errors
 ~~~~~~
 
-*Input segmentation is overlapping.*
+*Please make sure that input segments are not overlapping.*
     At least two of the input segments cover the same substring, which this
     widget cannot handle. Make sure every input segment covers a distinct 
     substring.

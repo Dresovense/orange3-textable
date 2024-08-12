@@ -36,7 +36,7 @@ documents in which the input segments occur simultaneously, and sends the result
 in the form of a *cooccurrence matrix* [1]_.
 
 The cooccurrence matrix produced by this widget is of *IntPivotCrosstab* type,
-a subtype of the generic *Table* format (see :ref:`Convert` widget, section
+a subtype of the generic *Table* format (see :doc:`Convert <convert>` widget, section
 :ref:`Table formats <anchor_to_table_formats>`). Since this table is a
 cooccurrence matrix, both rows and columns correspond to *unit* types.
 The cell at the intersection of a given column and row represents the number of
@@ -75,7 +75,7 @@ of the *letters* segmentation.
 
 As for the context types, there are two distinct forms
 of contexts for measuring the cooccurrence of the units:
-* **Sliding window*** **Containing segmentation**
+**Sliding window** and **Containing segmentation**.
 
 **Sliding window** relies on the notion of a "window" of *n* segments that we
 progressively "slide" from the beginning to the end of the segmentation. In our
@@ -248,7 +248,7 @@ subject to the cooccurrence measurement. The **Annotation key** menu displays
 the annotation keys associated to the chosen segmentation, if any; if one of the
 keys is selected, the corresponding annotation values will be considered; if on
 the other hand the value *(none)* is selected, the *content* of the segments
-will be taken into consideration. The **Sequence length** drop-down menu allows
+will be taken into consideration. The **Sequence length** cursor allows
 the user to indicate if isolated segments or segment *n--grams* should be
 considered; in the latter case, the (optional) string specified in the **Intra
 sequence delimiter** text field will be used to separate the content or the
@@ -289,14 +289,6 @@ segments), defined by the **Window size** cursor, set to 2 by default.
 
     Figure 3: **Cooccurrence** widget (**Sliding window** mode).
 
-.. _cooccurrence_fig4:
-
-.. figure:: ../figures/cooc_mode_containing_segmentation_example.png
-    :align: center
-    :alt: Cooccurrence widget in mode "Containing segmentation"
-
-    Figure 4: **Cooccurrence** widget (**Containing segmentation** mode).
-
 Finally, the **Containing segmentation** mode (see :ref:`figure 4
 <cooccurrence_fig4>`) corresponds to the case where contexts are defined by the
 segment types that appear in another segmentation. This segmentation is selected
@@ -306,15 +298,25 @@ context segmentation, if any; if one of the keys is selected, the corresponding
 annotation value types will constitute the row headers; otherwise the value
 *(none)* is selected so that *content* of the segments will be exploited.
 
-The **Info** section indicates whether or not the data is correctly sent to the
-output table. If not, the respective error message will be given.
+.. _cooccurrence_fig4:
 
-The **Compute** button triggers the emission of a table in the internal format
+.. figure:: ../figures/cooc_mode_containing_segmentation_example.png
+    :align: center
+    :alt: Cooccurrence widget in mode "Containing segmentation"
+
+    Figure 4: **Cooccurrence** widget (**Containing segmentation** mode).
+
+The **Send** button triggers the emission of a table in the internal format
 of Orange Textable, to the output connection(s). When it is selected, the
-**Compute automatically** checkbox disables the button and the widget attempts
+**Send automatically** checkbox disables the button and the widget attempts
 to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+The informations given below the **Send** button indicate whether or not the data is correctly sent to the
+output table. If not, the respective error message will be given.
 
 Messages
 --------
@@ -322,27 +324,21 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output.*
+*Table with <n> cooccurrences sent to output.*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Compute' when ready.*
-    Settings and/or input have changed but the **Compute automatically**
-    checkbox has not been selected, so the user is prompted to click the
-    **Compute** button (or equivalently check the box) in order for computation
-    and data emission to proceed.
-
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
+
+*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically**
+    checkbox has not been selected, so the user is prompted to click the
+    **Send** button (or equivalently check the box) in order for computation
+    and data emission to proceed.
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -350,10 +346,11 @@ Warnings
     problem (when using the **Containing segmentation** mode) is that the unit
     and context segmentations do not refer to the same strings, so that the
     units are in effect *not* contained in the contexts. This is typically a
-    consequence of the improper use of widgets :ref:`Preprocess` and/or
-    :ref:`Recode` (see :ref:`anchor_to_caveat`).
+    consequence of the improper use of widgets :doc:`Preprocess <preprocess>` and/or
+    :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
 
-
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 See also
 --------

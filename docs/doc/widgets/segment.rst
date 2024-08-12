@@ -40,7 +40,7 @@ means of regular expressions); alternatively, it can also operate based on a
 description of the separators that appear in-between the segments. It also
 allows the user to create annotations for the output segments.
 
-In the same way as for the :ref:`Recode` widget, it is possible to "capture"
+In the same way as for the :doc:`Recode <recode>` widget, it is possible to "capture"
 text portions with square brackets used in a regular expression, notably to
 copy them in the annotation key and/or in the associated value; for this we
 use the notations ``&1``, ``&2``, etc. corresponding to the pairs of
@@ -53,9 +53,13 @@ whether or not the **Advanced Settings** checkbox is selected.
 Basic interface
 ~~~~~~~~~~~~~~~
 
-The basic version of the widget is limited to the application of a single
-regular expression, specified in the Regex section (see :ref:`figure 1
-<segment_fig1>` below). The expression given as an example (``\w+``) creates a
+The basic version of the widget permits to choose between four types of Text Data segmentation output. 
+The *Segment into Letters* option segments text data into letters; the *Segment into Words* option segments 
+text data into words (which is mandatory in order to count segments, see :doc:`cookbook <../cookbook>`);
+the *Segment into lines* option segments text data into lines.
+Eventually, *Use a regular expression* opens a short Regex section (see :ref:`figure 1 <segment_fig1>` below). 
+This Regex can be a particular string of characters (a word) or a regular expression.
+For instance,``\w+`` creates a
 segment for each word of each input segment (to be precise: each continuous
 sequence of alphanumerical characters and underscores). [#]_
 
@@ -67,20 +71,17 @@ sequence of alphanumerical characters and underscores). [#]_
 
     Figure 1: **Segment** widget (basic interface).
 
-The **Options** section allows the user to define the output segmentation
-label. The annotations of each input segment are systematically copied in the
-corresponding output segments (see `Advanced interface`_, option **Import
-annotations**).
-
-The **Info** section gives indications regarding the current status of the
-widget instance (see `Messages`_ below, section `Information`_).
-
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button the user finds all the indications regarding the current status of the
+widget instance (see `Messages`_ below).
 
 Advanced interface
 ~~~~~~~~~~~~~~~~~~
@@ -101,8 +102,8 @@ these segments (**Split** mode). [#]_
     Figure 2: **Segment** widget (advanced interface).
 
 The advanced interface (see :ref:`figure 2 <segment_fig2>` above) presents
-similarities with that of the :ref:`Text Files`, :ref:`URLs`, and
-:ref:`Recode` widgets. The **Regexes** section allows the user to define the
+similarities with that of the :doc:`Text Files <text_files>`, :doc:`URLs <urls>`, and
+:doc:`Recode <recode>` widgets. The **Regexes** section allows the user to define the
 regular expressions applied successively to each segment of the input
 segmentation and to determine their application order. In the list which
 appears on top of the window, the columns indicate (a) the mode associated to
@@ -111,19 +112,19 @@ this regular expression, namely *t* for *Tokenize* (default) or *s* for
 and (d) the options associated to this expression.
 
 On :ref:`figure 2 <segment_fig2>` above, we can thus see that four regular
-expressions have been defined, each in the **Tokenize** mode; each identifies
+expressions have been defined (CHECK BASED ON IMAGE!!), each in the **Tokenize** mode; each identifies
 a type of character in the input segmentation and assigns to it an annotation
 whose key is type. The character classes identified by the four expressions
 are not mutually exclusive, however after having successively applied them,
 the widget automatically sorts the segments (exactly like the **Sort
-segments** option of the :ref:`Merge` widget) and fuses those whose addresses
+segments** option of the :doc:`Merge <merge>` widget) and fuses those whose addresses
 are identical, given that the **Fuse duplicates** option is selected, which
 triggers the fusion of segments with identical addresses (see below). In the
 end, each character thus belongs to a single segment, whose value for the
 annotation key *type* is the last one that was assigned to it according to the
 regular expressions application order.
 
-The first of the four expressions (``.``) creates a segment for each character
+The first of the four expressions (``.``) creates a segment for each character (CHECK BASED ON IMAGE!!)
 and assigns the annotation value *other* to it. The second (``\w``) creates a
 segment for each alphanumerical character, and assigns the annotation value
 *consonant* to it. The last two respectively identify vowels (``[aeiouy]``)
@@ -140,8 +141,8 @@ segment of the input segmentation (**Move Up** and **Move Down**), to delete
 an expression from the list (**Remove**) or to empty it entirely (**Clear
 All**). Except for **Clear All**, all of these buttons require the selection
 of an entry in the list beforehand. **Import List** enables the user to import
-a list of regular expressions in JSON format (see :ref:`JSON im-/export format
-<json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`)
+a list of regular expressions in JSON format
+(see :doc:`JSON im-/export format <../json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`)
 and to add them to those already selected. **Export List** enables the user on
 the contrary to export the list of regular expressions in a JSON file.
 
@@ -154,8 +155,7 @@ corresponding value (**Annotation key** and **value**). The **Ignore case
 regular expressions. Adding the new regular expression to the list is executed
 by finally clicking on the **Add** button.
 
-The **Options** section allows the user to define the output segmentation
-label. The **Auto-number with key** checkbox enables the program to
+Through the **Options** section, the **Auto-number with key** checkbox enables the program to
 automatically number the output segments and to associate the number to the
 annotation key specified in the text field on the right. The **Import
 annotations** checkbox copies the annotations of each input segment to the
@@ -164,9 +164,6 @@ enables the program to fuse into a single segment several distinct segments
 whose addresses are identical; the annotations associated to the fused
 segments are all copied in the single resulting segment. [#]_
 
-The **Info** section gives indications regarding the current status of the
-widget instance (see `Messages`_ below, section `Information`_).
-
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
@@ -174,16 +171,21 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send** button, the user finds indications regarding the current status of the
+widget instance (see `Messages`_ below).
+
 .. _segment_remote_control_ref:
 
 Remote control
 ~~~~~~~~~~~~~~
 
 **Segment** is one the widgets that can be controlled by means of the
-:ref:`Message` widget. Indeed, it can receive in input a message consisting
-of a regular expression list in JSON format (see :ref:`JSON im-/export format
-<json_format>`, :doc:`Regular expression list
-<../json_regular_expression_list>`), in which case the list of regular
+:doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
+of a regular expression list in JSON format
+(see :doc:`JSON im-/export format <../ json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`),
+in which case the list of regular
 expressions specified in this message replaces those previously specified
 (if any). Note that removing the incoming connection from the **Message**
 instance will not, by itself, remove the list of regular expressions imported
@@ -192,7 +194,7 @@ of files can be modified using buttons **Move up/down**, **Remove**, etc. even
 if the incoming connection from the **Message** instance has not been removed.
 Finally, note that if a **Segment** instance has the basic version of its
 interface activated when an incoming connection is created from an instance of
-:ref:`Message`, it automatically switches to the advanced interface.
+:doc:`Message <message>`, it automatically switches to the advanced interface.
 
 Messages
 --------
@@ -200,8 +202,11 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: <n> segments.*
+*<n> segments sent to output.*
     This confirms that the widget has operated properly.
+
+Warnings
+~~~~~~~~
 
 *Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
     Settings and/or input have changed but the **Send automatically** checkbox
@@ -209,52 +214,42 @@ Information
     button (or equivalently check the box) in order for computation and data
     emission to proceed.
 
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ and `Errors`_ below).
-
-Warnings
-~~~~~~~~
-
-*No regex defined.*
+*Please enter a regex.*
     A regular expression must be entered in the **Regex** field in order for
     computation and data emission to proceed (in the advanced interface, the
     **Add** button must also be clicked).
-
-*No label was provided.*
-    A label must be entered in the **Output segmentation label** field in
-    order for computation and data emission to proceed.
     
-*No annotation key was provided for auto-numbering.*
+*Please enter an annotation key for auto-numbering.*
     The **Auto-number with key** checkbox has been selected and an annotation
     key must be specified in the text field on the right in order for
     computation and data emission to proceed.
     
-*JSON message on input connection doesn't have the right keys and/or values.*
-    The widget instance has received a JSON message on its ``Message`` input
-    channel and the keys and/or values specified in this message do not match
-    those that are expected for this particular widget type (see :ref:`JSON
-    im-/export format <json_format>`, :doc:`Regular expression list
-    <../json_regular_expression_list>`).
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
-*JSON parsing error.*
-    The widget instance has received data on its ``Message`` input channel and
-    the data couldn't be correctly parsed. Please use a JSON validator to 
-    check the data's well-formedness.
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 Errors
 ~~~~~~
 
-*Regex error: <error_message>.*
+*Please verify keys and values of incoming JSON message.*
+    The widget instance has received a JSON message on its ``Message`` input
+    channel and the keys and/or values specified in this message do not match
+    those that are expected for this particular widget type
+    (see :doc:`JSON im-/export format <../json_format>`,
+    :doc:`Regular expression list <../json_regular_expression_list>`).
+
+*Please make sure that incoming message is valid JSON.*
+    The widget instance has received data on its ``Message`` input channel and
+    the data couldn't be correctly parsed. Please use a JSON validator to 
+    check the data's well-formedness.
+
+*Please enter a valid regex (<error_message>).*
     The regular expression entered in the **Regex** field is invalid.
 
-*Regex error: <error_message> (regex #<n>).*
+*Please enter a valid regex (regex #<n>).*
     The *n*-th regular expression in the **Regexes** list is invalid.
 
 *Reference to unmatched group in annotation key and/or value.*
@@ -266,17 +261,14 @@ Errors
 Examples
 --------
 
-* :doc:`Getting started: Segmenting data into smaller units
-  <../segmenting_data_smaller_units>`
-* :doc:`Cookbook: Segment text in smaller units <../segment_text>`
+- :doc:`Getting started: Segmenting data into smaller units <../segmenting_data_smaller_units>`
+- :doc:`Cookbook: Segment text in smaller units <../segment_text>`
 
 See also
 --------
-* :ref:`Reference: JSON im-/export format <json_format>`, :doc:`Regular
-  expression list <../json_regular_expression_list>`
-* :ref:`Reference: Message widget <Message>`
-* :doc:`Getting started: A note on regular expressions
-  <../note_regular_expressions>`
+* :doc:`Reference: JSON im-/export format <../json_format>`, :doc:`Regular expression list <../json_regular_expression_list>`
+* :doc:`Reference: Message widget <message>`
+* :doc:`Getting started: A note on regular expressions <../note_regular_expressions>`
 
 Footnotes
 ---------

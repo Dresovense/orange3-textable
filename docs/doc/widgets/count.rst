@@ -36,7 +36,7 @@ defined by another), and sends the result in the form of a *contingency
 table* (or *co-occurrence matrix* or also *term--document matrix*).
 
 The contingency tables produced by this widget are of *PivotCrosstab* type,
-a subtype of the generic *Table* format (see :ref:`Convert` widget, section
+a subtype of the generic *Table* format (see :doc:`Convert <convert>` widget, section
 :ref:`Table formats <anchor_to_table_formats>`). In such a table, each column
 corresponds to a *unit* type, each line corresponds to a *context* type, and
 the cell at the intersection of a given column and line contains the count (or
@@ -182,7 +182,7 @@ the segments:
     :stub-columns: 1
     :widths: 3 2 3
 
-    *vowel*,        o,    5
+    *vowel*,        0,    5
     *consonant*,    5,    4
 
 Let us also note that context specification, unlike unit specification, is
@@ -257,6 +257,18 @@ only parameter is the window size (in number of segments), defined by the
 
     Figure 2: **Count** widget (**Sliding window** mode).
 
+The **Left--right neighborhood** mode (see :ref:`figure 3 <count_fig3>`)
+allows the user to specify context types based on the *n* segments immediately
+to the left and/or right of each segment; this mode notably allows the user to
+build a Markov chain transition matrix. The **Left context size** and **Right
+context size** parameters determine the number of segments taken into
+consideration in each part of the context. The **Unit position marker** text
+field allows the user to specify the (possibly empty) character chain to
+insert in-between the left and right parts of the context in the row headers.
+The checkbox (**Treat distinct strings as contiguous**) enables the user to to choose 
+if separate strings should be treated as if they were actually contiguous, so that 
+the end of each string is adjacent to the beginning of the next string. 
+
 .. _count_fig3:
 
 .. figure:: ../figures/count_mode_left_right_neighborhood_example.png
@@ -264,23 +276,6 @@ only parameter is the window size (in number of segments), defined by the
     :alt: Count widget in mode "Left-right neighborhood"
 
     Figure 3: **Count** widget (**Left--right neighborhood** mode).
-
-.. _count_fig4:
-
-.. figure:: ../figures/count_mode_containing_segmentation.png
-    :align: center
-    :alt: Count widget in mode "Containing segmentation"
-
-    Figure 4: **Count** widget (**Containing segmentation** mode).
-
-The **Left--right neighborhood** mode (see :ref:`figure 3 <count_fig3>`)
-allows the user to specifycontext types based on the *n* segments immediately
-to the left and/or right of each segment; this mode notably allows the user to
-build a Markov chain transition matrix. The **Left context size** and **Right
-context size** parameters determine the number of segments taken into
-consideration in each part of the context. The **Unit position marker** text
-field allows the user to specify the (possibly empty) character chain to
-insert in-between the left and right parts of the context in the row headers.
 
 Finally, the **Containing segmentation** mode (see :ref:`figure 4
 <count_fig4>`) corresponds to the case where contexts are defined by the
@@ -294,16 +289,26 @@ the row headers; if however the value *(none)* is selected, the *content* of
 the segments will be exploited. The **Merge** contexts checkbox enables the
 program to globally count the units in the whole context segmentation.
 
-The **Info** section indicates the sum of frequencies in the output table, or
+.. _count_fig4:
+
+.. figure:: ../figures/count_mode_containing_segmentation.png
+    :align: center
+    :alt: Count widget in mode "Containing segmentation"
+
+    Figure 4: **Count** widget (**Containing segmentation** mode).
+
+The **Send** button triggers the emission of a segmentation to the output
+connection(s). When it is selected, the **Send automatically** checkbox
+disables the button and the widget attempts to automatically emit a
+segmentation at every modification of its interface or when its input data are
+modified (by deletion or addition of a connection, or because modified data is
+received through an existing connection).
+
+The **Cancel** button stops the widget from working and returns it to its inital state.
+
+Below the **Send button**, the user finds indications such as the sum of frequencies in the output table, or
 the reasons why not table is emitted (no input data or total frequency is
 zero).
-
-The **Compute** button triggers the emission of a table in the internal format
-of Orange Textable, to the output connection(s). When it is selected, the
-**Compute automatically** checkbox disables the button and the widget attempts
-to automatically emit a segmentation at every modification of its interface or
-when its input data are modified (by deletion or addition of a connection, or
-because modified data is received through an existing connection).
 
 Messages
 --------
@@ -311,27 +316,21 @@ Messages
 Information
 ~~~~~~~~~~~
 
-*Data correctly sent to output: total count is <n>.*
+*Table with <n> occurences sent to output.*
     This confirms that the widget has operated properly.
-
-*Settings were* (or *Input has*) *changed, please click 'Compute' when ready.*
-    Settings and/or input have changed but the **Compute automatically**
-    checkbox has not been selected, so the user is prompted to click the
-    **Compute** button (or equivalently check the box) in order for computation
-    and data emission to proceed.
-
-*No data sent to output yet: no input segmentation.*
-    The widget instance is not able to emit data to output because it receives
-    none on its input channel(s).
-
-*No data sent to output yet, see 'Widget state' below.*
-    A problem with the instance's parameters and/or input data prevents it
-    from operating properly, and additional diagnostic information can be
-    found in the **Widget state** box at the bottom of the instance's
-    interface (see `Warnings`_ below).
 
 Warnings
 ~~~~~~~~
+
+*Settings were* (or *Input has*) *changed, please click 'Send' when ready.*
+    Settings and/or input have changed but the **Send automatically** checkbox
+    has not been selected, so the user is prompted to click the **Send**
+    button (or equivalently check the box) in order for computation and data
+    emission to proceed.
+
+*Widget needs input.*
+    The widget instance is not able to emit data to output because it receives
+    none on its input channel(s).
 
 *Resulting table is empty.*
     No table has been emitted because the widget instance couldn't find a
@@ -339,28 +338,26 @@ Warnings
     problem (when using the **Containing segmentation** mode) is that the unit
     and context segmentations do not refer to the same strings, so that the
     units are in effect *not* contained in the contexts. This is typically a
-    consequence of the improper use of widgets :ref:`Preprocess` and/or
-    :ref:`Recode` (see :ref:`anchor_to_caveat`).
+    consequence of the improper use of widgets :doc:`Preprocess <preprocess>` and/or
+    :doc:`Recode <recode>` (see :ref:`anchor_to_caveat`).
+
+*Operation cancelled by user.*
+    The user has cancelled the operation.
 
 Examples
 --------
 
-* :doc:`Getting started: Counting segment types <../counting_segment_types>`
-* :doc:`Getting started: Counting in specific contexts
-  <../counting_specific_contexts>`
-* :doc:`Cookbook: Count unit frequency <../count_unit_frequency>`
-* :doc:`Cookbook: Count occurrences of smaller units in larger segments
-  <../count_occurrences_smaller_units_larger_segments>`
-* :doc:`Cookbook: Count transition frequency between adjacent units
-  <../count_transition_frequency_adjacent_units>`
-* :doc:`Cookbook: Examine the evolution of unit frequency along the text
-  <../examine_evolution_unit_frequency>`
+- :doc:`Getting started: Counting segment types <../counting_segment_types>`
+- :doc:`Getting started: Counting in specific contexts <../counting_specific_contexts>`
+- :doc:`Cookbook: Count unit frequency <../count_unit_frequency>`
+- :doc:`Cookbook: Count occurrences of smaller units in larger segments <../count_occurrences_smaller_units_larger_segments>`
+- :doc:`Cookbook: Count transition frequency between adjacent units <../count_transition_frequency_adjacent_units>`
+- :doc:`Cookbook: Examine the evolution of unit frequency along the text <../examine_evolution_unit_frequency>`
 
 See also
 --------
 
-* :ref:`Reference: Convert widget (section "Table formats")
-  <anchor_to_table_formats>`
+- :ref:`Reference: Convert widget (section "Table formats") <anchor_to_table_formats>`
 
 Footnotes
 ---------
