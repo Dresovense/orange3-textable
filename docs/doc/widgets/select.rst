@@ -101,7 +101,7 @@ application of the corresponding options to this expression.
 In the example of :ref:`figure 2 <select_fig2>` above, the widget is
 configured to include (**Mode: Include**) from the input segmentation the
 segments whose annotation value for key *category* (**Annotation key:**
-*category*) is either *noun* or *verb* (**Regex:** ``^(noun|verb)$``). (CHECK BASED ON IMAGE !!)
+*category*) is either *noun* or *verb* (**Regex:** ``^(noun|verb)$``).
 
 Method: Sample
 **************
@@ -159,7 +159,7 @@ In the :ref:`figure 4 <select_fig4>` example, the widget is configured to
 retain only the segments whose annotation value for the key *category*
 (**Annotation key**) has a relative frequency (**Threshold expressed as:
 Proportion**) comprised between 5% (**Min. proportion (%)**) and 10% (**Max.
-proportion (%)**) in the input segmentation. (CHECK BASED ON IMAGE !!)
+proportion (%)**) in the input segmentation.
 
 The elements of the **Options** section of the widget interface are common to
 the three selection methods presented above. The **Auto-number with key** checkbox enables the program

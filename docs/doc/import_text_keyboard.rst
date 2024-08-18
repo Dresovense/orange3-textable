@@ -22,9 +22,9 @@ Procedure
 
 .. _import_text_keyboard_fig1:
 
-.. figure:: figures/text_field_example.png
-    :align: center
-    :alt: Example usage of widget Text Field
+.. figure:: figures/text_field_example_cookbook.png
+   :align: center
+   :alt: Example usage of widget Text Field
 
    Figure 1: Importing a string using widget :doc:`Text Field <widgets/text_field>`.
 

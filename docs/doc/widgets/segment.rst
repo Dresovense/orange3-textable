@@ -59,7 +59,7 @@ text data into words (which is mandatory in order to count segments, see :doc:`c
 the *Segment into lines* option segments text data into lines.
 Eventually, *Use a regular expression* opens a short Regex section (see :ref:`figure 1 <segment_fig1>` below). 
 This Regex can be a particular string of characters (a word) or a regular expression.
-For instance,``\w+`` creates a
+For instance, ``\w+`` creates a
 segment for each word of each input segment (to be precise: each continuous
 sequence of alphanumerical characters and underscores). [#]_
 
@@ -112,7 +112,7 @@ this regular expression, namely *t* for *Tokenize* (default) or *s* for
 and (d) the options associated to this expression.
 
 On :ref:`figure 2 <segment_fig2>` above, we can thus see that four regular
-expressions have been defined (CHECK BASED ON IMAGE!!), each in the **Tokenize** mode; each identifies
+expressions have been defined, each in the **Tokenize** mode; each identifies
 a type of character in the input segmentation and assigns to it an annotation
 whose key is type. The character classes identified by the four expressions
 are not mutually exclusive, however after having successively applied them,
@@ -124,7 +124,7 @@ end, each character thus belongs to a single segment, whose value for the
 annotation key *type* is the last one that was assigned to it according to the
 regular expressions application order.
 
-The first of the four expressions (``.``) creates a segment for each character (CHECK BASED ON IMAGE!!)
+The first of the four expressions (``.``) creates a segment for each character
 and assigns the annotation value *other* to it. The second (``\w``) creates a
 segment for each alphanumerical character, and assigns the annotation value
 *consonant* to it. The last two respectively identify vowels (``[aeiouy]``)

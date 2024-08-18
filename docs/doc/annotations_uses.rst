@@ -18,9 +18,8 @@ annotation *{part of speech : adjective}*; this annotation’s key is
 .. figure:: figures/annotation_uses_fig1.png
     :align: center
     :alt: Annotating *simple* as an adjective.
-    :scale: 80 %
 
-   Figure 1 : Annotating *simple* as an adjective.
+    Figure 1 : Annotating *simple* as an adjective.
 
 A segment can have zero, one, or several annotations attached to it. The
 same segment could be simultaneously associated with another annotation
@@ -32,9 +31,9 @@ relevant.
 .. figure:: figures/annotation_uses_fig2.png
     :align: center
     :alt: segments with various annotations
-    :scale: 80 %
 
-   Figure 2 : Segments with various annotations
+    Figure 2 : Segments with various annotations
+
 
 Note that annotation keys are unique : Since they serve to recognize
 various annotation values attached to a single segment, annotation keys

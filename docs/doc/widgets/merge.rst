@@ -37,9 +37,9 @@ segmentation to its output connections.
 
 .. figure:: ../figures/merge_advanced_example.png
     :align: center
-    :alt: Merge widget (advanced interface)
+    :alt: Merge widget
 
-    Figure 1: **Merge** widget (advanced interface).
+    Figure 1: **Merge** widget.
 
 The **Options** section allows the user to import and label segments. The **Import labels with
 key** checkbox enables the user to create for each input segmentation an

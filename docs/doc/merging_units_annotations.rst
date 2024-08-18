@@ -35,11 +35,13 @@ speech) will be counted in place of the segments’ content.
 
 The resulting table is as follows:
 
-.. csv-table:: Table 1: Part of speech frequency.
-    :header: *NOUN*, *DET*, *PREP*
-    :stub-columns: 0
-
-    3, 1, 1
++----------+---+
+| **NOUN** | 3 |
++----------+---+
+| **DET**  | 1 |
++----------+---+
+| **PREP** | 1 |
++----------+---+
 
 Of course, annotations may be used to merge units *and* contexts
 simultaneously.

@@ -59,7 +59,7 @@ Procedure
 4.  Double-click on the icon of
     :doc:`Segment <widgets/segment>`
     to open its interface and type the query string in the **Regex**
-    field (here: therefore); assign this instance of
+    field (here: ``\btherefore\b``); assign this instance of
     :doc:`Segment <widgets/segment>`
     a recognizable name, such as *query*.
 
@@ -98,7 +98,7 @@ Comment
    widget you can use all the syntax of Python’s regular expression
    (*cf.* :doc:`Regular expressions <note_regular_expressions>`); for instance, if you wish to restrict
    your search to entire words, you might frame the query string with
-   word boundary anchors ``\b`` (in our example ``\bhobbit\b``).
+   word boundary anchors ``\b`` (in our example ``\btherefore\b``).
 
 See also
 ------------

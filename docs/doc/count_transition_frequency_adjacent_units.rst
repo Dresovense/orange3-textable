@@ -50,7 +50,7 @@ Procedure
    to open its interface.
 
 4. In the **Units** section, select the segmentation in which
-   transitions between units will be counted.
+   transitions between units will be counted (here *letters*).
 
 5. In the **Context** section, choose **Mode: Left-right neighborhood**.
 
@@ -73,7 +73,7 @@ Comment
 -  If **Sequence length** is set to a value greater than 1, the string
    appearing in the **Intra-sequence delimiter** field will be inserted
    between the elements composing each *n*-gram in the column headers,
-   which can enhance their readability. The default is # but you can
+   which can enhance their readability. The default is ``#`` but you can
    change it to the delimiter of your choice.
 
 -  Furthermore, it is possible to count the apparition of units in more
@@ -82,7 +82,7 @@ Comment
    (**Right context size**); or any combination of both.
 
 -  The **Unit position marker** is a string that indicates the
-   separation between left and right contexts sides. The default is \_
+   separation between left and right contexts sides. The default is ``_``
    but you can change it to the marker of your choice.
 
 See also

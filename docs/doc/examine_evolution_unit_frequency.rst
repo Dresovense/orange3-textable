@@ -78,7 +78,7 @@ Comment
 -  If **Sequence length** is set to a value greater than 1, the string
    appearing in the **Intra-sequence delimiter** field will be inserted
    between the elements composing each *n*-gram in the column headers,
-   which can enhance their readability. The default is # but you can
+   which can enhance their readability. The default is ``#`` but you can
    change it to the delimiter of your choice.
 
 See also

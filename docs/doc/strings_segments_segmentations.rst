@@ -15,7 +15,8 @@ counts as a character too).
 .. figure:: figures/strings_segments_segmentations1.png
    :align: center
    :alt: Sample of string segmentation
-Figure 1 : A sample string.
+   
+   Figure 1 : A sample string.
 
 What makes the transition from text strings to data tables possible is
 the concept of a *segmentation*. A segmentation is a string analysis
@@ -34,4 +35,4 @@ order in which they appear in the string.
    :align: center
    :alt: Segmentation spanning several strings
 
-Figure 2 : A segmentation can span several strings.
+   Figure 2 : A segmentation can span several strings.

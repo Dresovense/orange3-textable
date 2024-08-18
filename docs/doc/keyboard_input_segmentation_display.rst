@@ -26,8 +26,8 @@ widget, select **Rename** or press **F2**, then enter the new name.
    :align: center
    :alt: Example Widget Label
 
-    Figure 2: Typing an extract of *Salammbô* in widget :doc:`Text Field <widgets/text_field>` and
-    giving it a label (*Flaubert*).
+    Figure 2: Typing an extract of *Romeo and Juliet* in widget :doc:`Text Field <widgets/text_field>` and
+    giving it a label (*Romeo and Juliet*).
 
 This widget’s simplicity makes it most adequate for pedagogic purposes.
 Later, we will discover other, more powerful ways of importing strings
@@ -41,11 +41,11 @@ segment’s content (see :ref:`figure 3 <_keybord_input_fig3>` below).
 
 .. _keybord_input_fig3:
 
-.. figure:: figures/text_field_labelling.png
+.. figure:: figures/text_field_display.png
    :align: center
    :alt: Example usage of widget Display
 
-    Figure 3 : Viewing *Salammbô* in widget :doc:`Display <widgets/display>`.
+    Figure 3 : Viewing *Romeo and Juliet* in widget :doc:`Display <widgets/display>`.
 
 The numbers between square brackets after the segment number constitute
 the *address* of the segment, consisting of three elements: 1) string

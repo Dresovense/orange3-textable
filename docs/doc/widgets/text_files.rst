@@ -88,7 +88,7 @@ for each imported file.
 
 .. _text_files_fig2:
 
-.. figure:: ../figures/text_files_advanced_example.png
+.. figure:: ../figures/text_files_fig1.png
     :align: center
     :alt: Advanced interface of the Text files widget
     :scale: 80%
@@ -106,8 +106,8 @@ and (c) the encoding with which each is associated.
 
 In :ref:`figure 2 <text_files_fig2>`, we can see that two files are imported
 and that each is provided with an annotation whose key is *author*. The first
-file associates value *Dickens* with this key and is encoded in utf-8; the
-second one has value *Fitzgerald* and is encoded in iso-8859-1 (METTRE A JOUR LE TEXTE SELON LA CAPTURE D'ECRAN!!).
+file associates value *shakespeare* with this key and is encoded in utf-8; the
+second one has value *dickens* and is encoded in iso-8859-1.
 
 The first buttons on the right of the imported files' list enable the user to
 modify the order in which they appear in the output segmentation (**Move Up**
@@ -144,9 +144,8 @@ Similarly the button **Auto-number with key** enables the program to
 automatically number the imported files and to associate the number to the
 annotation key specified in the text field on the right.
 
-In :ref:`figure 2 <text_files_fig2>`, it was thus decided to assign the label
-*novels* to the output segmentation, and to associate the name of each file to
-the annotation key *filename* (CHECKER SELON LA CAPTURE D'ECRAN!!). On the other hand, the auto-numbering option
+In :ref:`figure 2 <text_files_fig2>`, it was thus decided to associate the name of each file to
+the annotation key *filename*. On the other hand, the auto-numbering option
 has not been enabled.
 
 The **Send** button triggers the emission of a segmentation to the output
@@ -158,7 +157,7 @@ The **Cancel** button stops the widget from working and returns it to its previo
 
 The text below the **Send** button indicates the length of the output segmentation in characters, 
 or the reasons why no segmentation is emitted (no input data, encoding issue, etc.). In the example,
-the two segments corresponding to the imported files thus total up to 1'262'145 characters. (CHECKER SELON CAPTURE D'ECRAN)
+the two segments corresponding to the imported files thus total up to 377'430 characters.
 
 .. _text_files_remote_control_ref:
 

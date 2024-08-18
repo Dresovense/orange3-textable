@@ -88,7 +88,7 @@ a segment for the content of each imported URL.
 
 .. _URLs_fig2:
 
-.. figure:: ../figures/urls_advanced_example.png
+.. figure:: ../figures/urls_fig1.png
     :align: center
     :alt: Advanced interface of the URLs widget
     :scale: 80%
@@ -107,8 +107,8 @@ associated.
 
 In :ref:`figure 2 <URLs_fig2>`, we can see that two URLs are imported (only
 the end of each URL is visible on the figure) and that each is provided with
-an annotation whose key is *author*. The first URL associates value *Dickens*
-with this key and is encoded in utf-8; the second one has value *Fitzgerald*
+an annotation whose key is *author*. The first URL associates value *shakespeare*
+with this key and is encoded in utf-8; the second one has value *dickens*
 and is encoded in iso-8859-1.
 
 The first buttons on the right of the imported URLs' list enable the user to
@@ -141,8 +141,7 @@ Similarly the button **Auto-number with key** enables the program to
 automatically number the imported URLs and to associate the number to the
 annotation key specified in the text field on the right.
 
-In :ref:`figure 2 <URLs_fig2>`, it was thus decided to assign the label
-*novels* to the output segmentation, and to associate the name of each URL to
+In :ref:`figure 2 <URLs_fig2>`, it was thus decided to associate the name of each URL to
 the annotation key *url*. On the other hand, the auto-numbering option
 has not been enabled.
 
@@ -156,7 +155,7 @@ The **Cancel** button stops the widget from working and returns it to its previo
 Below the **Send** button, the user finds the length of the output segmentation in
 characters, or the reasons why no segmentation is emitted (inability to
 retrieve the data, encoding issue, etc.). In the example, the two segments
-corresponding to the imported URLs' content thus total up to 1'300'344
+corresponding to the imported URLs' content thus total up to 348'021
 characters.
 
 .. _urls_remote_control_ref:

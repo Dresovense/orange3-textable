@@ -6,14 +6,14 @@ can be used in place of this segment’s content. A particularly common
 case consists in using annotations for tagging the rows of a table built
 with a table construction widget.
 
-Consider the example of the texts in English and French introduced here.
+Consider the example of the texts in English and French introduced :doc:`here <annotating_merging>`.
 Suppose that after having merged them into a single segmentation with
 :doc:`Merge <widgets/merge>`
 (*Texts*) (**Import labels with key:** *language*), we segment these
 three texts into letters with
 :doc:`Segment <widgets/segment>`
 (*Letters*), as in the workflow shown on :ref:`figure 1 <tagging_table_rows_annotations_fig1>`
-below; both segmentations (*texts* and *letters*) can then be sent to an
+below; both segmentations (*Texts* and *Letters*) can then be sent to an
 instance of
 :doc:`Count <widgets/count>` 
 for building a table with the frequency of each letter in each text.
@@ -46,13 +46,13 @@ and/or column order:
 
 
 .. csv-table:: Table 1: Letter frequency in three texts.
-    :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *E*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
+    :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
     :stub-columns: 1
     :widths: 7 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 
-    *a text in English*,       1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0
-    *another text in English*, 1, 3, 2, 1, 2, 3, 1, 1, 1, 1, 2, 1, 1, 0, 0, 0
-    *un texte en français*,    2, 2, 3, 1, 1, 3, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1
+    *a text in English*,       1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0
+    *another text in English*, 1, 3, 3, 1, 2, 3, 1, 1, 1, 2, 1, 1, 0, 0, 0
+    *un texte en français*,    2, 2, 3, 1, 1, 3, 0, 0, 1, 0, 0, 1, 1, 1, 1
 
 As can be seen, the default header of each row is the entire content of
 each text. While this may not be a problem in a pedagogic example like
@@ -78,12 +78,13 @@ above, key *language* has been selected, so that the resulting frequency
 table looks like this:
 
 .. csv-table:: Table 2: Letter frequency in two text types.
-    :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *E*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
+    :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
     :stub-columns: 1
     :widths: 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 
-    *en*, 2, 5, 3, 2, 4, 5, 2, 2, 2, 2, 3, 1, 1, 0, 0, 0
-    *fr*, 2, 2, 3, 1, 1, 3, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1
+
+    *en*, 2, 5, 5, 2, 4, 5, 2, 2, 2, 3, 1, 1, 0, 0, 0
+    *fr*, 2, 2, 3, 1, 1, 3, 0, 0, 1, 0, 0, 1, 1, 1, 1
 
 Besides the substitution of segment content by annotation values in row
 headers, this example demonstrates an important consequence of this

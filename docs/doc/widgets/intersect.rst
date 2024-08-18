@@ -65,12 +65,12 @@ annotation value for this key corresponds to a type present in the filter
 segmentation will be in-/excluded.
 
 Thus in :ref:`figure 1 <intersect_fig1>` above, the widget inputs two
-segmentations. The first (**Source segmentation**), whose label is *words*, is
+segmentations. The first (**Source segmentation**), whose label is *Words*, is
 the result of the segmentation of a text in words, as performed with the
 :doc:`Segment <segment>` widget for instance. The second (**Filter segmentation**),
-whose label is *stopwords*, is the result of the segmentation in words of a
+whose label is *Stopwords*, is the result of the segmentation in words of a
 list of so-called "stopwords" (articles, pronouns, prepositions,
-etc.), typically deemed irrelevant for information retrieval. (CHECK BASED ON IMAGE!!)
+etc.), typically deemed irrelevant for information retrieval.
 
 The **Send** button triggers the emission of a segmentation to the output
 connection(s). When it is selected, the **Send automatically** checkbox
@@ -91,6 +91,14 @@ Advanced interface
 The main difference between the widget's basic and advanced interface is that
 in the latter, section **Intersect** includes a **Filter annotation key**
 drop-down menu and a **Source annotation key**. 
+
+.. _intersect_fig2:
+
+.. figure:: ../figures/intersect_advanced.png
+    :align: center
+    :alt: Advances interface of the Intersect widget
+
+    Figure 2: **Intersect** widget (advanced interface).
 
 If a given annotation key of the filter segmentation is
 selected in the drop-down menu of the **Filter annotation key**, 

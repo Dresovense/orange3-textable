@@ -63,7 +63,7 @@ allows the user to specify the regular expression
 If the replacement string is left empty, the text parts identified by the
 regular expression will simply be deleted; it is the case in the example of
 :ref:`figure 1 <recode_fig1>`, which leads to the deletion of XML/HTML
-tags (CHECK IF TRUE BASED ON IMAGE!!). [#]_
+tags (but not their content). [#]_
 
 .. _recode_fig1:
 
@@ -111,7 +111,7 @@ empty) replacement string, and (c) the options associated with the regular
 expression. [#]_
 
 On :ref:`figure 2 <recode_fig2>` above, we can see that three substitutions
-have been specified. (CHECK BASED ON IMAGE!!) The first deletes XML/HTML tags (it replaces them with
+have been specified. The first deletes XML/HTML tags (it replaces them with
 the empty string). The second replaces occurrences of British English forms
 (*behaviour*, *colour*, and *neighbour*, possibly capitalized, since the
 *Ignore case* option is selected) with their American English variants

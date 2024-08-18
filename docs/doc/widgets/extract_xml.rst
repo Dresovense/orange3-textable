@@ -65,7 +65,7 @@ this element, including those embedded in other occurrences of the same type.
 
 .. _extract_xml_fig1:
 
-.. figure:: ../figures/extract_xml_basic_example.png
+.. figure:: ../figures/extract_xml_example.png
     :align: center
     :alt: Basic interface of the Extract XML widget
 
@@ -177,7 +177,7 @@ extraction only to the *<div>* elements that have a type attribute whose value
 is *poem*. If several conditions were defined, they would all have to be
 fulfilled for an element to be extracted. The buttons on the right enable the
 user to delete the selected condition (**Remove**) or to empty the list
-completely (**Clear All**). (CHECK BASED ON IMAGE!!)
+completely (**Clear All**).
 
 The remaining part of the **Conditions** subsection allows the user to add new
 conditions to the list. To do so, the attribute in question (**Attribute**)

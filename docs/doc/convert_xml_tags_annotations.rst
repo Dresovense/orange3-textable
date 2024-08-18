@@ -54,8 +54,8 @@ Comment
 
 - The XML tags that have been retrieved are actually discarded from the resulting segmentation: only their content is included in the output.
 - The attributes of the XML tags are automatically converted to annotations associated with the created segments.
-- Note that it is only possible to extract instances of a single XML element type at a time (here w).
-- However, it is possible to chain several :doc:`Extract XML <widgets/extract_xml>` instances in order to successively extract instances of different XML elements. For example, a first instance to extract div type elements, a second to extract w type elements, and so on. In this case, it is important to make sure that the **Remove markup** option is *not* selected.
+- Note that it is only possible to extract instances of a single XML element type at a time (here ``w``).
+- However, it is possible to chain several :doc:`Extract XML <widgets/extract_xml>` instances in order to successively extract instances of different XML elements. For example, a first instance to extract ``div`` type elements, a second to extract ``w`` type elements, and so on. In this case, it is important to make sure that the **Remove markup** option is *not* selected.
 
 See also
 ------------

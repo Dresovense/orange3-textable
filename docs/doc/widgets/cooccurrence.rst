@@ -259,8 +259,8 @@ The **Secondary units** section has almost the same characteristics as the
 menu. This section is by default disabled due to the default mode of the
 **Contexts** section being **Sliding window**, in which only one unit
 segmentation can be considered for the measure of cooccurrence (see
-:ref:`figure 1 <cooccurrence_fig1>`). When changing the mode to *Containing
-segmentation*, the box becomes automatically enabled (see
+:ref:`figure 1 <cooccurrence_fig1>`). When changing the mode to **Containing
+segmentation**, the box becomes automatically enabled (see
 :ref:`figure 2 <cooccurrence_fig2>`).
 
 .. _cooccurrence_fig2:

@@ -29,7 +29,7 @@ Procedure
 
 .. _count_unit_frequency_fig1:
 
-.. figure:: figures/count_unit_fequency_globally.png
+.. figure:: figures/count_unit_frequency_globally.png
    :align: center
    :alt: Count unit frequency globally with an instance of Count
 
@@ -63,7 +63,7 @@ Comment
 -  The total number of segments in your segmentation appears at the
    bottom of
    :doc:`Count <widgets/count>`’s
-   interface (here: 14).
+   interface (here: 148023).
 
 -  It is also possible to define units as segment pairs (*bigrams*),
    triples (*trigrams*), and so on, by increasing the **Sequence
@@ -72,7 +72,7 @@ Comment
 -  If **Sequence length** is set to a value greater than 1, the string
    appearing in the **Intra-sequence delimiter** field will be inserted
    between the elements composing each *n*-gram in the column headers,
-   which can enhance their readability. The default is # but you can
+   which can enhance their readability. The default is ``#`` but you can
    change it to the delimiter of your choice.
 
 See also

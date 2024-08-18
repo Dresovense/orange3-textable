@@ -53,9 +53,8 @@ Procedure
 Comment
 -----------
 
-In the **Regex** field you can use all the syntax of Python’s regular expression (*cf.* :doc:`Regular expressions <note_regular_expressions>`).
-
-The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected (see :doc:`Partitioning segmentations using a regex <partitioning_segmentations>` for instructions on how to access this other output segmentation).
+- In the **Regex** field you can use all the syntax of Python’s regular expression (*cf.* :doc:`Regular expressions <note_regular_expressions>`).
+- The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected (see :doc:`Partitioning segmentations using a regex <partitioning_segmentations>` for instructions on how to access this other output segmentation).
 
 See also
 ------------

@@ -27,11 +27,10 @@ Single file
 .. _import_text_file_fig1:
 
 .. figure:: figures/text_files_basic_example.png
-    :align: center
-    :alt: Importing a file using the Text Files widget
+   :align: center
+   :alt: Importing a file using the Text Files widget
 
-   Figure 1: Importing the content of a file using the :doc:`Text Files <widgets/text_files>`
-   widget.
+   Figure 1: Importing the content of a file using :doc:`Text Files <widgets/text_files>`.
 
 1. Create an instance of :doc:`Text Files <widgets/text_files>`.
 
@@ -58,14 +57,12 @@ Multiple files
 ~~~~~~~~~~~~~~~~~~
 
 .. _import_text_file_fig2:
-
+   
 .. figure:: figures/text_files_advanced_example.png
-    :align: center
-    :alt: Importing several files using the Text Files widget
-    :scale: 80%
+   :align: center
+   :alt: Importing several files using the Text Files widget
 
-   Figure 2: Importing the content of several files using the :doc:`Text Files <widgets/text_files>`
-   widget.
+   Figure 2: Importing the content of several files using :doc:`Text Files <widgets/text_files>`.
 
 1.  Create an instance of :doc:`Text Files <widgets/text_files>`.
 

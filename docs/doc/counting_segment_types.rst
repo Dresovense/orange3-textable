@@ -26,7 +26,7 @@ is to determine the frequency of segment types in an input segmentation.
 The label of that segmentation must be indicated in the **Segmentation**
 menu of section **Units** in the widget’s interface, while other
 controls may be left in their default state for now (see :ref:`figure 2 <counting_segment_types_fig2>`
-below). Clicking **Compute** then double-clicking the *Data Table*
+below). Clicking **Send** then double-clicking the *Data Table*
 instance should display essentially the same data as table 1
 :ref:`here <segmentation_tables_table1>`
 (with possible variations in the order of rows).

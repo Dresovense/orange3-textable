@@ -50,7 +50,7 @@ Procedure
 Comment
 -----------
 
-You can also segment text using any kind of pattern that can be described by Python regular expressions (*cf.* Regular expressions) with the **Use a regular expression** option.
+- You can also segment text using any kind of pattern that can be described by Python regular expressions (*cf.* Regular expressions) with the **Use a regular expression** option.
 
 See also
 ------------
