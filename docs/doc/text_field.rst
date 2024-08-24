@@ -7,7 +7,7 @@
 Text Field
 ==========
 
-.. image:: ../figures/TextField_54.png
+.. image:: figures/TextField_54.png
 
 Import text data from keyboard.
 
@@ -40,7 +40,7 @@ accessible through a right-click on the field or keyboard shortcuts.
 
 .. _text_field_fig1:
 
-.. figure:: ../figures/text_field_example.png
+.. figure:: figures/text_field_example.png
     :align: center
     :alt: Interface of the Text field widget
 
@@ -111,8 +111,8 @@ Warnings
 Examples
 --------
 
-- :doc:`Textable's Basics: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
-- :doc:`Cookbook: Import text from keyboard <../import_text_keyboard>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
+- :doc:`Cookbook: Import text from keyboard <import_text_keyboard>`
 
 See also
 --------

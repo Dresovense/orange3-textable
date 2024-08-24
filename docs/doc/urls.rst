@@ -7,7 +7,7 @@
 URLs
 ====
 
-.. image:: ../figures/URLs_54.png
+.. image:: figures/URLs_54.png
 
 Fetch text data from internet locations.
 
@@ -59,7 +59,7 @@ select the encoding of its content.
 
 .. _URLs_fig1:
 
-.. figure:: ../figures/urls_basic_example.png
+.. figure:: figures/urls_basic_example.png
     :align: center
     :alt: Basic interface of the URLs widget
 
@@ -88,7 +88,7 @@ a segment for the content of each imported URL.
 
 .. _URLs_fig2:
 
-.. figure:: ../figures/urls_fig1.png
+.. figure:: figures/urls_fig1.png
     :align: center
     :alt: Advanced interface of the URLs widget
     :scale: 80%
@@ -117,7 +117,7 @@ and **Move Down**), to delete an URL from the list (**Remove**) or to
 completely empty it (**Clear All**). Except for **Clear All**, all these
 buttons require the user to previously select an entry from the list. **Import
 List** enables the user to import a list of URLs in JSON format (see
-:doc:`JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`)
+:doc:`JSON im-/export format <json_import_export>`, :doc:`URL list <json_url_list>`)
 and to add it to the previously selected sources. In the opposite **Export
 List** enables the user to export the source list in a JSON file.
 
@@ -165,7 +165,7 @@ Remote control
 
 **URLs** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
-of a URL list in JSON format (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`), in which case the list
+of a URL list in JSON format (see :doc:`JSON im-/export format <json_import_export>`, :doc:`URL list <json_url_list>`), in which case the list
 of URLs specified in this message replaces previously imported sources (if
 any). Note that removing the incoming connection from the **Message** instance
 will not, by itself, remove the list of URLs imported in this way from the
@@ -219,7 +219,7 @@ Errors
 *Please verify keys and values of incoming JSON message.*
     The widget instance has received a JSON message on its ``Message`` input channel and the keys
     and/or values specified in this message do not match those that are expected for this particular
-    widget type (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`).
+    widget type (see :doc:`JSON im-/export format <json_import_export>`, :doc:`File list <json_file_list>`).
 
 *Please make sure that incoming message is valid JSON.*
     The widget instance has received data on its ``Message`` input channel and the data couldn't
@@ -228,11 +228,11 @@ Errors
 Examples
 --------
 
-- :doc:`Cookbook: Import text from internet location <../import_text_internet_location>`
+- :doc:`Cookbook: Import text from internet location <import_text_internet_location>`
 
 See also
 --------
 
-- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`URL list <../json_url_list>`
+- :doc:`Reference: JSON im-/export format <json_import_export>`, :doc:`URL list <json_url_list>`
 - :doc:`Reference: Message widget <message>`
 

@@ -7,7 +7,7 @@
 Category
 ========
 
-.. image:: ../figures/Category_54.png
+.. image:: figures/Category_54.png
 
 Build a table with categories defined by segments' content or annotations.
 
@@ -146,7 +146,7 @@ content or the annotation value corresponding to each individual segment.
 
 .. _category_fig1:
 
-.. figure:: ../figures/category_widget.png
+.. figure:: figures/category_widget.png
     :align: center
     :alt: interface of the Category widget
 

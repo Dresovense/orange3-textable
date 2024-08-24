@@ -7,7 +7,7 @@
 Text Field
 ==========
 
-.. image:: ../figures/TextField_54.png
+.. image:: figures/TextField_54.png
 
 Import text data from keyboard input.
 
@@ -41,7 +41,7 @@ accessible through a right-click on the field.
 
 .. _text_field_fig1:
 
-.. figure:: ../figures/text_field_example.png
+.. figure:: figures/text_field_example.png
     :align: center
     :alt: Interface of the Text field widget
 

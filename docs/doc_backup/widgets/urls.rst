@@ -7,7 +7,7 @@
 URLs
 ====
 
-.. image:: ../figures/URLs_54.png
+.. image:: figures/URLs_54.png
 
 Fetch text data from internet locations.
 
@@ -59,7 +59,7 @@ select the encoding of its content.
 
 .. _URLs_fig1:
 
-.. figure:: ../figures/urls_basic_example.png
+.. figure:: figures/urls_basic_example.png
     :align: center
     :alt: Basic interface of the URLs widget
 
@@ -88,7 +88,7 @@ a segment for the content of each imported URL.
 
 .. _URLs_fig2:
 
-.. figure:: ../figures/urls_advanced_example.png
+.. figure:: figures/urls_advanced_example.png
     :align: center
     :alt: Advanced interface of the URLs widget
     :scale: 80%

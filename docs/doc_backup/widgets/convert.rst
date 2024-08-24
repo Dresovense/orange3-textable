@@ -7,7 +7,7 @@
 Convert
 =======
 
-.. image:: ../figures/Convert_54.png
+.. image:: figures/Convert_54.png
 
 Convert, transform, or export Orange Textable tables
 
@@ -158,7 +158,7 @@ entities (for example *&#233*; for *é*).
 
 .. _convert_fig1:
 
-.. figure:: ../figures/convert_basic_example.png
+.. figure:: figures/convert_basic_example.png
     :align: center
     :alt: Basic interface of the Convert widget
 
@@ -192,7 +192,7 @@ The modified data can then be emitted on output connections or exported
 
 .. _convert_fig2:
 
-.. figure:: ../figures/convert_advanced_example.png
+.. figure:: figures/convert_advanced_example.png
     :align: center
     :alt: Advanced interface of the Convert widget
 

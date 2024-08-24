@@ -81,9 +81,9 @@ Text import widgets:
 .. toctree::
    :maxdepth: 1
 
-   Text Field <widgets/text_field>
-   Text Files <widgets/text_files>
-   URLs <widgets/urls>
+   Text Field <text_field>
+   Text Files <text_files>
+   URLs <urls>
   
 
 .. _segmentation_processing_widgets:
@@ -93,14 +93,14 @@ Segmentation processing widgets:
 .. toctree::
    :maxdepth: 1
 
-   Preprocess <widgets/preprocess>
-   Recode <widgets/recode>
-   Merge <widgets/merge>
-   Segment <widgets/segment>
-   Select <widgets/select>
-   Intersect <widgets/intersect>
-   Extract XML <widgets/extract_xml>
-   Display <widgets/display>
+   Preprocess <preprocess>
+   Recode <recode>
+   Merge <merge>
+   Segment <segment>
+   Select <select>
+   Intersect <intersect>
+   Extract XML <extract_xml>
+   Display <display>
 
 
 .. _table_construction_widgets:
@@ -110,12 +110,12 @@ Table construction widgets:
 .. toctree::
    :maxdepth: 1
 
-   Count <widgets/count>
-   Length <widgets/length>
-   Variety <widgets/variety>
-   Cooccurrence <widgets/cooccurrence>
-   Context <widgets/context>
-   Category <widgets/category>
+   Count <count>
+   Length <length>
+   Variety <variety>
+   Cooccurrence <cooccurrence>
+   Context <context>
+   Category <category>
  
 
 .. _conversion_export_widgets:
@@ -125,8 +125,8 @@ Conversion/export widgets:
 .. toctree::
    :maxdepth: 1
 
-   Convert <widgets/convert>
-   Message <widgets/message>
+   Convert <convert>
+   Message <message>
 
    
 .. _json_format:

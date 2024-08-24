@@ -11,7 +11,7 @@ with Orange Textable.
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`URLs <widgets/urls>`
+   **Widget**      :doc:`URLs <urls>`
    **Icon**        |urls_icon|
    **Quantity**    1
   ==============  =======
@@ -30,10 +30,10 @@ Single URL
     :align: center
     :alt: Importing text from an internet location using the URLs widget
 
-    Figure 1: Importing text from an internet location using the :doc:`URLs <widgets/urls>` widget.
+    Figure 1: Importing text from an internet location using the :doc:`URLs <urls>` widget.
 
 1. Create an instance of
-   :doc:`URLs <widgets/urls>`.
+   :doc:`URLs <urls>`.
 
 2. Double-click on it to open its interface.
 
@@ -50,7 +50,7 @@ Single URL
 
 7. A segmentation covering the URL’s content is then available at the
    output of
-   :doc:`URLs <widgets/urls>`;
+   :doc:`URLs <urls>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 Multiple URLs
@@ -64,10 +64,10 @@ Multiple URLs
     :scale: 80%
 
     Figure 2: Importing text from several internet locations using the
-    :doc:`URLs <widgets/urls>` widget.
+    :doc:`URLs <urls>` widget.
 
 1.  Create an instance of
-    :doc:`URLs <widgets/urls>`.
+    :doc:`URLs <urls>`.
 
 2.  Double-click on it to open its interface.
 
@@ -94,11 +94,11 @@ Multiple URLs
 
 10. A segmentation containing a segment covering each imported URL’s
     content is then available at the output of
-    :doc:`URLs <widgets/urls>`;
+    :doc:`URLs <urls>`;
     to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 See also
 ------------
 
-- :doc:`Reference: URLs widget <widgets/urls>`
+- :doc:`Reference: URLs widget <urls>`
 - :doc:`Cookbook: Text output <text_output>`

@@ -8,14 +8,14 @@ with a table construction widget.
 
 Consider the example of the texts in English and French introduced :doc:`here <annotating_merging>`.
 Suppose that after having merged them into a single segmentation with
-:doc:`Merge <widgets/merge>`
+:doc:`Merge <merge>`
 (*Texts*) (**Import labels with key:** *language*), we segment these
 three texts into letters with
-:doc:`Segment <widgets/segment>`
+:doc:`Segment <segment>`
 (*Letters*), as in the workflow shown on :ref:`figure 1 <tagging_table_rows_annotations_fig1>`
 below; both segmentations (*Texts* and *Letters*) can then be sent to an
 instance of
-:doc:`Count <widgets/count>` 
+:doc:`Count <count>` 
 for building a table with the frequency of each letter in each text.
 
 .. _tagging_table_rows_annotations_fig1:
@@ -28,7 +28,7 @@ for building a table with the frequency of each letter in each text.
     Figure 1: Workflow for counting letter frequency in three texts.
 
 Let us suppose, first, that the instance of
-:doc:`Count <widgets/count>`
+:doc:`Count <count>`
 is configured as shown on :ref:`figure 2 <tagging_table_rows_annotations_fig2>`
 below, so that the definition of contexts–that is, rows of the frequency
 table–is based on the content of the three texts.
@@ -62,7 +62,7 @@ or even millions of characters. To avoid that, it is useful to tag the
 table’s rows with annotation values attached to segments rather than
 with these segments’ content. To that effect, the desired annotation key
 must be selected in the **Contexts** section of widget
-:doc:`Count <widgets/count>`’s
+:doc:`Count <count>`’s
 interface.
  
 .. _tagging_table_rows_annotations_fig3:
@@ -92,13 +92,13 @@ manipulation: contexts associated with the same annotation value are, in
 effect, collapsed together so that they form a single row. If this
 behavior is not desired, it can be avoided by assigning distinct
 annotation values to the contexts that must be kept separated (e.g. by
-labelling the :doc:`Text Field <widgets/text_field>`
+labelling the :doc:`Text Field <text_field>`
 instances that contain English texts *en_1* and *en_2*).
 
 See also
 ------------------
 
 - :doc:`Textable's Basics: Annotating by merging <annotating_merging>`
-- :doc:`Reference: Merge widget <widgets/merge>`
-- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Reference: Merge widget <merge>`
+- :doc:`Reference: Count widget <count>`
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`

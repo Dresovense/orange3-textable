@@ -7,7 +7,7 @@
 Select
 ======
 
-.. image:: ../figures/Select_54.png
+.. image:: figures/Select_54.png
 
 Select a subset of segments in a segmentation.
 
@@ -56,7 +56,7 @@ by default.
 
 .. _select_fig1:
 
-.. figure:: ../figures/select_example.png
+.. figure:: figures/select_example.png
     :align: center
     :alt: Basic interface of the Select widget
 
@@ -71,7 +71,7 @@ menu (see figures :ref:`2 <select_fig2>` to :ref:`4 <select_fig4>` below).
 
 .. _select_fig2:
 
-.. figure:: ../figures/select_advanced_regex_example.png
+.. figure:: figures/select_advanced_regex_example.png
     :align: center
     :alt: Advanced interface of the Select widget (Regex method)
 
@@ -112,7 +112,7 @@ probability of being selected or not.
 
 .. _select_fig3:
 
-.. figure:: ../figures/select_advanced_sample_example.png
+.. figure:: figures/select_advanced_sample_example.png
     :align: center
     :alt: Advanced interface of the Select widget (Sample method)
 
@@ -135,7 +135,7 @@ in the segmentation that is comprised between given bounds.
 
 .. _select_fig4:
 
-.. figure:: ../figures/select_advanced_threshold_example.png
+.. figure:: figures/select_advanced_threshold_example.png
     :align: center
     :alt: Advanced interface of the Select widget (Threshold method)
 
@@ -227,8 +227,8 @@ Errors
 Examples
 --------
 
-- :doc:`Advanced Topics: Partitioning segmentations <../partitioning_segmentations>`
-- :doc:`Advanced Topics: Annotation-based selection <../xml_annotation_based_selection>`
-- :doc:`Cookbook: Include/exclude segments based on a pattern <../include_exclude_based_on_pattern>`
-- :doc:`Cookbook: Filter segments based on their frequency <../filter_segments_based_on_frequency>`
-- :doc:`Cookbook: Create a random selection or sample of segments <../random_sample>`
+- :doc:`Advanced Topics: Partitioning segmentations <partitioning_segmentations>`
+- :doc:`Advanced Topics: Annotation-based selection <xml_annotation_based_selection>`
+- :doc:`Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>`
+- :doc:`Cookbook: Filter segments based on their frequency <filter_segments_based_on_frequency>`
+- :doc:`Cookbook: Create a random selection or sample of segments <random_sample>`

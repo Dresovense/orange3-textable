@@ -7,7 +7,7 @@
 Intersect
 =========
 
-.. image:: ../figures/Intersect_54.png
+.. image:: figures/Intersect_54.png
 
 In-/exclude segments based on another segmentation.
 
@@ -53,7 +53,7 @@ segmentation (**Filter segmentation**) among the input segmentations. [#]_
 
 .. _intersect_fig1:
 
-.. figure:: ../figures/intersect_example.png
+.. figure:: figures/intersect_example.png
     :align: center
     :alt: Basic interface of the Intersect widget
 
@@ -94,7 +94,7 @@ drop-down menu and a **Source annotation key**.
 
 .. _intersect_fig2:
 
-.. figure:: ../figures/intersect_advanced.png
+.. figure:: figures/intersect_advanced.png
     :align: center
     :alt: Advances interface of the Intersect widget
 
@@ -153,8 +153,8 @@ Warnings
 Examples
 --------
 
-- :doc:`Textable's Basics: Using a segmentation to filter another <../using_segmentation_filter_another>`
-- :doc:`Cookbook: Exclude segments based on a stoplist <../exclude_segments_based_on_stoplist>`
+- :doc:`Textable's Basics: Using a segmentation to filter another <using_segmentation_filter_another>`
+- :doc:`Cookbook: Exclude segments based on a stoplist <exclude_segments_based_on_stoplist>`
 
 Footnotes
 ---------

@@ -7,7 +7,7 @@
 Segment
 =======
 
-.. image:: ../figures/Segment_54.png
+.. image:: figures/Segment_54.png
 
 Subdivide a segmentation using regular expressions.
 
@@ -55,7 +55,7 @@ Basic interface
 
 The basic version of the widget permits to choose between four types of Text Data segmentation output. 
 The *Segment into Letters* option segments text data into letters; the *Segment into Words* option segments 
-text data into words (which is mandatory in order to count segments, see :doc:`cookbook <../cookbook>`);
+text data into words (which is mandatory in order to count segments, see :doc:`cookbook <cookbook>`);
 the *Segment into lines* option segments text data into lines.
 Eventually, *Use a regular expression* opens a short Regex section (see :ref:`figure 1 <segment_fig1>` below). 
 This Regex can be a particular string of characters (a word) or a regular expression.
@@ -65,7 +65,7 @@ sequence of alphanumerical characters and underscores). [#]_
 
 .. _segment_fig1:
 
-.. figure:: ../figures/segment_example.png
+.. figure:: figures/segment_example.png
     :align: center
     :alt: Basic interface of the Segment widget
 
@@ -95,7 +95,7 @@ these segments (**Split** mode). [#]_
 
 .. _segment_fig2:
 
-.. figure:: ../figures/segment_advanced_example.png
+.. figure:: figures/segment_advanced_example.png
     :align: center
     :alt: Advanced interface of the Segment widget
 
@@ -142,7 +142,7 @@ an expression from the list (**Remove**) or to empty it entirely (**Clear
 All**). Except for **Clear All**, all of these buttons require the selection
 of an entry in the list beforehand. **Import List** enables the user to import
 a list of regular expressions in JSON format
-(see :doc:`JSON im-/export format <../json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`)
+(see :doc:`JSON im-/export format <json_import_export>`, :doc:`Regular expression list <json_regular_expression_list>`)
 and to add them to those already selected. **Export List** enables the user on
 the contrary to export the list of regular expressions in a JSON file.
 
@@ -184,7 +184,7 @@ Remote control
 **Segment** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
 of a regular expression list in JSON format
-(see :doc:`JSON im-/export format <../ json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`),
+(see :doc:`JSON im-/export format < json_import_export>`, :doc:`Regular expression list <json_regular_expression_list>`),
 in which case the list of regular
 expressions specified in this message replaces those previously specified
 (if any). Note that removing the incoming connection from the **Message**
@@ -250,8 +250,8 @@ Errors
     The widget instance has received a JSON message on its ``Message`` input
     channel and the keys and/or values specified in this message do not match
     those that are expected for this particular widget type
-    (see :doc:`JSON im-/export format <../json_import_export>`,
-    :doc:`Regular expression list <../json_regular_expression_list>`).
+    (see :doc:`JSON im-/export format <json_import_export>`,
+    :doc:`Regular expression list <json_regular_expression_list>`).
 
 *Please make sure that incoming message is valid JSON.*
     The widget instance has received data on its ``Message`` input channel and
@@ -261,13 +261,13 @@ Errors
 Examples
 --------
 
-- :doc:`Textable's Basics: Segmenting data into smaller units <../segmenting_data_smaller_units>`
-- :doc:`Cookbook: Segment text in smaller units <../segment_text>`
+- :doc:`Textable's Basics: Segmenting data into smaller units <segmenting_data_smaller_units>`
+- :doc:`Cookbook: Segment text in smaller units <segment_text>`
 
 See also
 --------
-- :doc:`Advanced Topics: A note on regular expressions <../note_regular_expressions>`
-- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`Regular expression list <../json_regular_expression_list>`
+- :doc:`Advanced Topics: A note on regular expressions <note_regular_expressions>`
+- :doc:`Reference: JSON im-/export format <json_import_export>`, :doc:`Regular expression list <json_regular_expression_list>`
 - :doc:`Reference: Message widget <message>`
 
 Footnotes

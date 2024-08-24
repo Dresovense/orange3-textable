@@ -1,12 +1,12 @@
 Counting segment types
 =============================
 
-Widget :doc:`Count <widgets/count>`
+Widget :doc:`Count <count>`
 takes in input one or more segmentations and produces frequency tables
 such as tables 1 and 2 :ref:`here <segmentation_tables_table1>`.
 To try it out, create a workflow such as illustrated on :ref:`figure 1 <counting_segment_types_fig1>`
-below. As usual, we will suppose that the :doc:`Text Field <widgets/text_field>`
-instance contains *a simple example*. The :doc:`Segment <widgets/segment>`
+below. As usual, we will suppose that the :doc:`Text Field <text_field>`
+instance contains *a simple example*. The :doc:`Segment <segment>`
 instance is configured for letter segmentation (**Segment into
 letters**). The default configuration of *Data Table* (from the **Data**
 tab of Orange Canvas) needs not be modified for this example.
@@ -18,10 +18,10 @@ tab of Orange Canvas) needs not be modified for this example.
     :alt: Schema for testing the Count widget
     :scale: 80 %
 
-    Figure 1: Workflow for testing the :doc:`Count <widgets/count>` widget.
+    Figure 1: Workflow for testing the :doc:`Count <count>` widget.
 
 Basically, the purpose of widget
-:doc:`Count <widgets/count>`
+:doc:`Count <count>`
 is to determine the frequency of segment types in an input segmentation.
 The label of that segmentation must be indicated in the **Segmentation**
 menu of section **Units** in the widget’s interface, while other
@@ -35,9 +35,9 @@ instance should display essentially the same data as table 1
 
 .. figure:: figures/count_example.png
     :align: center
-    :alt: Counting the frequency of letter types with widget :doc:`Count <widgets/count>`
+    :alt: Counting the frequency of letter types with widget :doc:`Count <count>`
 
-    Figure 2: Counting the frequency of letter types with widget :doc:`Count <widgets/count>`.
+    Figure 2: Counting the frequency of letter types with widget :doc:`Count <count>`.
 
 Note that checkbox *Send automatically* is unchecked by default so that
 the user must click on **Send** to trigger computations. The motivation
@@ -68,6 +68,6 @@ bigrams *as* and *ee* have a nonzero frequency.
 See also
 -----------------
 
-- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Reference: Count widget <count>`
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`
 - :doc:`Cookbook: Count unit frequency <count_unit_frequency>`

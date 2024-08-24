@@ -28,20 +28,20 @@ The same experiment can be run with Orange Textable, by building a
 Such a program is called a *workflow*. Its visible part consists of a
 network of interconnected units called *widget instances*. Each instance
 belongs to a type, e.g.
-:doc:`URLs <widgets/urls>`, :doc:`Recode <widgets/recode>`, :doc:`Segment <widgets/segment>`,
+:doc:`URLs <urls>`, :doc:`Recode <recode>`, :doc:`Segment <segment>`,
 and so on. Widgets are the basic blocks with which a variety of text
 analysis applications can be built. Each corresponds to a fundamental
-operation, such as “import data from an online source” (:doc:`URLs <widgets/urls>`)
-or “replace specific text patterns with others” (:doc:`Recode <widgets/recode>`)
+operation, such as “import data from an online source” (:doc:`URLs <urls>`)
+or “replace specific text patterns with others” (:doc:`Recode <recode>`)
 for example. Connections between instances determine the flow of data in
 the workflow, and thus the order in which operations are carried on.
 Several parallel paths can be constructed, as demonstrated here by the
-:doc:`Recode <widgets/recode>` instance, which sends data to :doc:`Segment <widgets/segment>` as well as
-:doc:`Count <widgets/count>`.
+:doc:`Recode <recode>` instance, which sends data to :doc:`Segment <segment>` as well as
+:doc:`Count <count>`.
 
 Widget instances can be individually parameterized in order to
 “fine-tune” their operation. For example, double-clicking on the
-:doc:`Recode <widgets/recode>` instance of :ref:`figure 1 <illustration-fig1>`
+:doc:`Recode <recode>` instance of :ref:`figure 1 <illustration-fig1>`
 above displays the interface shown on :ref:`figure 2 <illustration-fig2>`
 below. What this particular configuration means is that every line
 beginning with symbol \| or >
@@ -58,7 +58,7 @@ several of them and Orange Textable’s flexibility owes a lot to them.
     :align: center
     :alt: Interface of Recode widget in the Humanist example
 
-    Figure 2: Interface of the :doc:`Recode <widgets/recode>` widget.
+    Figure 2: Interface of the :doc:`Recode <recode>` widget.
 
 After executing the workflow of :ref:`figure 1 <illustration_fig1>` above, the resulting frequencies can be viewed by double-clicking on the
 **Data Table** instance, whose interface is shown on  :ref:`figure 3 <illustration_fig3>`

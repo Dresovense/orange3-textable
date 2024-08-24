@@ -16,7 +16,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Preprocess <widgets/preprocess>`
+   **Widget**      :doc:`Preprocess <preprocess>`
    **Icon**        |preprocess_icon|
    **Quantity**    1
   ==============  =======
@@ -33,16 +33,16 @@ Procedure
    :alt: Convert text to lower or upper case with an instance of Preprocess
 
    Figure 1: Convert text to lower or upper case with an instance of 
-   :doc:`Preprocess <widgets/preprocess>`.
+   :doc:`Preprocess <preprocess>`.
 
-1. Create an instance of :doc:`Preprocess <widgets/preprocess>`.
+1. Create an instance of :doc:`Preprocess <preprocess>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be modified (here :doc:`Text Field <widgets/text_field>`
-   (*Hamlet*)), to the input of :doc:`Preprocess <widgets/preprocess>`
+   emits the segmentation to be modified (here :doc:`Text Field <text_field>`
+   (*Hamlet*)), to the input of :doc:`Preprocess <preprocess>`
    (lefthand side).
 
-3. Double-click on the icon of :doc:`Preprocess <widgets/preprocess>`
+3. Double-click on the icon of :doc:`Preprocess <preprocess>`
    to open its interface.
 
 4. In the **Processing** section, tick the **Transform case** checkbox.
@@ -54,13 +54,13 @@ Procedure
    checkbox.
 
 7. A segmentation containing the modified text is then available at the
-   output of :doc:`Preprocess <widgets/preprocess>`;
+   output of :doc:`Preprocess <preprocess>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 See also
 ------------
 
-- :doc:`Reference: Preprocess widget <widgets/preprocess>`
+- :doc:`Reference: Preprocess widget <preprocess>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
 - :doc:`Cookbook: Text output <text_output>`

@@ -7,7 +7,7 @@
 Length
 ======
 
-.. image:: ../figures/Length_54.png
+.. image:: figures/Length_54.png
 
 Compute the (average) length of segments.
 
@@ -196,7 +196,7 @@ likely to spectacularly extend the calculation time.
 
 .. _length_fig1:
 
-.. figure:: ../figures/Length_example.png
+.. figure:: figures/Length_example.png
     :align: center
     :alt: Length widget in mode "No context"
 
@@ -217,7 +217,7 @@ segments), set by means of the **Window size** cursor.
 
 .. _length_fig2:
 
-.. figure:: ../figures/count_mode_sliding_window_example.png
+.. figure:: figures/count_mode_sliding_window_example.png
     :align: center
     :alt: Length widget in mode "Sliding window"
 
@@ -225,7 +225,7 @@ segments), set by means of the **Window size** cursor.
 
 .. _length_fig3:
 
-.. figure:: ../figures/count_mode_containing_segmentation.png
+.. figure:: figures/count_mode_containing_segmentation.png
     :align: center
     :alt: Length widget in mode "Containing segmentation"
 

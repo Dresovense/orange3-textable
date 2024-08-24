@@ -18,7 +18,7 @@ Ingredients
 ---------------
 
   ==============  =================================  =================
-   **Widget**      :doc:`Convert <widgets/convert>`   **Data Table**
+   **Widget**      :doc:`Convert <convert>`   **Data Table**
    **Icon**        |convert_icon|                     |datatable_icon|
    **Quantity**    1                                  1
   ==============  =================================  =================
@@ -37,20 +37,20 @@ Procedure
    :scale: 80%
    
    Figure 1: Display an Orange Textable table with instances of
-   :doc:`Convert <widgets/convert>` and **Data Table**.
+   :doc:`Convert <convert>` and **Data Table**.
 
-1. Create an instance of :doc:`Convert <widgets/convert>` and **Data Table** (the latter is found in the **Data** tab of Orange Canvas).
+1. Create an instance of :doc:`Convert <convert>` and **Data Table** (the latter is found in the **Data** tab of Orange Canvas).
 
-2. Drag and drop from the output (righthand side) of the widget that has been used to build a table, here :doc:`Context <widgets/context>`, to the input of :doc:`Convert <widgets/convert>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that has been used to build a table, here :doc:`Context <context>`, to the input of :doc:`Convert <convert>` (lefthand side).
 
-3. Connect :doc:`Convert <widgets/convert>` to **Data Table**.
+3. Connect :doc:`Convert <convert>` to **Data Table**.
 
 4. Double-click on the icon of **Data Table** to open its interface and display the table.
  
 Comment
 -----------
 
-- If the table is a document-term frequency table, you may want to change its default orientation to make it easier to read. To that effect, open the :doc:`Convert <widgets/convert>` instance’s interface, tick the **Advanced settings** checkbox, and in the **Transform** section, tick the **transpose** checkbox.
+- If the table is a document-term frequency table, you may want to change its default orientation to make it easier to read. To that effect, open the :doc:`Convert <convert>` instance’s interface, tick the **Advanced settings** checkbox, and in the **Transform** section, tick the **transpose** checkbox.
 
 .. _display_table_fig2:
 
@@ -59,13 +59,13 @@ Comment
    :alt: Change the orientation of Orange Textable table using Convert
 
    Figure 2: Change the orientation of an Orange Textable frequency table
-   using an instance of :doc:`Convert <widgets/convert>`.
+   using an instance of :doc:`Convert <convert>`.
 
 See also
 ------------
 
 - :doc:`Getting started: Converting between table formats`
-- :doc:`Reference: Convert widget <widgets/convert>`
+- :doc:`Reference: Convert widget <convert>`
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

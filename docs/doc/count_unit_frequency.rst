@@ -16,7 +16,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Count <widgets/count>`
+   **Widget**      :doc:`Count <count>`
    **Icon**        |count_icon|
    **Quantity**    1
   ==============  =======
@@ -33,18 +33,18 @@ Procedure
    :align: center
    :alt: Count unit frequency globally with an instance of Count
 
-   Figure 1: Count unit frequency with an instance of :doc:`Count <widgets/count>`.
+   Figure 1: Count unit frequency with an instance of :doc:`Count <count>`.
 
-1. Create an instance of :doc:`Count <widgets/count>`.
+1. Create an instance of :doc:`Count <count>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
    emits the segments that will be counted, here
-   :doc:`Segment <widgets/segment>`
-   (*letters*), to the input of :doc:`Count <widgets/count>`
+   :doc:`Segment <segment>`
+   (*letters*), to the input of :doc:`Count <count>`
    (lefthand side).
 
 3. Double-click on the icon of
-   :doc:`Count <widgets/count>`
+   :doc:`Count <count>`
    to open its interface.
 
 4. In the **Units** section, select the segmentation containing units to
@@ -54,7 +54,7 @@ Procedure
    checkbox.
 
 6. A table showing the results is then available at the output of
-   :doc:`Count <widgets/count>`;
+   :doc:`Count <count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
 Comment
@@ -62,7 +62,7 @@ Comment
 
 -  The total number of segments in your segmentation appears at the
    bottom of
-   :doc:`Count <widgets/count>`’s
+   :doc:`Count <count>`’s
    interface (here: 148023).
 
 -  It is also possible to define units as segment pairs (*bigrams*),
@@ -79,7 +79,7 @@ See also
 ------------
 
 -  :doc:`Textable's Basics : Counting segment types <counting_segment_types>`
--  :doc:`Reference: Count widget <widgets/count>`
+-  :doc:`Reference: Count widget <count>`
 -  :doc:`Cookbook: Text input <text_input>`
 -  :doc:`Cookbook: Segment text in smaller units <segment_text>`
 -  :doc:`Cookbook: Table output <table_output>`

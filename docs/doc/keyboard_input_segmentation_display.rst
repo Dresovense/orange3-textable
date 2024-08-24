@@ -1,7 +1,7 @@
 Keyboard input, widget labelling and segmentation display
 ================================================================
 
-Typing or pasting text in a :doc:`Text Field <widgets/text_field>`
+Typing or pasting text in a :doc:`Text Field <text_field>`
 widget is the simplest way to import a string in Orange Textable. As a
 result, the widget creates a segmentation with a single segment covering
 the entire string. (see :ref:`figure 1 <keybord_input_fig1>`
@@ -13,7 +13,7 @@ below):
    :align: center
    :alt: Example usage of text field
 
-    Figure 1: Typing text in widget :doc:`Text Field <widgets/text_field>`.
+    Figure 1: Typing text in widget :doc:`Text Field <text_field>`.
 
 Each segmentation is identified by a label which is the name of the
 widget that creates the segmentation. It is a good habit to rename
@@ -26,16 +26,16 @@ widget, select **Rename** or press **F2**, then enter the new name.
    :align: center
    :alt: Example Widget Label
 
-    Figure 2: Typing an extract of *Romeo and Juliet* in widget :doc:`Text Field <widgets/text_field>` and
+    Figure 2: Typing an extract of *Romeo and Juliet* in widget :doc:`Text Field <text_field>` and
     giving it a label (*Romeo and Juliet*).
 
 This widget’s simplicity makes it most adequate for pedagogic purposes.
 Later, we will discover other, more powerful ways of importing strings
-such as the :doc:`Text Files <widgets/text_files>` and
-:doc:`URLs <widgets/urls>` widgets. These import widgets create a segmentation with one segment for
+such as the :doc:`Text Files <text_files>` and
+:doc:`URLs <urls>` widgets. These import widgets create a segmentation with one segment for
 each imported file or URL.
 
-The :doc:`Display <widgets/display>` widget can be used to visualize the details of a segmentation. By
+The :doc:`Display <display>` widget can be used to visualize the details of a segmentation. By
 default, it shows the segmentation’s label followed by each successive
 segment’s content (see :ref:`figure 3 <_keybord_input_fig3>` below).
 
@@ -45,14 +45,14 @@ segment’s content (see :ref:`figure 3 <_keybord_input_fig3>` below).
    :align: center
    :alt: Example usage of widget Display
 
-    Figure 3 : Viewing *Romeo and Juliet* in widget :doc:`Display <widgets/display>`.
+    Figure 3 : Viewing *Romeo and Juliet* in widget :doc:`Display <display>`.
 
 The numbers between square brackets after the segment number constitute
 the *address* of the segment, consisting of three elements: 1) string
 index 2) initial position within the string 3) final position. The text
 corresponding to a given segment is called the segment’s *content*.
 
-By default, :doc:`Display <widgets/display>` passes its input data without modification to its output connections. It
+By default, :doc:`Display <display>` passes its input data without modification to its output connections. It
 is very useful for viewing intermediate results in an Orange Textable
 workflow and making sure that other widgets have processed data as
 expected.
@@ -60,7 +60,7 @@ expected.
 See also
 -----------------
 
-- :doc:`Reference: Text field widget <widgets/text_field>`
-- :doc:`Reference: Display widget <widgets/display>`
+- :doc:`Reference: Text field widget <text_field>`
+- :doc:`Reference: Display widget <display>`
 - :doc:`Cookbook: Import text from keyboard <import_text_keyboard>`
 - :doc:`Cookbook: Display text content <display_text_content>`

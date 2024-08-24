@@ -7,7 +7,7 @@
 Count
 =====
 
-.. image:: ../figures/Count_54.png
+.. image:: figures/Count_54.png
 
 Count segment types.
 
@@ -218,7 +218,7 @@ separate sections for unit definition (**Units**) and context definition
 
 .. _count_fig1:
 
-.. figure:: ../figures/count_example.png
+.. figure:: figures/count_example.png
     :align: center
     :alt: Count widget in mode "No context"
 
@@ -251,7 +251,7 @@ only parameter is the window size (in number of segments), defined by the
 
 .. _count_fig2:
 
-.. figure:: ../figures/count_mode_sliding_window_example.png
+.. figure:: figures/count_mode_sliding_window_example.png
     :align: center
     :alt: Count widget in mode "Sliding window"
 
@@ -259,7 +259,7 @@ only parameter is the window size (in number of segments), defined by the
 
 .. _count_fig3:
 
-.. figure:: ../figures/count_mode_left_right_neighborhood_example.png
+.. figure:: figures/count_mode_left_right_neighborhood_example.png
     :align: center
     :alt: Count widget in mode "Left-right neighborhood"
 
@@ -267,7 +267,7 @@ only parameter is the window size (in number of segments), defined by the
 
 .. _count_fig4:
 
-.. figure:: ../figures/count_mode_containing_segmentation.png
+.. figure:: figures/count_mode_containing_segmentation.png
     :align: center
     :alt: Count widget in mode "Containing segmentation"
 

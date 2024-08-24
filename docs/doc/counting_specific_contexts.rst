@@ -1,7 +1,7 @@
 Counting in specific contexts
 ===============================
 
-Section **Contexts** of widget :doc:`Count <widgets/count>`’s
+Section **Contexts** of widget :doc:`Count <count>`’s
 interface lets the user define the *contexts* in which units should be
 counted. In the example of the :doc:`previous section <counting_segment_types>`,
 setting **Mode** to **No context** indicated that units were to be
@@ -15,7 +15,7 @@ other modes corresponding to three different definitions of contexts.
     :align: center
     :alt: Interface of widget Count, Sliding window mode
 
-    Figure 1: Interface of widget :doc:`Count <widgets/count>`, Sliding window mode.
+    Figure 1: Interface of widget :doc:`Count <count>`, Sliding window mode.
 
 When **Mode** is set to **Sliding window** (see :ref:`figure 1 <counting_specific_contexts_fig1>`
 above), context is defined as a “window” of *n* consecutive segments
@@ -57,7 +57,7 @@ the left and/or right of each position.
     :align: center
     :alt: Interface of widget Count, Left-right neighborhood mode
 
-    Figure 2: Interface of widget :doc:`Count <widgets/count>`, Left-right neighborhood mode.
+    Figure 2: Interface of widget :doc:`Count <count>`, Left-right neighborhood mode.
 
 For instance, setting **Left context size** to 1 and **Right context
 size** to 0 amounts to counting the frequency of each segment type given
@@ -112,14 +112,14 @@ below.
     :alt: Schema for testing the Count widget (Containing segmentation mode)
     :scale: 80 %
 
-    Figure 3: Workflow for testing the :doc:`Count <widgets/count>` widget (Containing segmentation mode).
+    Figure 3: Workflow for testing the :doc:`Count <count>` widget (Containing segmentation mode).
 
-:doc:`Segment <widgets/segment>`
+:doc:`Segment <segment>`
 (*words*) produces a word segmentation (**Segment into words**) which
-:doc:`Segment <widgets/segment>`
+:doc:`Segment <segment>`
 (*letters*) further decomposes into letters (**Segment into letters**).
 The instance of
-:doc:`Count <widgets/count>`
+:doc:`Count <count>`
 is configured as shown on :ref:`figure 4 <counting_specific_contexts_fig4>`
 below. The resulting table is the same as table 2
 :ref:`here <segmentation_tables_table2>`
@@ -131,7 +131,7 @@ below. The resulting table is the same as table 2
     :align: center
     :alt: Interface of widget Count, Containing segmentation mode
 
-    Figure 4: Configuration of widget :doc:`Count <widgets/count>` for counting letters in words.
+    Figure 4: Configuration of widget :doc:`Count <count>` for counting letters in words.
 
 Note that in this mode, checking the **Merge contexts** box still
 restricts counting to those units that are contained within the segments
@@ -146,7 +146,7 @@ this case (contrary to what can be seen in table 1
 See also
 -----------------
 
-- :doc:`Reference: Count widget <widgets/count>`
+- :doc:`Reference: Count widget <count>`
 - :doc:`Cookbook: Count occurrences of smaller units in larger segments <count_occurrences_smaller_units_larger_segments>`
 - :doc:`Cookbook: Count transition frequency between adjacent units <count_transition_frequency_adjacent_units>`
 - :doc:`Cookbook: Examine the evolution of unit frequency along the text <examine_evolution_unit_frequency>`

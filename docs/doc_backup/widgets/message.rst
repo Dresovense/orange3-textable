@@ -7,7 +7,7 @@
 Message
 =======
 
-.. image:: ../figures/Message_54.png
+.. image:: figures/Message_54.png
 
 Parse JSON data in segmentation and use them to control other widgets.
 
@@ -40,7 +40,7 @@ used to control its behavior remotely.
 
 .. _message_fig1:
 
-.. figure:: ../figures/message_example.png
+.. figure:: figures/message_example.png
     :align: center
     :alt: Interface of the Message widget
 

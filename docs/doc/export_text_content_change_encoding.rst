@@ -16,7 +16,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Display <widgets/display>`
+   **Widget**      :doc:`Display <display>`
    **Icon**        |display_icon|
    **Quantity**    1
   ==============  =======
@@ -33,16 +33,16 @@ Procedure
    :alt: Export text with an instance of Display
    :scale: 80%
    
-   Figure 1: Export text with an instance of :doc:`Display <widgets/display>`.
+   Figure 1: Export text with an instance of :doc:`Display <display>`.
 
-1. Create an instance of :doc:`Display <widgets/display>`.
+1. Create an instance of :doc:`Display <display>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be displayed (here :doc:`Text Field <widgets/text_field>`
-   (*Hamlet*)), to the :doc:`Display <widgets/display>`
+   emits the segmentation to be displayed (here :doc:`Text Field <text_field>`
+   (*Hamlet*)), to the :doc:`Display <display>`
    (lefthand side).
 
-3. Double-click on the icon of :doc:`Display <widgets/display>`
+3. Double-click on the icon of :doc:`Display <display>`
    to open its interface and view the imported text.
 
 4. Uncheck the **Display segmentation in rich text format (HTML)**
@@ -77,6 +77,6 @@ Comment
 See also
 ------------
 
-- :doc:`Reference: Display widget <widgets/display>`
+- :doc:`Reference: Display widget <display>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

@@ -4,7 +4,7 @@ Converting XML markup to annotations
 Often, the best way (and sometimes the only way) to add a specific type
 of annotation to a text is by “manually” adding it to the data. This is
 frequently done with XML markup. For instance, the text that appears in
-the :doc:`Text Field <widgets/text_field>` instance of :ref:`figure 1 <converting_xml_markup_annotations_fig1>`
+the :doc:`Text Field <text_field>` instance of :ref:`figure 1 <converting_xml_markup_annotations_fig1>`
 below is segmented into words by means of *<w>* tags whose *type*
 attribute indicates the “part of speech” associated with each word (e.g.
 *DET*, *NOUN*, *PREP*, and so on).
@@ -17,7 +17,7 @@ attribute indicates the “part of speech” associated with each word (e.g.
 
     Figure 1: Sample text annotated using XML markup.
 
-The role of widget :doc:`Extract XML <widgets/extract_xml>`
+The role of widget :doc:`Extract XML <extract_xml>`
 is to convert XML markup into annotated segments . In its basic version
 (see :ref:`figure 2 <converting_xml_markup_annotations_fig2>`
 below), the widget’s interface essentially requires the user to specify
@@ -32,12 +32,12 @@ further markup in this example, so that this option has no effect here).
     :align: center
     :alt: Interface of the Extract XML widget
 
-    Figure 2: Interface of the :doc:`Extract XML <widgets/extract_xml>` widget.
+    Figure 2: Interface of the :doc:`Extract XML <extract_xml>` widget.
 
-After connecting the above :doc:`Text Field <widgets/text_field>`
-and :doc:`Extract XML <widgets/extract_xml>`
+After connecting the above :doc:`Text Field <text_field>`
+and :doc:`Extract XML <extract_xml>`
 instances, and the latter to an instance of
-:doc:`Display <widgets/display>`,
+:doc:`Display <display>`,
 you can verify that the resulting segmentation contains a segment for
 the content of each *<w>* tag in the input text, and that this segment
 is annotated with key *type* and value *DET*, *NOUN*, or *PREP* (the
@@ -51,10 +51,10 @@ automatically converted to a *{key: value}* annotation.
     :align: center
     :alt: Annotations imported using Extract XML
 
-Figure 3: Annotations imported using :doc:`Extract XML <widgets/extract_xml>`.
+Figure 3: Annotations imported using :doc:`Extract XML <extract_xml>`.
 
 See also
 -----------------
 
-- :doc:`Reference: Extract XML widget <widgets/extract_xml>`
+- :doc:`Reference: Extract XML widget <extract_xml>`
 - :doc:`Cookbook: Convert XML tags to Orange Textable annotations <convert_xml_tags_annotations>`

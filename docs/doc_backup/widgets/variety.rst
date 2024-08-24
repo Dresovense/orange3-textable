@@ -7,7 +7,7 @@
 Variety
 =======
 
-.. image:: ../figures/Variety_54.png
+.. image:: figures/Variety_54.png
 
 Measure the variety of segments.
 
@@ -196,7 +196,7 @@ count.
 
 .. _variety_fig1:
 
-.. figure:: ../figures/variety_widget.png
+.. figure:: figures/variety_widget.png
     :align: center
     :alt: variety widget mode no context
 
@@ -240,7 +240,7 @@ parameter is the window size (in number of segments), set by means of the
 
 .. _variety_fig2:
 
-.. figure:: ../figures/count_mode_sliding_window_example.png
+.. figure:: figures/count_mode_sliding_window_example.png
     :align: center
     :alt: Variety widget in mode "Sliding window"
 
@@ -248,7 +248,7 @@ parameter is the window size (in number of segments), set by means of the
 
 .. _variety_fig3:
 
-.. figure:: ../figures/count_mode_containing_segmentation.png
+.. figure:: figures/count_mode_containing_segmentation.png
     :align: center
     :alt: Variety widget in mode "Containing segmentation"
 

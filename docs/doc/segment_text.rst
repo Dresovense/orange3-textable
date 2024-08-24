@@ -17,7 +17,7 @@ Ingredients
 
 
   ==============  =======
-   **Widget**      :doc:`Segment <widgets/segment>`
+   **Widget**      :doc:`Segment <segment>`
    **Icon**        |segment_icon|
    **Quantity**    1
   ==============  =======
@@ -33,19 +33,19 @@ Procedure
    :align: center
    :alt: Segment text in lines with an instance of Segment
 
-   Figure 1: Segment text in lines with an instance of :doc:`Segment <widgets/segment>`.
+   Figure 1: Segment text in lines with an instance of :doc:`Segment <segment>`.
 
-1. Create an instance of :doc:`Segment <widgets/segment>`.
+1. Create an instance of :doc:`Segment <segment>`.
 
-2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be segmented (here :doc:`Text Field <widgets/text_field>` (*Hamlet*)), to the input of :doc:`Segment <widgets/segment>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be segmented (here :doc:`Text Field <text_field>` (*Hamlet*)), to the input of :doc:`Segment <segment>` (lefthand side).
 
-3. Double-click on the icon of :doc:`Segment <widgets/segment>` to open its interface.
+3. Double-click on the icon of :doc:`Segment <segment>` to open its interface.
 
 4. In the **Segment type** section, you can choose to segment the text into letters, words or lines using the drop-down menu. 
 
 5. Click the **Send** button or tick the **Send automatically** checkbox.
 
-6. A segmentation containing a segment for each specified unit (e.g. line) is then available at the output of :doc:`Segment <widgets/segment>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
+6. A segmentation containing a segment for each specified unit (e.g. line) is then available at the output of :doc:`Segment <segment>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 Comment
 -----------
@@ -56,7 +56,7 @@ See also
 ------------
 
 - :doc:`Textable's Basics: Segmenting data into smaller units <segmenting_data_smaller_units>`
-- :doc:`Reference: Segment widget <widgets/segment>`
+- :doc:`Reference: Segment widget <segment>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
 - :doc:`Cookbook: Text output <text_output>`

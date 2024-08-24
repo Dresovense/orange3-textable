@@ -7,7 +7,7 @@
 Preprocess
 ==========
 
-.. image:: ../figures/Preprocess_54.png
+.. image:: figures/Preprocess_54.png
 
 Basic text preprocessing.
 
@@ -36,7 +36,7 @@ the replacing of accentuated characters by their non-accentuated equivalents.
 
 .. _preprocess_fig1:
 
-.. figure:: ../figures/preprocess_advanced_example.png
+.. figure:: figures/preprocess_advanced_example.png
     :align: center
     :alt: Interface of the Preprocess widget
 
@@ -80,7 +80,7 @@ an example.
 
 Suppose that you wish to count word frequency in the content of two
 :doc:`Text Field <text_field>` instances--a scenario similar to that illustrated in section
-:doc:`Counting in specific contexts <../counting_specific_contexts>`. You could
+:doc:`Counting in specific contexts <counting_specific_contexts>`. You could
 use :doc:`Merge <merge>` to combine the :doc:`Text Field <text_field>` instances' output in a
 single segmentation (see :ref:`figure 2 <preprocess_fig2>` below), then
 segment the latter into words with :doc:`Segment <segment>`. You would eventually
@@ -90,7 +90,7 @@ building the frequency table.
 
 .. _preprocess_fig2:
 
-.. figure:: ../figures/preprocess_caveat_schema_without.png
+.. figure:: figures/preprocess_caveat_schema_without.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 
@@ -105,7 +105,7 @@ refers to these new strings, this raises a rather insidious issue.
 
 .. _preprocess_fig3:
 
-.. figure:: ../figures/preprocess_caveat_schema_wrong.png
+.. figure:: figures/preprocess_caveat_schema_wrong.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 
@@ -127,7 +127,7 @@ in the others.
 
 .. _preprocess_fig4:
 
-.. figure:: ../figures/preprocess_caveat_schema_right.png
+.. figure:: figures/preprocess_caveat_schema_right.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 
@@ -169,18 +169,18 @@ Errors
 Examples
 --------
 
-- :doc:`Textable's Basics: Merging segmentations together <../merging_segmentations_together>`
-- :doc:`Textable's Basics: Annotating by merging <../annotating_merging>`
-- :doc:`Cookbook: Merge several texts <../merge_several_texts>`
-- :doc:`Cookbook: Convert text to lower or upper case <../convert_text_to_lower_upper_case>`
-- :doc:`Cookbook: Remove accents from text <../remove_accents_from_text>`
+- :doc:`Textable's Basics: Merging segmentations together <merging_segmentations_together>`
+- :doc:`Textable's Basics: Annotating by merging <annotating_merging>`
+- :doc:`Cookbook: Merge several texts <merge_several_texts>`
+- :doc:`Cookbook: Convert text to lower or upper case <convert_text_to_lower_upper_case>`
+- :doc:`Cookbook: Remove accents from text <remove_accents_from_text>`
 
 
 See also
 --------
 
-- :doc:`Textable's Basics: Counting in specific contexts <../counting_specific_contexts>`
-- :doc:`Textable's Basics: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
+- :doc:`Textable's Basics: Counting in specific contexts <counting_specific_contexts>`
+- :doc:`Textable's Basics: Tagging table rows with annotations <tagging_table_rows_label_segment>`
 - :doc:`Reference: Text Field widget <text_field>`
 - :doc:`Reference: Merge widget <merge>`
 - :doc:`Reference: Segment widget <segment>`

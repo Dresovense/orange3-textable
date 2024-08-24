@@ -18,7 +18,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Recode <widgets/recode>`
+   **Widget**      :doc:`Recode <recode>`
    **Icon**        |recode_icon|
    **Quantity**    1
   ==============  =======
@@ -34,16 +34,16 @@ Procedure
    :align: center
    :alt: Replace all occurrences of a string with the Recode widget
 
-   Figure 1: Replace all occurrences of a string with an instance of :doc:`Recode <widgets/recode>`.
+   Figure 1: Replace all occurrences of a string with an instance of :doc:`Recode <recode>`.
 
-1. Create an instance of :doc:`Recode <widgets/recode>`.
+1. Create an instance of :doc:`Recode <recode>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be modified (here :doc:`Text Field <widgets/text_field>`
-   (*Hamlet*)), to the input of :doc:`Recode <widgets/recode>`
+   emits the segmentation to be modified (here :doc:`Text Field <text_field>`
+   (*Hamlet*)), to the input of :doc:`Recode <recode>`
    (lefthand side).
 
-3. Double-click on the icon of :doc:`Recode <widgets/recode>`
+3. Double-click on the icon of :doc:`Recode <recode>`
    to open its interface.
 
 4. In the **Substitution** section, insert the string that will be
@@ -55,7 +55,7 @@ Procedure
    checkbox.
 
 7. A segmentation containing the modified text is then available at the
-   output of :doc:`Recode <widgets/recode>`;
+   output of :doc:`Recode <recode>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 Comment
@@ -74,7 +74,7 @@ Comment
 See also
 ------------
 
-- :doc:`Reference: Recode widget <widgets/recode>`
+- :doc:`Reference: Recode widget <recode>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
 - :doc:`Cookbook: Text output <text_output>`

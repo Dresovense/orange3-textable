@@ -7,7 +7,7 @@
 Recode
 ======
 
-.. image:: ../figures/Recode_54.png
+.. image:: figures/Recode_54.png
 
 Custom text recoding using regular expressions.
 
@@ -67,7 +67,7 @@ tags. [#]_
 
 .. _recode_fig1:
 
-.. figure:: ../figures/recode_basic_example.png
+.. figure:: figures/recode_basic_example.png
     :align: center
     :alt: Basic interface of the Recode widget
 
@@ -97,7 +97,7 @@ successively be applied to each segment of the input segmentation.
 
 .. _recode_fig2:
 
-.. figure:: ../figures/recode_advanced_example.png
+.. figure:: figures/recode_advanced_example.png
     :align: center
     :alt: Advanced interface of the Recode widget
 

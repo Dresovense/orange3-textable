@@ -7,7 +7,7 @@
 Display
 =======
 
-.. image:: ../figures/Display_54.png
+.. image:: figures/Display_54.png
 
 Display or export the details of a segmentation.
 
@@ -63,7 +63,7 @@ program to directly show a particular segment using **Go to segment**.
 
 .. _display_fig1:
 
-.. figure:: ../figures/display_basic_interface.png
+.. figure:: figures/display_basic_interface.png
     :align: center
     :alt: Basic interface of the Display widget
 
@@ -94,7 +94,7 @@ received through an existing connection).
 
 .. _display_fig2:
 
-.. figure:: ../figures/display_advanced_interface.png
+.. figure:: figures/display_advanced_interface.png
     :align: center
     :alt: Advanced interface of the Display widget
 
@@ -245,9 +245,9 @@ Errors
 Examples
 --------
 
-- :doc:`Textable's Basics: Keyboard input and segmentation display <../keyboard_input_segmentation_display>`
-- :doc:`Cookbook: Display text content <../display_text_content>`
-- :doc:`Cookbook: Export text content (and/or change text encoding) <../export_text_content_change_encoding>`
+- :doc:`Textable's Basics: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
+- :doc:`Cookbook: Display text content <display_text_content>`
+- :doc:`Cookbook: Export text content (and/or change text encoding) <export_text_content_change_encoding>`
 
 Footnotes
 ---------

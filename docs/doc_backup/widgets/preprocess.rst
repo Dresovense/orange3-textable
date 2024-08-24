@@ -7,7 +7,7 @@
 Preprocess
 ==========
 
-.. image:: ../figures/Preprocess_54.png
+.. image:: figures/Preprocess_54.png
 
 Basic text preprocessing.
 
@@ -36,7 +36,7 @@ the replacing of accentuated characters by their non-accentuated equivalents.
 
 .. _preprocess_fig1:
 
-.. figure:: ../figures/preprocess_advanced_example.png
+.. figure:: figures/preprocess_advanced_example.png
     :align: center
     :alt: Interface of the Preprocess widget
 
@@ -93,7 +93,7 @@ building the frequency table.
 
 .. _preprocess_fig2:
 
-.. figure:: ../figures/preprocess_caveat_schema_without.png
+.. figure:: figures/preprocess_caveat_schema_without.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 
@@ -108,7 +108,7 @@ refers to these new strings, this raises a rather insidious issue.
 
 .. _preprocess_fig3:
 
-.. figure:: ../figures/preprocess_caveat_schema_wrong.png
+.. figure:: figures/preprocess_caveat_schema_wrong.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 
@@ -130,7 +130,7 @@ in the others.
 
 .. _preprocess_fig4:
 
-.. figure:: ../figures/preprocess_caveat_schema_right.png
+.. figure:: figures/preprocess_caveat_schema_right.png
     :align: center
     :alt: Counting words in the content of two Text Field instances
 

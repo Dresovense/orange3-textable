@@ -7,7 +7,7 @@
 Text Files
 ==========
 
-.. image:: ../figures/TextFiles_54.png
+.. image:: figures/TextFiles_54.png
 
 Import data from raw text files.
 
@@ -62,7 +62,7 @@ encoding of the file.
 
 .. _text_files_fig1:
 
-.. figure:: ../figures/text_files_basic_example.png
+.. figure:: figures/text_files_basic_example.png
     :align: center
     :alt: Basic interface of the Text files widget
 
@@ -90,7 +90,7 @@ for each imported file.
 
 .. _text_files_fig2:
 
-.. figure:: ../figures/text_files_advanced_example.png
+.. figure:: figures/text_files_advanced_example.png
     :align: center
     :alt: Advanced interface of the Text files widget
     :scale: 80%

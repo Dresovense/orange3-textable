@@ -7,7 +7,7 @@
 Message
 =======
 
-.. image:: ../figures/Message_54.png
+.. image:: figures/Message_54.png
 
 Parse JSON data in segmentation and use them to control other widgets.
 
@@ -33,14 +33,14 @@ This widget inputs a segmentation containing a single segment whose content
 is in `JSON <http://www.json.org/>`_ format. After validation, the data is
 converted to a *JSONMessage* object and emitted to the widget's
 output connections. Provided that the data conforms to one of the formats
-described in section :doc:`JSON im-/export format <../json_import_export>`, the
+described in section :doc:`JSON im-/export format <json_import_export>`, the
 *JSONMessage* object can be sent to an instance of the corresponding widget
 (either :doc:`Text Files <text_files>`, :doc:`urls`, :doc:`Recode <recode>`, or :doc:`Segment <segment>`) and
 used to control its behavior remotely.
 
 .. _message_fig1:
 
-.. figure:: ../figures/message_example.png
+.. figure:: figures/message_example.png
     :align: center
     :alt: Interface of the Message widget
 
@@ -100,4 +100,4 @@ See also
 - :doc:`Reference: URLs widget <urls>`, :ref:`urls_remote_control_ref`
 - :doc:`Reference: Segment widget <segment>`, :ref:`segment_remote_control_ref`
 - :doc:`Reference: Recode widget <recode>`, :ref:`recode_remote_control_ref`
-- :doc:`Reference: JSON im-/export format <../json_import_export>`
+- :doc:`Reference: JSON im-/export format <json_import_export>`

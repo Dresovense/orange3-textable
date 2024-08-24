@@ -7,7 +7,7 @@
 Cooccurrence
 ============
 
-.. image:: ../figures/Cooccurrence_54.png
+.. image:: figures/Cooccurrence_54.png
 
 Measure the cooccurrence of segments in documents.
 
@@ -236,7 +236,7 @@ units**) and context definition (**Contexts**).
 
 .. _cooccurrence_fig1:
 
-.. figure:: ../figures/cooc_example.png
+.. figure:: figures/cooc_example.png
     :align: center
     :alt: Cooccurrence widget in the default mode("Sliding window")
 
@@ -265,7 +265,7 @@ segmentation*, the box becomes automatically enabled (see
 
 .. _cooccurrence_fig2:
 
-.. figure:: ../figures/cooc_secondary_units_example.png
+.. figure:: figures/cooc_secondary_units_example.png
     :align: center
     :alt: Secondary units box of Cooccurrence widget in mode "Sliding window"
 
@@ -283,7 +283,7 @@ segments), defined by the **Window size** cursor, set to 2 by default.
 
 .. _cooccurrence_fig3:
 
-.. figure:: ../figures/cooc_mode_sliding_window_example.png
+.. figure:: figures/cooc_mode_sliding_window_example.png
     :align: center
     :alt: Cooccurrence widget in mode "Sliding window"
 
@@ -291,7 +291,7 @@ segments), defined by the **Window size** cursor, set to 2 by default.
 
 .. _cooccurrence_fig4:
 
-.. figure:: ../figures/cooc_mode_containing_segmentation_example.png
+.. figure:: figures/cooc_mode_containing_segmentation_example.png
     :align: center
     :alt: Cooccurrence widget in mode "Containing segmentation"
 

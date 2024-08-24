@@ -10,7 +10,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Text Field <widgets/text_field>`
+   **Widget**      :doc:`Text Field <text_field>`
    **Icon**        |text_field_icon|
    **Quantity**    1
   ==============  =======
@@ -26,9 +26,9 @@ Procedure
    :align: center
    :alt: Example usage of widget Text Field
 
-   Figure 1: Importing a string using widget :doc:`Text Field <widgets/text_field>`.
+   Figure 1: Importing a string using widget :doc:`Text Field <text_field>`.
 
-1. Create an instance of :doc:`Text Field <widgets/text_field>`.
+1. Create an instance of :doc:`Text Field <text_field>`.
 
 2. Double-click on it to open its interface.
 
@@ -38,12 +38,12 @@ Procedure
    checkbox.
 
 5. A segmentation covering the input text is then available at the
-   output of :doc:`Text Field <widgets/text_field>`;
+   output of :doc:`Text Field <text_field>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 See also
 ------------
 
 - :doc:`Textable's Basics: Keyboard input and segmentation display <keyboard_input_segmentation_display>`
-- :doc:`Reference: Text Field widget <widgets/text_field>`
+- :doc:`Reference: Text Field widget <text_field>`
 - :doc:`Cookbook: Text output <text_output>`

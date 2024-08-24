@@ -17,7 +17,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Count <widgets/count>`
+   **Widget**      :doc:`Count <count>`
    **Icon**        |count_icon|
    **Quantity**    1
   ==============  =======
@@ -33,20 +33,20 @@ Procedure
    :align: center
    :alt: Examine the evolution of unit frequency with an instance of Count
 
-   Figure 1: Examine the evolution of unit frequency with an instance of :doc:`Count <widgets/count>`
+   Figure 1: Examine the evolution of unit frequency with an instance of :doc:`Count <count>`
 
 1. Create an instance of
-   :doc:`Count <widgets/count>`.
+   :doc:`Count <count>`.
 
 2. Drag and drop from the output (righthand side) of the widget that has
    been used to segment the text, here
-   :doc:`Segment <widgets/segment>`
+   :doc:`Segment <segment>`
    (*letters*), to the input of
-   :doc:`Count <widgets/count>`
+   :doc:`Count <count>`
    (lefthand side).
 
 3. Double-click on the icon of
-   :doc:`Count <widgets/count>`
+   :doc:`Count <count>`
    to open its interface.
 
 4. In the **Units** section, select the segmentation whose units will be
@@ -65,7 +65,7 @@ Procedure
    checkbox.
 
 8. A table showing the results is then available at the output of
-   :doc:`Count <widgets/count>`;
+   :doc:`Count <count>`;
    to display or export it, see :doc:`Cookbook: Table output <table_output>`.
 
 Comment
@@ -84,6 +84,6 @@ Comment
 See also
 ------------
 
--  :doc:`Reference: Count widget <widgets/count>`
+-  :doc:`Reference: Count widget <count>`
 -  :doc:`Cookbook: Segment text <segment_text>`
 -  :doc:`Cookbook: Display table <display_table>`

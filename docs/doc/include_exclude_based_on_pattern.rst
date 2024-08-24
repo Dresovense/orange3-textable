@@ -15,7 +15,7 @@ Ingredients
 ---------------
 
   ==============  ================  
-   **Widget**      :doc:`Select <widgets/select>`   
+   **Widget**      :doc:`Select <select>`   
    **Icon**        |select_icon|    
    **Quantity**    1                
   ==============  ================ 
@@ -31,15 +31,15 @@ Procedure
    :align: center
    :alt: Include or exclude units based on a pattern with an instance of Select
 
-   Figure 1: Using the :doc:`Select <widgets/select>` widget to include/exclude segments
+   Figure 1: Using the :doc:`Select <select>` widget to include/exclude segments
    from a segmentation based on a regular expression
    
 
-1. Create an instance of :doc:`Select <widgets/select>`.
+1. Create an instance of :doc:`Select <select>`.
 
-2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be filtered (here :doc:`Segment <widgets/segment>` (*letters*)), to the input of :doc:`Select <widgets/select>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be filtered (here :doc:`Segment <segment>` (*letters*)), to the input of :doc:`Select <select>` (lefthand side).
 
-3. Double-click on the icon of :doc:`Select <widgets/select>` to open its interface.
+3. Double-click on the icon of :doc:`Select <select>` to open its interface.
 
 4. In the **Select** section, choose either **Mode:** **Include** or **Exclude**.
 
@@ -47,20 +47,20 @@ Procedure
 
 6. Click the **Send** button or tick the **Send automatically** checkbox.
 
-7. A segmentation containing the selected segments is then available at the output of :doc:`Select <widgets/select>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
+7. A segmentation containing the selected segments is then available at the output of :doc:`Select <select>`; to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 
 Comment
 -----------
 
 - In the **Regex** field you can use all the syntax of Python’s regular expression (*cf.* :doc:`Regular expressions <note_regular_expressions>`).
-- The :doc:`Select <widgets/select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected (see :doc:`Partitioning segmentations using a regex <partitioning_segmentations>` for instructions on how to access this other output segmentation).
+- The :doc:`Select <select>` widget emits on a second output connection (not selected by default) a segmentation containing the segments that were *not* selected (see :doc:`Partitioning segmentations using a regex <partitioning_segmentations>` for instructions on how to access this other output segmentation).
 
 See also
 ------------
 
 - :doc:`Advanced Topics: Partitioning segmentations <partitioning_segmentations>`
-- :doc:`Reference: Select widget <widgets/select>`
+- :doc:`Reference: Select widget <select>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segment text in smaller units <segment_text>`
 - :doc:`Cookbook: Text output <text_output>`

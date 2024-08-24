@@ -8,7 +8,7 @@ text, in order to restrict analyses to content words (cf. `an example of
 a list of
 stopwords <http://members.unine.ch/jacques.savoy/clef/englishST.txt>`__).
 
-The purpose of widget :doc:`Intersect <widgets/intersect>`
+The purpose of widget :doc:`Intersect <intersect>`
 is precisely to solve that kind of problem. It takes two segmentations
 in input and lets the user include in or exclude from the first
 (*source*) segmentation those segments whose content is the same as that
@@ -22,7 +22,7 @@ below.
     :align: center
     :alt: Interface of widget Intersect configured for stopword removal
 
-    Figure 1: Interface of widget :doc:`Intersect <widgets/intersect>` configured for stopword removal.
+    Figure 1: Interface of widget :doc:`Intersect <intersect>` configured for stopword removal.
 
 The **Mode** option serves to indicate if the segments present in the
 filter segmentation should be removed from the source segmentation
@@ -34,17 +34,17 @@ segmentation and the **Filter** segmentation.
 
 In order to try out the widget, set up a workflow similar to the one
 shown on :ref:`figure 2 <using_segmentation_filter_another_fig2>`
-below. The first instance of :doc:`Text Field <widgets/text_field>`
+below. The first instance of :doc:`Text Field <text_field>`
 (*UDHR*) contains the text to process (for instance the `Universal
 Declaration of Human Rights <http://www.un.org/en/documents/udhr/>`__),
-while :doc:`Text Field <widgets/text_field>`
+while :doc:`Text Field <text_field>`
 (*Stopwords*), contains the list of English stopwords mentioned above.
 Both instances of
-:doc:`Segment <widgets/segment>`
+:doc:`Segment <segment>`
 produce a word segmentation (**Segment into words**); the only
 difference in their configuration is the widget label , i.e. *Words*
 versus *Stopwords*. Finally,
-:doc:`Intersect <widgets/intersect>`
+:doc:`Intersect <intersect>`
 is configured as shown on :ref:`figure 1 <using_segmentation_filter_another_fig1>`
 above.
 
@@ -56,7 +56,7 @@ above.
     :scale: 80 %
 
 Figure 2: Example workflow for removing stopwords using widget
-:doc:`Intersect <widgets/intersect>`.
+:doc:`Intersect <intersect>`.
 
 The content of the first segments of the resulting segmentation is:
 
@@ -98,5 +98,5 @@ world
 See also
 -----------------
 
-- :doc:`Reference: Intersect widget <widgets/intersect>`
+- :doc:`Reference: Intersect widget <intersect>`
 - :doc:`Cookbook: Exclude segments based on a stoplist <exclude_segments_based_on_stoplist>`

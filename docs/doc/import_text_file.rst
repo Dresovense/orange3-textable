@@ -11,7 +11,7 @@ Ingredients
 ---------------
 
   ==============  =======
-   **Widget**      :doc:`Text Files <widgets/text_files>`
+   **Widget**      :doc:`Text Files <text_files>`
    **Icon**        |text_files_icon|
    **Quantity**    1
   ==============  =======
@@ -30,9 +30,9 @@ Single file
    :align: center
    :alt: Importing a file using the Text Files widget
 
-   Figure 1: Importing the content of a file using :doc:`Text Files <widgets/text_files>`.
+   Figure 1: Importing the content of a file using :doc:`Text Files <text_files>`.
 
-1. Create an instance of :doc:`Text Files <widgets/text_files>`.
+1. Create an instance of :doc:`Text Files <text_files>`.
 
 2. Double-click on it to open its interface.
 
@@ -50,7 +50,7 @@ Single file
    checkbox.
 
 8. A segmentation covering the file’s content is then available at the
-   output of :doc:`Text Files <widgets/text_files>`;
+   output of :doc:`Text Files <text_files>`;
    to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 Multiple files
@@ -62,9 +62,9 @@ Multiple files
    :align: center
    :alt: Importing several files using the Text Files widget
 
-   Figure 2: Importing the content of several files using :doc:`Text Files <widgets/text_files>`.
+   Figure 2: Importing the content of several files using :doc:`Text Files <text_files>`.
 
-1.  Create an instance of :doc:`Text Files <widgets/text_files>`.
+1.  Create an instance of :doc:`Text Files <text_files>`.
 
 2.  Double-click on it to open its interface.
 
@@ -87,11 +87,11 @@ Multiple files
     checkbox.
 
 10. A segmentation containing a segment covering each imported file’s
-    content is then available at the output of :doc:`Text Files <widgets/text_files>`;
+    content is then available at the output of :doc:`Text Files <text_files>`;
     to display or export it, see :doc:`Cookbook: Text output <text_output>`.
 
 See also
 ------------
 
-- :doc:`Reference: Text Files widget <widgets/text_files>`
+- :doc:`Reference: Text Files widget <text_files>`
 - :doc:`Cookbook: Text output <text_output>`

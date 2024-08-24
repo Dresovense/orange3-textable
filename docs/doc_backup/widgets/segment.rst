@@ -7,7 +7,7 @@
 Segment
 =======
 
-.. image:: ../figures/Segment_54.png
+.. image:: figures/Segment_54.png
 
 Subdivide a segmentation using regular expressions.
 
@@ -61,7 +61,7 @@ sequence of alphanumerical characters and underscores). [#]_
 
 .. _segment_fig1:
 
-.. figure:: ../figures/segment_example.png
+.. figure:: figures/segment_example.png
     :align: center
     :alt: Basic interface of the Segment widget
 
@@ -94,7 +94,7 @@ these segments (**Split** mode). [#]_
 
 .. _segment_fig2:
 
-.. figure:: ../figures/segment_advanced_example.png
+.. figure:: figures/segment_advanced_example.png
     :align: center
     :alt: Advanced interface of the Segment widget
 

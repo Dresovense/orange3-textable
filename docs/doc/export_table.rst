@@ -19,7 +19,7 @@ Ingredients
 ---------------
 
   ==============  ================
-   **Widget**      :doc:`Convert <widgets/convert>`
+   **Widget**      :doc:`Convert <convert>`
    **Icon**        |convert_icon|
    **Quantity**    1
   ==============  ================
@@ -36,14 +36,14 @@ Procedure
    :align: center
    :alt: Export table with an instance of Convert
 
-   Figure 1: Export table with an instance of :doc:`Convert <widgets/convert>`
+   Figure 1: Export table with an instance of :doc:`Convert <convert>`
 
 
-1. Create an instance of :doc:`Convert <widgets/convert>`.
+1. Create an instance of :doc:`Convert <convert>`.
 
-2. Drag and drop from the output (righthand side) of the widget that has been used to build a table (here :doc:`Context <widgets/context>`), to the input of :doc:`Convert <widgets/convert>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that has been used to build a table (here :doc:`Context <context>`), to the input of :doc:`Convert <convert>` (lefthand side).
 
-3. Double-click on the icon of :doc:`Convert <widgets/convert>` to open its interface.
+3. Double-click on the icon of :doc:`Convert <convert>` to open its interface.
 
 4. Select the desired encoding for the exported data (e.g. utf8).
 
@@ -56,12 +56,12 @@ Comment
 
 - If you rather want to *copy* the text content in order to later paste it in another program, click on **Copy to clipboard**; note that in this case, the encoding is by default utf8 and cannot be changed.
 
-- The default column delimiter is \\t but this can be modified to either comma (,) or semi-colon (;) by ticking the **Advanced settings** checkbox in the :doc:`Convert <widgets/convert>` instance’s interface, then selecting the desired delimiter in the **Column delimiter** drop-down menu (**Export** section).
+- The default column delimiter is \\t but this can be modified to either comma (,) or semi-colon (;) by ticking the **Advanced settings** checkbox in the :doc:`Convert <convert>` instance’s interface, then selecting the desired delimiter in the **Column delimiter** drop-down menu (**Export** section).
 
 See also
 ------------
 
-- :doc:`Reference: Convert widget <widgets/convert>`
+- :doc:`Reference: Convert widget <convert>`
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`

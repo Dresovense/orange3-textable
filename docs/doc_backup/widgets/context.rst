@@ -6,7 +6,7 @@
 
 Context
 =======
-.. image:: ../figures/Context_54.png
+.. image:: figures/Context_54.png
 
 Explore the context of segments.
 
@@ -259,7 +259,7 @@ considered surrounding.
 
 .. _context_fig1:
 
-.. figure:: ../figures/context_example.png
+.. figure:: figures/context_example.png
     :align: center
     :alt: interface of the Context widget
 
@@ -305,7 +305,7 @@ list.
 
 .. _context_fig2:
 
-.. figure:: ../figures/context_mode_containing_segmentation_example.png
+.. figure:: figures/context_mode_containing_segmentation_example.png
     :align: center
     :alt: Context widget in "Containing segmentation mode"
 

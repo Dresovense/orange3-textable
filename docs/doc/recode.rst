@@ -7,7 +7,7 @@
 Recode
 ======
 
-.. image:: ../figures/Recode_54.png
+.. image:: figures/Recode_54.png
 
 Custom text recoding using regular expressions.
 
@@ -67,7 +67,7 @@ tags (but not their content). [#]_
 
 .. _recode_fig1:
 
-.. figure:: ../figures/recode_basic_example.png
+.. figure:: figures/recode_basic_example.png
     :align: center
     :alt: Basic interface of the Recode widget
 
@@ -94,7 +94,7 @@ successively be applied to each segment of the input segmentation.
 
 .. _recode_fig2:
 
-.. figure:: ../figures/recode_advanced_example.png
+.. figure:: figures/recode_advanced_example.png
     :align: center
     :alt: Advanced interface of the Recode widget
 
@@ -147,8 +147,8 @@ input segmentation (**Move Up** and **Move Down**), to delete a substitution
 from the list (**Remove**) or to empty it entirely (**Clear All**). Except for
 **Clear All**, all of these buttons require the selection of an entry in the
 list beforehand. **Import List** enables the user to import a list of
-substitutions in JSON format (see :doc:`JSON im-/export format <../json_import_export>`,
-:doc:`Substitution list <../json_substitution_list>`) and to add them to those
+substitutions in JSON format (see :doc:`JSON im-/export format <json_import_export>`,
+:doc:`Substitution list <json_substitution_list>`) and to add them to those
 already selected. **Export List** enables the user on the contrary to export
 the list of substitutions in a JSON format file.
 
@@ -185,8 +185,8 @@ Remote control
 
 **Recode** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
-of a substitution list in JSON format (see :doc:`JSON im-/export format <../json_import_export>`,
-:doc:`Substitution list <../json_substitution_list>`), in which
+of a substitution list in JSON format (see :doc:`JSON im-/export format <json_import_export>`,
+:doc:`Substitution list <json_substitution_list>`), in which
 case the list of substitutions specified in this message replaces those
 previously specified (if any). Note that removing the incoming connection from
 the **Message** instance will not, by itself, remove the list of substitutions
@@ -255,7 +255,7 @@ Errors
 *Please verify keys and values of incoming JSON message.*
     The widget instance has received a JSON message on its ``Message`` input channel and the keys
     and/or values specified in this message do not match those that are expected for this particular
-    widget type (see :doc:`JSON im-/export format <../json_import_export>`, :doc:`File list <../json_file_list>`).
+    widget type (see :doc:`JSON im-/export format <json_import_export>`, :doc:`File list <json_file_list>`).
 
 *Please make sure that incoming message is valid JSON.*
     The widget instance has received data on its ``Message`` input channel and the data couldn't
@@ -264,15 +264,15 @@ Errors
 Examples
 --------
 
-- :doc:`Cookbook: Replace all occurrences of a string/pattern <../replace_all_occurrences_of_string_pattern>`
+- :doc:`Cookbook: Replace all occurrences of a string/pattern <replace_all_occurrences_of_string_pattern>`
 
 See also
 --------
 
-- :doc:`Reference: JSON im-/export format <../json_import_export>`, :doc:`Substitution list <../json_substitution_list>`
+- :doc:`Reference: JSON im-/export format <json_import_export>`, :doc:`Substitution list <json_substitution_list>`
 - :doc:`Reference: Message widget <message>`
 - :ref:`Reference: Preprocess (section "Caveat") <anchor_to_caveat>`
-- :doc:`Advanced Topics: A note on regular expressions <../note_regular_expressions>`
+- :doc:`Advanced Topics: A note on regular expressions <note_regular_expressions>`
 
 Footnotes
 ---------

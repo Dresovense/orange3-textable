@@ -7,7 +7,7 @@
 Merge
 =====
 
-.. image:: ../figures/Merge_54.png
+.. image:: figures/Merge_54.png
 
 Merge two or more segmentations.
 
@@ -35,7 +35,7 @@ segmentation to its output connections.
 
 .. _merge_fig1:
 
-.. figure:: ../figures/merge_advanced_example.png
+.. figure:: figures/merge_advanced_example.png
     :align: center
     :alt: Merge widget (advanced interface)
 

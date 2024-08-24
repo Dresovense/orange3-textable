@@ -7,7 +7,7 @@
 Intersect
 =========
 
-.. image:: ../figures/Intersect_54.png
+.. image:: figures/Intersect_54.png
 
 In-/exclude segments based on another segmentation.
 
@@ -53,7 +53,7 @@ segmentation (**Filter segmentation**) among the input segmentations. [#]_
 
 .. _intersect_fig1:
 
-.. figure:: ../figures/intersect_example.png
+.. figure:: figures/intersect_example.png
     :align: center
     :alt: Basic interface of the Intersect widget
 

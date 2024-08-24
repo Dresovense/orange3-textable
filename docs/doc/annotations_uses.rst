@@ -62,6 +62,6 @@ etc.
 
 There are several ways of creating annotations in Orange Textable. In
 the following section, we will see a simple method based on the
-:doc:`Merge <widgets/merge>`
+:doc:`Merge <merge>`
 widget. Later on in the Tables section, we will discover various ways of
 exploiting such annotations.

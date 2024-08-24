@@ -2,9 +2,9 @@ Partitioning segmentations using a regex
 ================================================
 
 In section :doc:`Using a segmentation to filter another <using_segmentation_filter_another>`,
-we have seen how to use the :doc:`Intersect <widgets/intersect>`
+we have seen how to use the :doc:`Intersect <intersect>`
 widget to exclude a specified list of words (so-called “stopwords”) from
-a segmentation. The :doc:`Select <widgets/select>`
+a segmentation. The :doc:`Select <select>`
 widget is tailored for such tasks.
 
 The widget’s interface (see :ref:`figure 1 <partitioning_segmentations_fig1>`
@@ -22,7 +22,7 @@ be applied to each incoming segment successively. For now, the option
     :align: center
     :alt: Example usage of widget Select
 
-Figure 1: Excluding short words with widget :doc:`Select <widgets/select>`.
+Figure 1: Excluding short words with widget :doc:`Select <select>`.
 
 In the example of :ref:`figure 1 <partitioning_segmentations_fig1>`,
 the widget is configured to exclude all incoming segments containing no
@@ -31,14 +31,14 @@ more than 3 letters. Note that without the *beginning of segment* and
 sequence of 1 to 3 letters–i.e. all the words–would be excluded.
 
 Note that
-:doc:`Select <widgets/select>`
+:doc:`Select <select>`
 automatically emits a second segmentation containing all the segments
 that have been discarded from the main output segmentation (in the case
 of :ref:`figure 1 <partitioning_segmentations_fig1>`
 above, that would be all words less than 4 letters long). This feature
 is useful when both the selected *and* the discarded segments are to be
 further processed on distinct branches. By default, when
-:doc:`Select <widgets/select>`
+:doc:`Select <select>`
 is connected to another widget, the main segmentation is being emitted.
 In order to send the segmentation of discarded segments instead,
 right-click on the outgoing connection and select **Reset Signals** (see
@@ -75,5 +75,5 @@ See also
 -----------------
 
 - :doc:`Textable's Basics: Using a segmentation to filter another <using_segmentation_filter_another>`
-- :doc:`Reference: Select widget <widgets/select>`
+- :doc:`Reference: Select widget <select>`
 - :doc:`Cookbook: Include/exclude segments based on a pattern <include_exclude_based_on_pattern>`

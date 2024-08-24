@@ -7,7 +7,7 @@
 Merge
 =====
 
-.. image:: ../figures/Merge_54.png
+.. image:: figures/Merge_54.png
 
 Merge two or more segmentations.
 
@@ -35,7 +35,7 @@ segmentation to its output connections.
 
 .. _merge_fig1:
 
-.. figure:: ../figures/merge_advanced_example.png
+.. figure:: figures/merge_advanced_example.png
     :align: center
     :alt: Merge widget
 
@@ -108,14 +108,14 @@ Warnings
 Examples
 --------
 
-- :doc:`Textable's Basics: Merging segmentations together <../merging_segmentations_together>`
-- :doc:`Textable's Basics: Annotating by merging <../annotating_merging>`
-- :doc:`Cookbook: Merge several texts <../merge_several_texts>`
+- :doc:`Textable's Basics: Merging segmentations together <merging_segmentations_together>`
+- :doc:`Textable's Basics: Annotating by merging <annotating_merging>`
+- :doc:`Cookbook: Merge several texts <merge_several_texts>`
 
 See also
 --------
 
-- :doc:`Textable's Basics: Tagging table rows with annotations <../tagging_table_rows_label_segment>`
+- :doc:`Textable's Basics: Tagging table rows with annotations <tagging_table_rows_label_segment>`
 
 Footnotes
 ---------

@@ -7,7 +7,7 @@
 Display
 =======
 
-.. image:: ../figures/Display_54.png
+.. image:: figures/Display_54.png
 
 Display or export the details of a segmentation.
 
@@ -61,7 +61,7 @@ program to directly show a particular segment using **Go to segment**.
 
 .. _display_fig1:
 
-.. figure:: ../figures/display_basic_interface.png
+.. figure:: figures/display_basic_interface.png
     :align: center
     :alt: Basic interface of the Display widget
 
@@ -90,7 +90,7 @@ received through an existing connection).
 
 .. _display_fig2:
 
-.. figure:: ../figures/display_advanced_interface.png
+.. figure:: figures/display_advanced_interface.png
     :align: center
     :alt: Advanced interface of the Display widget
 

@@ -7,7 +7,7 @@
 Extract XML
 ===========
 
-.. image:: ../figures/ExtractXML_54.png
+.. image:: figures/ExtractXML_54.png
 
 Create a new segmentation based on XML markup.
 
@@ -65,7 +65,7 @@ this element, including those embedded in other occurrences of the same type.
 
 .. _extract_xml_fig1:
 
-.. figure:: ../figures/extract_xml_example.png
+.. figure:: figures/extract_xml_example.png
     :align: center
     :alt: Basic interface of the Extract XML widget
 
@@ -104,7 +104,7 @@ the name of the XML element extracted by the widget.
 
 .. _extract_xml_fig2:
 
-.. figure:: ../figures/extract_xml_advanced_example.png
+.. figure:: figures/extract_xml_advanced_example.png
     :align: center
     :alt: Advanced interface of the Extract XML widget
 
@@ -262,8 +262,8 @@ Errors
 Examples
 --------
 
-- :doc:`Advanced Topics: Converting XML markup to annotations <../converting_xml_markup_annotations>`
-- :doc:`Cookbook: Convert XML tags to Orange Textable annotations <../convert_xml_tags_annotations>`
+- :doc:`Advanced Topics: Converting XML markup to annotations <converting_xml_markup_annotations>`
+- :doc:`Cookbook: Convert XML tags to Orange Textable annotations <convert_xml_tags_annotations>`
 
 Footnotes
 ---------
