@@ -313,7 +313,7 @@ to automatically emit a segmentation at every modification of its interface or
 when its input data are modified (by deletion or addition of a connection, or
 because modified data is received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 The informations given below the **Send** button indicate whether or not the data is correctly sent to the
 output table. If not, the respective error message will be given.

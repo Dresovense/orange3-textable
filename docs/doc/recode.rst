@@ -80,7 +80,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 Below the **Send** button, the user finds all the indications regarding the current status of the
 widget instance (see `Messages`_ below).
@@ -173,7 +173,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 Below the **Send** button, the user finds all the indications regarding the current status of the
 widget instance (see `Messages`_ below).

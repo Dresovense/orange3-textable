@@ -73,7 +73,7 @@ connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 The text below the **Send** button indicates the number of characters in
 the single segment contained in the output segmentation, or the reasons
@@ -153,7 +153,7 @@ connections. When it is selected, the **Send automatically** checkbox
 disables the button and the widget attempts to automatically emit a
 segmentation at every modification of its interface.
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 The text below the **Send** button indicates the length of the output segmentation in characters, 
 or the reasons why no segmentation is emitted (no input data, encoding issue, etc.). In the example,

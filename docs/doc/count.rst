@@ -304,7 +304,7 @@ segmentation at every modification of its interface or when its input data are
 modified (by deletion or addition of a connection, or because modified data is
 received through an existing connection).
 
-The **Cancel** button stops the widget from working and returns it to its previous state.
+The **Cancel** button interrupts the current process and therefore returns the widget to its precedent state.
 
 Below the **Send button**, the user finds indications such as the sum of frequencies in the output table, or
 the reasons why not table is emitted (no input data or total frequency is
