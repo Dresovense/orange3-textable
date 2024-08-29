@@ -199,6 +199,7 @@ count.
 .. figure:: figures/variety_widget.png
     :align: center
     :alt: variety widget mode no context
+    :scale: 75%
 
     Figure 1: **Variety** widget.
 
@@ -226,7 +227,7 @@ key whose values will be used for the category definitions. The **Weigh by
 frequency** checkbox allows the user to enable the weighing by the category
 frequency. Checking the **Dynamically adjust subsample size** box 
 permits a more robust variety estimation. This calculation uses the RMSP subsample size 
-adjustment method described in Xanthos and Guex 2015. (ADD LINK TO PAPER?? OR FOOTNOTE?)
+adjustment method described in Xanthos and Guex 2015.
 
 The **Contexts** section is available in several variants depending on the
 value selected in the **Mode** drop-down menu. The latter allows the user to

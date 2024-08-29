@@ -56,6 +56,7 @@ segmentation (**Filter segmentation**) among the input segmentations. [#]_
 .. figure:: figures/intersect_example.png
     :align: center
     :alt: Basic interface of the Intersect widget
+    :scale: 75%
 
     Figure 1: **Intersect** widget (basic interface).
 
@@ -97,6 +98,7 @@ drop-down menu and a **Source annotation key**.
 .. figure:: figures/intersect_advanced.png
     :align: center
     :alt: Advances interface of the Intersect widget
+    :scale: 75%
 
     Figure 2: **Intersect** widget (advanced interface).
 

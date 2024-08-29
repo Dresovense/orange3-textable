@@ -68,6 +68,7 @@ this element, including those embedded in other occurrences of the same type.
 .. figure:: figures/extract_xml_example.png
     :align: center
     :alt: Basic interface of the Extract XML widget
+    :scale: 75%
 
     Figure 1: **Extract XML** widget (basic interface).
     
@@ -107,6 +108,7 @@ the name of the XML element extracted by the widget.
 .. figure:: figures/extract_xml_advanced_example.png
     :align: center
     :alt: Advanced interface of the Extract XML widget
+    :scale: 75%
 
     Figure 2: **Extract XML** widget (advanced interface).
 

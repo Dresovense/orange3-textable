@@ -70,6 +70,7 @@ tags (but not their content). [#]_
 .. figure:: figures/recode_basic_example.png
     :align: center
     :alt: Basic interface of the Recode widget
+    :scale: 75%
 
     Figure 1: **Recode** widget (basic interface).
 
@@ -97,6 +98,7 @@ successively be applied to each segment of the input segmentation.
 .. figure:: figures/recode_advanced_example.png
     :align: center
     :alt: Advanced interface of the Recode widget
+    :scale: 75%
 
     Figure 2: **Recode** widget (basic interface).
 

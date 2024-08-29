@@ -159,6 +159,7 @@ entities (for example *&#233*; for *é*).
 .. figure:: figures/convert_basic_example.png
     :align: center
     :alt: Basic interface of the Convert widget
+    :scale: 75%
 
     Figure 1: **Convert** widget (basic interface).
 
@@ -193,6 +194,7 @@ The modified data can then be emitted on output connections or exported
 .. figure:: figures/convert_advanced_example.png
     :align: center
     :alt: Advanced interface of the Convert widget
+    :scale: 75%
 
     Figure 2: **Convert** widget (advanced interface).
 

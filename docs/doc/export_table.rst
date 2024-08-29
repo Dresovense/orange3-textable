@@ -35,6 +35,7 @@ Procedure
 .. figure:: figures/export_table_convert_interface.png
    :align: center
    :alt: Export table with an instance of Convert
+   :scale: 75%
 
    Figure 1: Export table with an instance of :doc:`Convert <convert>`
 

@@ -68,6 +68,7 @@ sequence of alphanumerical characters and underscores). [#]_
 .. figure:: figures/segment_example.png
     :align: center
     :alt: Basic interface of the Segment widget
+    :scale: 75%
 
     Figure 1: **Segment** widget (basic interface).
 
@@ -98,6 +99,7 @@ these segments (**Split** mode). [#]_
 .. figure:: figures/segment_advanced_example.png
     :align: center
     :alt: Advanced interface of the Segment widget
+    :scale: 75%
 
     Figure 2: **Segment** widget (advanced interface).
 

@@ -25,6 +25,7 @@ Procedure
 .. figure:: figures/text_field_example_cookbook.png
    :align: center
    :alt: Example usage of widget Text Field
+   :scale: 75%
 
    Figure 1: Importing a string using widget :doc:`Text Field <text_field>`.
 

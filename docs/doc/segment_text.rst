@@ -32,8 +32,9 @@ Procedure
 .. figure:: figures/segment_text.png
    :align: center
    :alt: Segment text in lines with an instance of Segment
+   :scale: 75%
 
-   Figure 1: Segment text in lines with an instance of :doc:`Segment <segment>`.
+   Figure 1: Segment text in words with an instance of :doc:`Segment <segment>`.
 
 1. Create an instance of :doc:`Segment <segment>`.
 

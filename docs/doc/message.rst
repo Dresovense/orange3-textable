@@ -43,6 +43,7 @@ used to control its behavior remotely.
 .. figure:: figures/message_example.png
     :align: center
     :alt: Interface of the Message widget
+    :scale: 75%
 
     Figure 1: Interface of the **Message** widget.
 

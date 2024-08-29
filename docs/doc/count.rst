@@ -221,6 +221,7 @@ separate sections for unit definition (**Units**) and context definition
 .. figure:: figures/count_example.png
     :align: center
     :alt: Count widget in mode "No context"
+    :scale: 75%
 
     Figure 1: **Count** widget (**No context** mode).
 
@@ -254,6 +255,7 @@ only parameter is the window size (in number of segments), defined by the
 .. figure:: figures/count_mode_sliding_window_example.png
     :align: center
     :alt: Count widget in mode "Sliding window"
+    :scale: 90%
 
     Figure 2: **Count** widget (**Sliding window** mode).
 
@@ -274,6 +276,7 @@ the end of each string is adjacent to the beginning of the next string.
 .. figure:: figures/count_mode_left_right_neighborhood_example.png
     :align: center
     :alt: Count widget in mode "Left-right neighborhood"
+    :scale: 90%
 
     Figure 3: **Count** widget (**Left--right neighborhood** mode).
 
@@ -294,6 +297,7 @@ program to globally count the units in the whole context segmentation.
 .. figure:: figures/count_mode_containing_segmentation.png
     :align: center
     :alt: Count widget in mode "Containing segmentation"
+    :scale: 90%
 
     Figure 4: **Count** widget (**Containing segmentation** mode).
 

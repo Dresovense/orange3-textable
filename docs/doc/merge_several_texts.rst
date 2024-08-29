@@ -32,6 +32,7 @@ Procedure
 .. figure:: figures/merge_several_texts.png
    :align: center
    :alt: Merge several texts with an instance of Merge
+   :scale: 75%
 
    Figure 1: Merge several texts with an instance of :doc:`Merge <merge>`
 

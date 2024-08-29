@@ -262,6 +262,7 @@ considered surrounding.
 .. figure:: figures/context_example.png
     :align: center
     :alt: interface of the Context widget
+    :scale: 75%
 
     Figure 1: Interface of the **Context** widget.
 

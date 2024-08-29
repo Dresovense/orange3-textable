@@ -32,6 +32,7 @@ Procedure
 .. figure:: figures/remove_accents_from_text.png
    :align: center
    :alt: Remove accents from text with an instance of Preprocess
+   :scale: 75%
 
    Figure 1: Remove accents from text with an instance of :doc:`Preprocess <preprocess>`.
 

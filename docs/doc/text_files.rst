@@ -65,6 +65,7 @@ encoding of the file or select (**auto-detect**) if unsure.
 .. figure:: figures/text_files_basic_example.png
     :align: center
     :alt: Basic interface of the Text files widget
+    :scale: 75%
 
     Figure 1: **Text files** widget (basic interface).
 

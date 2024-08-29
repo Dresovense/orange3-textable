@@ -239,6 +239,7 @@ units**) and context definition (**Contexts**).
 .. figure:: figures/cooc_example.png
     :align: center
     :alt: Cooccurrence widget in the default mode("Sliding window")
+    :scale: 75%
 
     Figure 1: **Cooccurrence** widget (**Sliding window** mode as the default mode).
 

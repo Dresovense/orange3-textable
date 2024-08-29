@@ -66,6 +66,7 @@ program to directly show a particular segment using **Go to segment**.
 .. figure:: figures/display_basic_interface.png
     :align: center
     :alt: Basic interface of the Display widget
+    :scale: 75%
 
     Figure 1: **Display** widget (basic interface).
 
@@ -97,6 +98,7 @@ received through an existing connection).
 .. figure:: figures/display_advanced_interface.png
     :align: center
     :alt: Advanced interface of the Display widget
+    :scale: 75%
 
     Figure 2: **Display** widget (advanced interface).
 

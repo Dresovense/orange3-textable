@@ -29,6 +29,7 @@ Single file
 .. figure:: figures/text_files_basic_example.png
    :align: center
    :alt: Importing a file using the Text Files widget
+   :scale: 75%
 
    Figure 1: Importing the content of a file using :doc:`Text Files <text_files>`.
 
@@ -61,6 +62,7 @@ Multiple files
 .. figure:: figures/text_files_advanced_example.png
    :align: center
    :alt: Importing several files using the Text Files widget
+   :scale: 75%
 
    Figure 2: Importing the content of several files using :doc:`Text Files <text_files>`.
 

@@ -29,6 +29,7 @@ Single URL
 .. figure:: figures/urls_basic_example.png
     :align: center
     :alt: Importing text from an internet location using the URLs widget
+    :scale: 75%
 
     Figure 1: Importing text from an internet location using the :doc:`URLs <urls>` widget.
 

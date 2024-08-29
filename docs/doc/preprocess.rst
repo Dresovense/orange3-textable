@@ -39,6 +39,7 @@ the replacing of accentuated characters by their non-accentuated equivalents.
 .. figure:: figures/preprocess_advanced_example.png
     :align: center
     :alt: Interface of the Preprocess widget
+    :scale: 75%
 
     Figure 1: Interface of the **Preprocess** widget. 
 

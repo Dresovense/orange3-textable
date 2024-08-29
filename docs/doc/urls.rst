@@ -62,6 +62,7 @@ select the encoding of its content.
 .. figure:: figures/urls_basic_example.png
     :align: center
     :alt: Basic interface of the URLs widget
+    :scale: 75%
 
     Figure 1: **URLs** widget (basic interface).
 
@@ -91,7 +92,7 @@ a segment for the content of each imported URL.
 .. figure:: figures/urls_fig1.png
     :align: center
     :alt: Advanced interface of the URLs widget
-    :scale: 80%
+    :scale: 75%
 
     Figure 2: **URLs** widget (advanced interface).
 

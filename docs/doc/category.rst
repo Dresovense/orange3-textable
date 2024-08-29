@@ -137,6 +137,7 @@ processing specification (**Multiple Values**), and for context specification
 .. figure:: figures/category_widget.png
     :align: center
     :alt: interface of the Category widget
+    :scale: 75%
 
     Figure 1: Interface of the **Category** widget.
 

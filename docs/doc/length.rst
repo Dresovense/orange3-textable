@@ -199,6 +199,7 @@ likely to spectacularly extend the calculation time.
 .. figure:: figures/Length_example.png
     :align: center
     :alt: Length widget in mode "No context"
+    :scale: 75%
 
     Figure 1: **Length** widget (**No context** mode).
     

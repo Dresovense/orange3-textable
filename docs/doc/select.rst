@@ -59,6 +59,7 @@ by default.
 .. figure:: figures/select_example.png
     :align: center
     :alt: Basic interface of the Select widget
+    :scale: 75%
 
     Figure 1: **Select** widget (basic interface).
 
@@ -74,6 +75,7 @@ menu (see figures :ref:`2 <select_fig2>` to :ref:`4 <select_fig4>` below).
 .. figure:: figures/select_advanced_regex_example.png
     :align: center
     :alt: Advanced interface of the Select widget (Regex method)
+    :scale: 75%
 
     Figure 2: **Select** widget (advanced interface, **Regex** method).
 

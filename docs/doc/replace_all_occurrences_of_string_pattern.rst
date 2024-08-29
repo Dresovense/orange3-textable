@@ -33,6 +33,7 @@ Procedure
 .. figure:: figures/replace_all_occurrences_of_string_pattern.png
    :align: center
    :alt: Replace all occurrences of a string with the Recode widget
+   :scale: 75%
 
    Figure 1: Replace all occurrences of a string with an instance of :doc:`Recode <recode>`.
 

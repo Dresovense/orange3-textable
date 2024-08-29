@@ -31,6 +31,7 @@ Procedure
 .. figure:: figures/display_example.png
    :align: center
    :alt: Viewing text with an instance of Display
+   :scale: 75%
 
    Figure 1: Viewing text with an instance of :doc:`Display <display>`.
 
@@ -39,7 +40,7 @@ Procedure
 
 2. Drag and drop from the output (righthand side) of the widget that
    emits the segmentation to be displayed, here :doc:`Text Field <text_field>`
-   (*Shakespeare*), to the input of :doc:`Display <display>`
+   (*Hamlet*), to the input of :doc:`Display <display>`
    (lefthand side).
 
 3. Double-click on the icon of :doc:`Display <display>`

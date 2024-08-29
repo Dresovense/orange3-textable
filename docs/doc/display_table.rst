@@ -57,6 +57,7 @@ Comment
 .. figure:: figures/display_table_convert_interface.png
    :align: center
    :alt: Change the orientation of Orange Textable table using Convert
+   :scale: 75%
 
    Figure 2: Change the orientation of an Orange Textable frequency table
    using an instance of :doc:`Convert <convert>`.

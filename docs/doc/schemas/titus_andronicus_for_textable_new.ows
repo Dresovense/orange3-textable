@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <scheme version="2.0" title="" description="">
 	<nodes>
-		<node id="0" name="URLs" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Titus Andriconus TOC" position="(150, 150)" />
-		<node id="1" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Links to scenes" position="(185.0, 248.0)" />
+		<node id="0" name="URLs (thread)" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Titus Andriconus TOC" position="(150, 150)" />
+		<node id="1" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Links to scenes" position="(185.0, 248.0)" />
 		<node id="2" name="Display" qualified_name="_textable.widgets.OWTextableDisplay.OWTextableDisplay" project_name="Orange3-Textable" version="" title="Display" position="(234.0, 357.0)" />
 		<node id="3" name="Message" qualified_name="_textable.widgets.OWTextableMessage.OWTextableMessage" project_name="Orange3-Textable" version="" title="Message" position="(386.0, 130.0)" />
 		<node id="4" name="Text Field" qualified_name="_textable.widgets.OWTextableTextField.OWTextableTextField" project_name="Orange3-Textable" version="" title="Text Field" position="(331.0, 355.0)" />
-		<node id="5" name="URLs" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Scenes" position="(462.0, 245.0)" />
-		<node id="6" name="Preprocess" qualified_name="_textable.widgets.OWTextablePreprocessThread.OWTextablePreprocess" project_name="Orange3-Textable" version="" title="Scenes lowercase" position="(512.0, 353.0)" />
-		<node id="7" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Lines" position="(605.0, 127.0)" />
-		<node id="8" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment" position="(704.0, 127.0)" />
-		<node id="9" name="URLs" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Stoplist" position="(616.0, 255.0)" />
-		<node id="10" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Stopwords" position="(696.0, 254.0)" />
-		<node id="11" name="Intersect" qualified_name="_textable.widgets.OWTextableIntersectThread.OWTextableIntersect" project_name="Orange3-Textable" version="" title="Selected words" position="(792.0, 236.0)" />
-		<node id="12" name="Count" qualified_name="_textable.widgets.OWTextableCountThread.OWTextableCount" project_name="Orange3-Textable" version="" title="Count words in scenes" position="(835.0, 357.0)" />
-		<node id="13" name="Convert" qualified_name="_textable.widgets.OWTextableConvertThread.OWTextableConvert" project_name="Orange3-Textable" version="" title="Convert" position="(919.0, 358.0)" />
+		<node id="5" name="URLs (thread)" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Scenes" position="(462.0, 245.0)" />
+		<node id="6" name="Preprocess (thread)" qualified_name="_textable.widgets.OWTextablePreprocessThread.OWTextablePreprocess" project_name="Orange3-Textable" version="" title="Scenes lowercase" position="(512.0, 353.0)" />
+		<node id="7" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Lines" position="(605.0, 127.0)" />
+		<node id="8" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment" position="(704.0, 127.0)" />
+		<node id="9" name="URLs (thread)" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="Stoplist" position="(616.0, 255.0)" />
+		<node id="10" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Stopwords" position="(696.0, 254.0)" />
+		<node id="11" name="Intersect (thread)" qualified_name="_textable.widgets.OWTextableIntersectThread.OWTextableIntersect" project_name="Orange3-Textable" version="" title="Selected words" position="(792.0, 236.0)" />
+		<node id="12" name="Count (thread)" qualified_name="_textable.widgets.OWTextableCountThread.OWTextableCount" project_name="Orange3-Textable" version="" title="Count words in scenes" position="(835.0, 357.0)" />
+		<node id="13" name="Convert (thread)" qualified_name="_textable.widgets.OWTextableConvertThread.OWTextableConvert" project_name="Orange3-Textable" version="" title="Convert" position="(919.0, 358.0)" />
 		<node id="14" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(1002.0, 431.0)" />
 		<node id="15" name="Distances" qualified_name="Orange.widgets.unsupervised.owdistances.OWDistances" project_name="Orange3" version="" title="Example Distance" position="(1007.0, 244.0)" />
 		<node id="16" name="Distance Map" qualified_name="Orange.widgets.unsupervised.owdistancemap.OWDistanceMap" project_name="Orange3" version="" title="Distance Map" position="(1095.0, 168.0)" />

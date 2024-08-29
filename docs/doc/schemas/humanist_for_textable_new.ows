@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <scheme version="2.0" title="" description="">
 	<nodes>
-		<node id="0" name="URLs" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="URLs" position="(300, 300)" />
-		<node id="1" name="Recode" qualified_name="_textable.widgets.OWTextableRecodeThread.OWTextableRecode" project_name="Orange3-Textable" version="" title="Recode" position="(450, 300)" />
-		<node id="2" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment" position="(556.0, 389.0)" />
-		<node id="3" name="Segment" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment (1)" position="(656.0, 389.0)" />
-		<node id="4" name="Count" qualified_name="_textable.widgets.OWTextableCountThread.OWTextableCount" project_name="Orange3-Textable" version="" title="Count" position="(750, 300)" />
-		<node id="5" name="Convert" qualified_name="_textable.widgets.OWTextableConvertThread.OWTextableConvert" project_name="Orange3-Textable" version="" title="Convert" position="(900, 300)" />
+		<node id="0" name="URLs (thread)" qualified_name="_textable.widgets.OWTextableURLsThread.OWTextableURLs" project_name="Orange3-Textable" version="" title="URLs" position="(300, 300)" />
+		<node id="1" name="Recode (thread)" qualified_name="_textable.widgets.OWTextableRecodeThread.OWTextableRecode" project_name="Orange3-Textable" version="" title="Recode" position="(450, 300)" />
+		<node id="2" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment" position="(556.0, 389.0)" />
+		<node id="3" name="Segment (thread)" qualified_name="_textable.widgets.OWTextableSegmentThread.OWTextableSegment" project_name="Orange3-Textable" version="" title="Segment (1)" position="(656.0, 389.0)" />
+		<node id="4" name="Count (thread)" qualified_name="_textable.widgets.OWTextableCountThread.OWTextableCount" project_name="Orange3-Textable" version="" title="Count" position="(750, 300)" />
+		<node id="5" name="Convert (thread)" qualified_name="_textable.widgets.OWTextableConvertThread.OWTextableConvert" project_name="Orange3-Textable" version="" title="Convert" position="(900, 300)" />
 		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(1050, 300)" />
 	</nodes>
 	<links>
@@ -25,33 +25,35 @@
 		<properties node_id="1" format="literal">{'autoSend': True, 'controlAreaVisible': True, 'copyAnnotations': True, 'displayAdvancedSettings': True, 'lastLocation': '.', 'regex': '&lt;.+?&gt;', 'replString': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xfb\x00\x00\x00k\x00\x00\x04}\x00\x00\x02\xf1\x00\x00\x02\xfc\x00\x00\x00\x89\x00\x00\x04|\x00\x00\x02\xf0\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xfc\x00\x00\x00\x89\x00\x00\x04|\x00\x00\x02\xf0', 'substitutions': [('^[|&gt;].+(?m)', '', False, True, False, False)], 'uuid': 'bb9810ee-3461-4401-a395-2f6a75077321', '__version__': 1, '_TextableUtils_settings_version__': (0, 13)}</properties>
 		<properties node_id="2" format="literal">{'autoNumber': False, 'autoNumberKey': 'num', 'autoSend': True, 'controlAreaVisible': True, 'displayAdvancedSettings': False, 'importAnnotations': True, 'lastLocation': '.', 'mergeDuplicates': True, 'mode': 'Tokenize', 'regex': '(?&lt;=\\(.\\))(.|\\n)*?(?=(From|\\Z))(?s)', 'regexes': [('.', 'type', 'other', False, True, False, False, 'Tokenize'), ('\\w', 'type', 'consonant', False, True, False, False, 'Tokenize'), ('[aeiouy]', 'type', 'vowel', False, True, False, False, 'Tokenize'), ('[0-9]', 'type', 'digit', False, True, False, False, 'Tokenize')], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x0f\x00\x00\x00&amp;\x00\x00\x04\x04\x00\x00\x028\x00\x00\x03\x10\x00\x00\x00D\x00\x00\x04\x03\x00\x00\x027\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03\x10\x00\x00\x00D\x00\x00\x04\x03\x00\x00\x027', 'segmentType': 'Use a regular expression', 'uuid': '14d029e5-2c8c-481a-9e39-3a96659f221d', '__version__': 1, '_TextableUtils_settings_version__': (0, 21)}</properties>
 		<properties node_id="3" format="literal">{'autoNumber': False, 'autoNumberKey': 'num', 'autoSend': True, 'controlAreaVisible': True, 'displayAdvancedSettings': True, 'importAnnotations': True, 'lastLocation': '.', 'mergeDuplicates': True, 'mode': 'Tokenize', 'regex': '\\b(Digital Humanities|Humanities Computing)\\b', 'regexes': [('Humanities Computing', 'type', 'Humanities Computing', True, True, False, False, 'Tokenize'), ('Digital Humanities', 'type', 'Digital Humanities', True, True, False, False, 'Tokenize')], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xbc\x00\x00\x00+\x00\x00\x04\x00\x00\x00\x03+\x00\x00\x02\xbd\x00\x00\x00I\x00\x00\x03\xff\x00\x00\x03*\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xbd\x00\x00\x00I\x00\x00\x03\xff\x00\x00\x03*', 'segmentType': 'Use a regular expression', 'uuid': 'eca99630-041e-40ac-bfef-bd4305acf2e2', '__version__': 1, '_TextableUtils_settings_version__': (0, 21)}</properties>
-		<properties node_id="4" format="pickle">gASVGAUAAAAAAAB9lCiMCGF1dG9TZW5klIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjA1pbnRyYVNl
+		<properties node_id="4" format="pickle">gASVugUAAAAAAAB9lCiMCGF1dG9TZW5klIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjA1pbnRyYVNl
 cURlbGltlIwBI5SMDW1lcmdlQ29udGV4dHOUiYwMbWVyZ2VTdHJpbmdzlIiME3NhdmVkV2lkZ2V0
 R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAx0AAAAyAAAEdQAAAhAAAAMeAAAAUAAABHQAAAIPAAAAAAAA
 AAAGAAAAAx4AAABQAAAEdAAAAg+UjA5zZXF1ZW5jZUxlbmd0aJRLAYwNdW5pdFBvc01hcmtlcpSM
 AV+UjAR1dWlklIwkY2QzNGE2YWItMzFlMy00YzQ1LThkOTItMDU3OWUzZDE1ZjVjlIwLX192ZXJz
 aW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdD
-b250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAlfY29udGV4dHOUSwCMFGNvbnRleHRBbm5vdGF0
+b250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAlfY29udGV4dHOUSwGMFGNvbnRleHRBbm5vdGF0
 aW9uS2V5lIwEeWVhcpSMD2xlZnRDb250ZXh0U2l6ZZRLAIwEbW9kZZSMF0NvbnRhaW5pbmcgc2Vn
 bWVudGF0aW9ulIwQcmlnaHRDb250ZXh0U2l6ZZRLAIwRdW5pdEFubm90YXRpb25LZXmUjAR0eXBl
-lIwFdW5pdHOUSwGMCndpbmRvd1NpemWUSwGMDXNlZ21lbnRhdGlvbnOUXZQojAZSZWNvZGWUjAN1
-cmyUjAR5ZWFylIaUToeUjAtTZWdtZW50ICgxKZSMBHR5cGWUaCZoJ4eUToeUZWgOSwF1jAdlbmNv
-ZGVklGgNaCSGlHViaBMpgZR9lChoFn2UKGgYSwBoGWgaaBtLAGgcaB1oHksAaB+MBihub25lKZRo
-IUsAaCJLAWgjXZRoJWgmaCeGlE6HlGFoDksBdWguaA1oNIaUdWJoEymBlH2UKGgWfZQoaBhLAGgZ
-aBpoG0sAaBxoHWgeSwBoH2gzaCFLAWgiSwFoI12UKGglaCZoJ4aUToeUaCpoJmgnhpROh5RlaA5L
-AXVoLmgNaDuGlHViaBMpgZR9lChoFn2UKGgYSwBoGYwDdXJslGgbSwBoHGgdaB5LAGgfaDNoIUsB
-aCJLAWgjXZQoaCVoJoWUToeUaCpoJoWUToeUZWgOSwF1aC5oDWhFhpR1YmgTKYGUfZQoaBZ9lCho
-GEr/////aBloM2gbSwBoHIwKTm8gY29udGV4dJRoHksAaB9oM2ghSwBoIksBaCNdlGglaCaFlE6H
-lGFoDksBdWguaA1oT4aUdWJoEymBlH2UKGgWfZQoaBhK/////2gZaDNoG0sAaBxoTmgeSwBoH4wA
-lGghSv////9oIksBaCNdlGgOSwF1aC5oDWhXhpR1YmgTKYGUfZQoaBZ9lCiMCV9jb250ZXh0c5RK
-/////4wUY29udGV4dEFubm90YXRpb25LZXmUjAYobm9uZSmUjA9sZWZ0Q29udGV4dFNpemWUSwCM
-BG1vZGWUjApObyBjb250ZXh0lIwQcmlnaHRDb250ZXh0U2l6ZZRLAIwRdW5pdEFubm90YXRpb25L
-ZXmUaF6MBXVuaXRzlEsAjAp3aW5kb3dTaXpllEsBjA1zZWdtZW50YXRpb25zlF2UaCpoJoWUToeU
-YWgOSwF1aC5oDWhnhpR1YmWMIV9UZXh0YWJsZVV0aWxzX3NldHRpbmdzX3ZlcnNpb25fX5RLAEsV
-hpR1Lg==
+lIwFdW5pdHOUSwCMCndpbmRvd1NpemWUSwGMDXNlZ21lbnRhdGlvbnOUXZQojAtTZWdtZW50ICgx
+KZSMBHR5cGWUjAN1cmyUjAR5ZWFylIeUToeUjAZSZWNvZGWUaCdoKIaUToeUZWgOSwF1jAdlbmNv
+ZGVklGgNaCSGlHViaBMpgZR9lChoFn2UKGgYSv////9oGYwGKG5vbmUplGgbSwBoHIwKTm8gY29u
+dGV4dJRoHksAaB+MAJRoIUr/////aCJLAWgjXZRoDksBdWguaA1oNoaUdWJoEymBlH2UKGgWfZQo
+jAlfY29udGV4dHOUSwCMFGNvbnRleHRBbm5vdGF0aW9uS2V5lIwEeWVhcpSMD2xlZnRDb250ZXh0
+U2l6ZZRLAIwEbW9kZZRoHYwQcmlnaHRDb250ZXh0U2l6ZZRLAIwRdW5pdEFubm90YXRpb25LZXmU
+aDOMBXVuaXRzlEsAjAp3aW5kb3dTaXpllEsBjA1zZWdtZW50YXRpb25zlF2UjAZSZWNvZGWUjAN1
+cmyUjAR5ZWFylIaUToeUYWgOSwF1aC5oDWhFhpR1YmgTKYGUfZQoaBZ9lChoO0sAaDxoPWg+SwBo
+P2gdaEBLAGhBaDNoQksBaENLAWhEXZQoaEZoR2hIhpROh5SMC1NlZ21lbnQgKDEplGhHaEiGlE6H
+lGVoDksBdWguaA1oT4aUdWJoEymBlH2UKGgWfZQoaDtLAGg8jAN1cmyUaD5LAGg/aB1oQEsAaEFo
+M2hCSwFoQ0sBaERdlChoRmhHhZROh5RoUmhHhZROh5RlaA5LAXVoLmgNaFqGlHViaBMpgZR9lCho
+Fn2UKGg7Sv////9oPGgzaD5LAGg/jApObyBjb250ZXh0lGhASwBoQWgzaEJLAGhDSwFoRF2UaEZo
+R4WUToeUYWgOSwF1aC5oDWhkhpR1YmgTKYGUfZQoaBZ9lCiMCV9jb250ZXh0c5RK/////4wUY29u
+dGV4dEFubm90YXRpb25LZXmUjAYobm9uZSmUjA9sZWZ0Q29udGV4dFNpemWUSwCMBG1vZGWUjApO
+byBjb250ZXh0lIwQcmlnaHRDb250ZXh0U2l6ZZRLAIwRdW5pdEFubm90YXRpb25LZXmUaG2MBXVu
+aXRzlEsAjAp3aW5kb3dTaXpllEsBjA1zZWdtZW50YXRpb25zlF2UaFJoR4WUToeUYWgOSwF1aC5o
+DWh2hpR1YmWMIV9UZXh0YWJsZVV0aWxzX3NldHRpbmdzX3ZlcnNpb25fX5RLAEsVhpR1Lg==
 </properties>
 		<properties node_id="5" format="literal">{'associationBias': 'none', 'autoSend': True, 'colDelimiter_idx': 0, 'controlAreaVisible': True, 'conversionType': 'association matrix', 'convert': False, 'displayAdvancedSettings': True, 'exportEncoding': 'utf8', 'includeOrangeHeaders': False, 'lastLocation': '.', 'normalize': False, 'normalizeMode': 'rows', 'normalizeType': 'l1', 'reformat': False, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x81\x00\x00\x00Y\x00\x00\x05m\x00\x00\x02\xd5\x00\x00\x03\x82\x00\x00\x00w\x00\x00\x05l\x00\x00\x02\xd4\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03\x82\x00\x00\x00w\x00\x00\x05l\x00\x00\x02\xd4', 'sortCols': False, 'sortColsReverse': False, 'sortRows': False, 'sortRowsReverse': False, 'transpose': False, 'unweighted': False, 'uuid': '702bcf8b-fdc8-4ff4-aa35-4bcab307e761', '__version__': 1, '_TextableUtils_settings_version__': (0, 19)}</properties>
-		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01K\x00\x00\x00\xb0\x00\x00\x04l\x00\x00\x02\xc2\x00\x00\x01L\x00\x00\x00\xce\x00\x00\x04k\x00\x00\x02\xc1\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01L\x00\x00\x00\xce\x00\x00\x04k\x00\x00\x02\xc1', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01}\x00\x00\x00\x84\x00\x00\x04@\x00\x00\x02\xc0\x00\x00\x01~\x00\x00\x00\xa2\x00\x00\x04?\x00\x00\x02\xbf\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01~\x00\x00\x00\xa2\x00\x00\x04?\x00\x00\x02\xbf', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />

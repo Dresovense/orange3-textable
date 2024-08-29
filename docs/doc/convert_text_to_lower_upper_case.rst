@@ -31,6 +31,7 @@ Procedure
 .. figure:: figures/convert_lower_upper_case.png
    :align: center
    :alt: Convert text to lower or upper case with an instance of Preprocess
+   :scale: 75%
 
    Figure 1: Convert text to lower or upper case with an instance of 
    :doc:`Preprocess <preprocess>`.

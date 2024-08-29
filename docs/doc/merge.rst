@@ -38,6 +38,7 @@ segmentation to its output connections.
 .. figure:: figures/merge_advanced_example.png
     :align: center
     :alt: Merge widget
+    :scale: 75%
 
     Figure 1: **Merge** widget.
 
