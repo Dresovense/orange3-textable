@@ -45,7 +45,7 @@ the annotation key to which values *en* and *fr* should be associated.
 This can be done by entering the string *language* in field **Import
 labels with key**, having previously ensured that labels would actually
 be converted into annotation values by checking the box at the left of
-this line (see figure 3 below).
+this line (see :ref:`figure 3 <annotating_merging_fig3>` below).
 
 We also have the option to give a distinct, numeric annotation value to
 each segment; to that effect, check the **Auto-number with key** box. A
@@ -62,7 +62,7 @@ sensible key for this annotation might be e.g. *num*.
 
 The result of these operations can be viewed using an instance of
 :doc:`Display <display>`,
-whose output is shown on figure 4 below. For each segment in the merged
+whose output is shown on :ref:`figure 4 <annotating_merging_fig4>` below. For each segment in the merged
 segmentation, an annotation value *en* or *fr* associated with key
 *language* is displayed above the segment’s content:
 

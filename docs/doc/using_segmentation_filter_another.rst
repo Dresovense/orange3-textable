@@ -26,7 +26,7 @@ below.
 
 The **Mode** option serves to indicate if the segments present in the
 filter segmentation should be removed from the source segmentation
-(**Exclude**) or, conversely, if they should be retained (**include**);
+(**Exclude**) or, conversely, if they should be retained (**Include**);
 in the latter case, all the segments *absent* in the filter segmentation
 will be removed from the source segmentation. The next step is to
 specify which incoming segmentation plays the role of the **Source**
@@ -53,7 +53,7 @@ above.
 .. figure:: figures/intersect_example_schema.png
     :align: center
     :alt: Schema illustrating the use of the Intersect widget for stopword removal
-    :scale: 80 %
+    :scale: 60 %
 
 Figure 2: Example workflow for removing stopwords using widget
 :doc:`Intersect <intersect>`.

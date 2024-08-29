@@ -44,8 +44,8 @@ Procedure
 
 2.  Drag and drop from the output (righthand side) of the widget that
     emits the segmentation in which occurrences of the query string will
-    be retrieved (here :doc:`Text Field <text_field>`
-    (*Hamlet*)), to the input of
+    be retrieved, here :doc:`Text Field <text_field>`
+    (*Hamlet*), to the input of
     :doc:`Segment <segment>`
     (lefthand side).
 
@@ -71,7 +71,7 @@ Procedure
     to open its interface.
 
 7.  In the **Units** section, select the segmentation that contains the
-    occurrences of the query string (here: query) using the
+    occurrences of the query string (here: *query*) using the
     **Segmentation** drop-down menu.
 
 8.  In the **Contexts** section, choose **Mode: Containing

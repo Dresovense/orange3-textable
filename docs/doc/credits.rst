@@ -15,7 +15,7 @@ Textable’s development has continued between 2012 and 2013, still
 carried on by `LangTech Sàrl <http://langtech.ch>`_, while the program
 was being gradually integrated to courses taught at Unil’s department of
 `SLI <http://www.unil.ch/sli>`_ (where most of the tutorials that would
-later become the Textable's Basics and Advanced Topics sections of this documentation have been
+later become the :doc:`Textable's Basics <textable_basics>` and :doc:`Advanced Topics <advanced_topics>` sections of this documentation have been
 created).
 
 In automn 2013, Textable became a registered Orange Canvas add-on and
@@ -27,7 +27,7 @@ In early 2014, Unil’s `FIP <http://www.unil.ch/fip>`_ has renewed its
 support to Orange Textable by granting a maintenance funding. This has
 made it possible for `LangTech Sàrl <http://langtech.ch>`_ to
 collaborate with the creators of Orange Canvas, `University of
-Ljubljana’s Biolab <http://www.fri.uni-lj.si/en/laboratories/biolab/>`_
+Ljubljana’s Biolab <https://www.fri.uni-lj.si/en/laboratory/biolab-27>`_
 for producing version v1.4 of Orange Textable.
 
 In the meantime, `UNIL’s Faculty of Arts <http://www.unil.ch/lettres>`_
@@ -63,7 +63,7 @@ Xanthos <http://www.unil.ch/unisciences/arisxanthos>`_ who have been
 involved at about every step of Orange Textable’s conception,
 implementation, documentation, and so on, a special mention should be
 made to Benjamin Gay (specifications, conception and implementation),
-people at `Biolab <http://www.fri.uni-lj.si/en/laboratories/biolab/>`_
+people at `Biolab <https://www.fri.uni-lj.si/en/laboratory/biolab-27>`_
 (in particular Blaž Zupan and Aleš Erjavec for conception and
 implementation work), Corinne Morey (French to English translation of
 the user guide, preparation of the online version of the documentation,

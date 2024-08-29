@@ -37,7 +37,7 @@ relevant.
 
 Note that annotation keys are unique : Since they serve to recognize
 various annotation values attached to a single segment, annotation keys
-cannot be duplicated within the segment. On figure 2 above, “simple” can
+cannot be duplicated within the segment. On :ref:`figure 2 <annotating_uses_fig2>` above, “simple” can
 only have one value at a time for key “category” .
 
 Even though they have been ignored so far in this tutorial, annotations
@@ -63,5 +63,5 @@ etc.
 There are several ways of creating annotations in Orange Textable. In
 the following section, we will see a simple method based on the
 :doc:`Merge <merge>`
-widget. Later on in the Tables section, we will discover various ways of
+widget. Later on in the :doc:`Tables <tables>` section, we will discover various ways of
 exploiting such annotations.

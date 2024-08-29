@@ -37,7 +37,7 @@ Procedure
 
 1. Create an instance of :doc:`Segment <segment>`.
 
-2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be segmented (here :doc:`Text Field <text_field>` (*Hamlet*)), to the input of :doc:`Segment <segment>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be segmented, here :doc:`Text Field <text_field>` (*Hamlet*), to the input of :doc:`Segment <segment>` (lefthand side).
 
 3. Double-click on the icon of :doc:`Segment <segment>` to open its interface.
 

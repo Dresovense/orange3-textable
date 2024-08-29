@@ -13,11 +13,11 @@ Welcome to the documentation of Orange Textable.
 
 This documentation is divided into six main sections (see detailed `contents`_ below):
 
--  Why you should use Orange Textable offers a brief overview of what Orange Textable can do, as well as how it should be installed and configured. This is what you should read first if you are unsure whether Orange Textable is the right piece of software for your needs or how to set it up.
+-  :doc:`Why you should use Orange Textable <introduction>` offers a brief overview of what Orange Textable can do, as well as how it should be installed and configured. This is what you should read first if you are unsure whether Orange Textable is the right piece of software for your needs or how to set it up.
 
 -  :doc:`Textable’s basics <textable_basics>` is a tutorial that introduces the basic concepts underlying Orange Textable and its main usage patterns. This should be your first reading once you’ve determined that Orange Textable can be useful to you.
 
--  To go further enables the advanced user to benefit from more complex text queries using regular expressions and xml markup. This part implies a solid knowledge of the above Basics section.
+-  :doc:`Advanced topics <advanced_topics>` enables the advanced user to benefit from more complex text queries using regular expressions and xml markup. This part implies a solid knowledge of the above Basics section.
 
 -  In the :doc:`Cookbook <cookbook>`, you’ll find a number of concise, illustrated recipes describing how to perform various basic tasks with Orange Textable. When starting a new project, you might want to skim through this section in case some elementary operation you need is listed there.
 

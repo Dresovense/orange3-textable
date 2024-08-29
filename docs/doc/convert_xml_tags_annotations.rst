@@ -43,7 +43,7 @@ Procedure
 
 3. Double-click on the icon of :doc:`Extract XML <extract_xml>` to open its interface.
 
-4. In the **XML Extraction** section, insert the desired **XML element** (here w).
+4. In the **XML Extraction** section, insert the desired **XML element** (here ``w``).
 
 5. Click the **Send** button or tick the **Send automatically** checkbox.
 

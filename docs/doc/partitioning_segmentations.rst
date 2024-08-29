@@ -22,12 +22,12 @@ be applied to each incoming segment successively. For now, the option
     :align: center
     :alt: Example usage of widget Select
 
-Figure 1: Excluding short words with widget :doc:`Select <select>`.
+    Figure 1: Excluding short words with widget :doc:`Select <select>`.
 
 In the example of :ref:`figure 1 <partitioning_segmentations_fig1>`,
 the widget is configured to exclude all incoming segments containing no
 more than 3 letters. Note that without the *beginning of segment* and
-*end of segment* anchors (^ and $), all words containing *at least* a
+*end of segment* anchors (``^`` and ``$``), all words containing *at least* a
 sequence of 1 to 3 letters–i.e. all the words–would be excluded.
 
 Note that

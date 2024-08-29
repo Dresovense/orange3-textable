@@ -10,7 +10,7 @@ skeleton of various more ambitious projects.
 **Section content**
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Text input <text_input>
     Text output <text_output>

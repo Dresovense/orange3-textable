@@ -40,8 +40,7 @@ instances, and the latter to an instance of
 :doc:`Display <display>`,
 you can verify that the resulting segmentation contains a segment for
 the content of each *<w>* tag in the input text, and that this segment
-is annotated with key *type* and value *DET*, *NOUN*, or *PREP* (the
-three first such segments are shown on :ref:`figure 3 <converting_xml_markup_annotations_fig3>`
+is annotated with key *type* and value *DET*, *NOUN*, or *PREP* (see :ref:`figure 3 <converting_xml_markup_annotations_fig3>`
 below). Each attribute-value pair of each XML tag has indeed been
 automatically converted to a *{key: value}* annotation.
 
@@ -51,7 +50,7 @@ automatically converted to a *{key: value}* annotation.
     :align: center
     :alt: Annotations imported using Extract XML
 
-Figure 3: Annotations imported using :doc:`Extract XML <extract_xml>`.
+    Figure 3: Annotations imported using :doc:`Extract XML <extract_xml>`.
 
 See also
 -----------------

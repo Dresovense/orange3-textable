@@ -38,8 +38,8 @@ Procedure
    :doc:`Display <display>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be displayed (here :doc:`Text Field <text_field>`
-   (*Hamlet*)), to the input of :doc:`Display <display>`
+   emits the segmentation to be displayed, here :doc:`Text Field <text_field>`
+   (*Shakespeare*), to the input of :doc:`Display <display>`
    (lefthand side).
 
 3. Double-click on the icon of :doc:`Display <display>`

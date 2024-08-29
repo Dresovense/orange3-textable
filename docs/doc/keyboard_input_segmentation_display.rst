@@ -25,6 +25,7 @@ widget, select **Rename** or press **F2**, then enter the new name.
 .. figure:: figures/text_field_labelling.png
    :align: center
    :alt: Example Widget Label
+   :width: 50%
 
     Figure 2: Typing an extract of *Romeo and Juliet* in widget :doc:`Text Field <text_field>` and
     giving it a label (*Romeo and Juliet*).
@@ -37,7 +38,7 @@ each imported file or URL.
 
 The :doc:`Display <display>` widget can be used to visualize the details of a segmentation. By
 default, it shows the segmentation’s label followed by each successive
-segment’s content (see :ref:`figure 3 <_keybord_input_fig3>` below).
+segment’s content (see :ref:`figure 3 <keybord_input_fig3>` below).
 
 .. _keybord_input_fig3:
 

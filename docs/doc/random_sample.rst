@@ -37,7 +37,7 @@ Procedure
 
 1. Create an instance of :doc:`Select <select>`.
 
-2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be sampled (here :doc:`Segment <segment>` (*letters*)), to the input of :doc:`Select <select>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be sampled, here :doc:`Segment <segment>` (*letters*), to the input of :doc:`Select <select>` (lefthand side).
 
 3. Double-click on the icon of :doc:`Select <select>` to open its interface.
 

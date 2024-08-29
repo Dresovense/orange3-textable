@@ -7,7 +7,7 @@ Goal
 Import text content located at one or more URLs for further processing
 with Orange Textable.
 
-**Ingredients**
+Ingredients
 ---------------
 
   ==============  =======
@@ -40,7 +40,7 @@ Single URL
 3. Make sure the **Advanced settings** checkbox is *not* selected.
 
 4. In the **URL** field, type the URL whose content you want to import
-   (including the http:// prefix).
+   (including the ``http://`` or ``https://`` prefix).
 
 5. In the **Encoding** drop-down menu, select the encoding that
    corresponds to this URL or **(auto-detect)** if unsure.
@@ -77,7 +77,7 @@ Multiple URLs
     all** button.
 
 5.  In the **URL(s)** field, enter the URLs you want to import
-    (including the http:// or https:// prefix), separated by the string
+    (including the ``http://`` or ``https://`` prefix), separated by the string
     ” / ” (space + slash + space).
 
 6.  In the **Encoding** drop-down menu, select the encoding that

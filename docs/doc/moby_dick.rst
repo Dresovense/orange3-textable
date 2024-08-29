@@ -32,12 +32,12 @@ select *Ahab* and visualize the frequency of *Ahab* in the novel.
 
 .. figure:: figures/moby_dick_freq_whales.png
     :align: center
-    :scale: 75%
+    :scale: 40%
     :alt: Relative frequency of term "whale(s)" in Moby Dick
 
 .. figure:: figures/moby_dick_freq_ahab.png
     :align: center
-    :scale: 75%
+    :scale: 40%
     :alt: Relative frequency of term "Ahab" in Moby Dick
 
     Figure 2: Negative correlation between the relative frequency of terms *whale(s)* (top) and *Ahab* (bottom) in Melville's novel.    

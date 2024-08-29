@@ -37,7 +37,7 @@ Procedure
 
 1. Create an instance of :doc:`Merge <merge>`.
 
-2. Drag and drop from the output (righthand side) of the widgets that emit the segmentations to be merged together (here :doc:`Text Field <text_field>` (*Hamlet*) and :doc:`Text Field <text_field>` (*Macbeth*)), to the input of :doc:`Merge <merge>` (lefthand side).
+2. Drag and drop from the output (righthand side) of the widgets that emit the segmentations to be merged together, here :doc:`Text Files <text_files>` (*Hamlet*) and :doc:`Text Files <text_files>` (*Macbeth*), to the input of :doc:`Merge <merge>` (lefthand side).
 
 3. Double-click on the icon of :doc:`Merge <merge>` to open its interface.
 

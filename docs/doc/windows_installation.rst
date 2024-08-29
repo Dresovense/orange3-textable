@@ -5,9 +5,8 @@
 Windows installation
 ====================
 
-1. On the `Orange 2.7 download page <http://orange.biolab.si/orange2/>`_, 
-   download the software installer by following the *Orange 2.7 installer for 
-   Windows* link.
+1. On the `Orange 3.37.0 download page <https://orangedatamining.com/download/>`_, 
+   download the software installer by following the *Standalone installer (default)* link under the *Windows* tab.
 
 2. Execute the Orange Canvas installer and click **Ok** at each stage
    (including the stages of the installation of Python modules).
@@ -32,6 +31,7 @@ Windows installation
 .. figure:: figures/addons_management_dialog.png
     :align: center
     :alt: Orange Textable marked for installation
+    :width: 50%
 
     Figure 2: Orange Textable marked for installation.
 

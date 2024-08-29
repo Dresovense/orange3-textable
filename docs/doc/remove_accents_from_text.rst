@@ -38,8 +38,8 @@ Procedure
 1. Create an instance of :doc:`Preprocess <preprocess>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be modified (here :doc:`Text Field <text_field>`
-   (*Hamlet*)), to the input of :doc:`Preprocess <preprocess>`
+   emits the segmentation to be modified, here :doc:`Text Field <text_field>`
+   (*Hamlet*), to the input of :doc:`Preprocess <preprocess>`
    (lefthand side).
 
 3. Double-click on the icon of :doc:`Preprocess <preprocess>`

@@ -46,7 +46,7 @@ Procedure
 
 3. Create an instance of :doc:`Intersect <intersect>`.
 
-4. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be filtered (here :doc:`Segment <segment>` (*words*)), to the input of :doc:`Intersect <intersect>` (lefthand side).
+4. Drag and drop from the output (righthand side) of the widget that emits the segmentation to be filtered, here :doc:`Segment <segment>` (*words*), to the input of :doc:`Intersect <intersect>` (lefthand side).
 
 5. Likewise, connect :doc:`Segment <segment>` (*stopwords*) to :doc:`Intersect <intersect>`.
 
@@ -64,7 +64,7 @@ Procedure
 Comment
 -----------
 
-Stopword lists for various languages can be found `here <http://members.unine.ch/jacques.savoy/clef/>`__.
+- Stopword lists for various languages can be found `here <http://members.unine.ch/jacques.savoy/clef/>`__.
 
 See also
 ------------

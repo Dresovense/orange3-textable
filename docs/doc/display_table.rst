@@ -18,7 +18,7 @@ Ingredients
 ---------------
 
   ==============  =================================  =================
-   **Widget**      :doc:`Convert <convert>`   **Data Table**
+   **Widget**      :doc:`Convert <convert>`           **Data Table**
    **Icon**        |convert_icon|                     |datatable_icon|
    **Quantity**    1                                  1
   ==============  =================================  =================

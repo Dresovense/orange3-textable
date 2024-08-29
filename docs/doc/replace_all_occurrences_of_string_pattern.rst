@@ -39,8 +39,8 @@ Procedure
 1. Create an instance of :doc:`Recode <recode>`.
 
 2. Drag and drop from the output (righthand side) of the widget that
-   emits the segmentation to be modified (here :doc:`Text Field <text_field>`
-   (*Hamlet*)), to the input of :doc:`Recode <recode>`
+   emits the segmentation to be modified, here :doc:`Text Field <text_field>`
+   (*Hamlet*), to the input of :doc:`Recode <recode>`
    (lefthand side).
 
 3. Double-click on the icon of :doc:`Recode <recode>`
