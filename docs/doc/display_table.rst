@@ -65,9 +65,9 @@ Comment
 See also
 ------------
 
-- :doc:`Getting started: Converting between table formats`
 - :doc:`Reference: Convert widget <convert>`
 - :doc:`Reference: Table construction widgets <table_construction_widgets>`
+- :doc:`Textable's Basics: Converting between table formats <converting_table_formats>`
 - :doc:`Cookbook: Text input <text_input>`
 - :doc:`Cookbook: Segmentation manipulation <segmentation_manipulation>`
 - :doc:`Cookbook: Text analysis <text_analysis>`

@@ -1,5 +1,5 @@
 Segmentations
-===========
+===============
 
 Orange Textable is mostly about taking text in input and producing tables
 in output. What makes the transition from text to tables possible and

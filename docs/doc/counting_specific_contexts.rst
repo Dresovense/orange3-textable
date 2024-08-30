@@ -90,7 +90,7 @@ context size** to 2, we would find that *e* occurs once both in context
 Finally, when **Mode** is set to **Containing segmentation**, unit types
 are counted within the segment types of a second segmentation, as
 illustrated in table 2
-:ref:`here <segmentations-tables-table2>`
+:ref:`here <segmentation_tables_table2>`
 (frequency of letters within words). Segment *A* is considered to be
 contained within segment *B* if the following three conditions are met:
 

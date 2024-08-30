@@ -48,10 +48,10 @@ and/or column order:
 .. csv-table:: Table 1: Letter frequency in three texts.
     :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
     :stub-columns: 1
-    :widths: 7 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+    :widths: 7 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 
-    *a text in English*,       1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0
-    *another text in English*, 1, 3, 3, 1, 2, 3, 1, 1, 1, 2, 1, 1, 0, 0, 0
+    *a text in english*,       1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0
+    *another text in english*, 1, 3, 3, 1, 2, 3, 1, 1, 1, 2, 1, 1, 0, 0, 0
     *un texte en français*,    2, 2, 3, 1, 1, 3, 0, 0, 1, 0, 0, 1, 1, 1, 1
 
 As can be seen, the default header of each row is the entire content of
@@ -80,7 +80,7 @@ table looks like this:
 .. csv-table:: Table 2: Letter frequency in two text types.
     :header: "", *a*, *t*, *e*, *x*, *i*, *n*, *g*, *l*, *s*, *h*, *o*, *r*, *u*, *f*, *ç*
     :stub-columns: 1
-    :widths: 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+    :widths: 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 
 
     *en*, 2, 5, 5, 2, 4, 5, 2, 2, 2, 3, 1, 1, 0, 0, 0

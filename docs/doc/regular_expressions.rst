@@ -1,5 +1,5 @@
 Regular Expressions
-===============
+====================
 
 Regular Expressions are an important tool to select specific parts of a text corpus. Thus, in this section you'll learn
 how to use them to create segmentations and select specific segments.

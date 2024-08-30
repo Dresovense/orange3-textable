@@ -1,5 +1,5 @@
 Text preprocessing and recoding
-===============
+================================
 
 In this section, you will learn how to modify and replace elements in
 the text that has been imported, with three different “recipes”.

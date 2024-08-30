@@ -1,5 +1,5 @@
 Segmentation manipulation
-===============
+==========================
 
 This section shows several ways of segmenting text and manipulating
 segmentations.

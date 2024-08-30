@@ -186,7 +186,7 @@ Remote control
 **Segment** is one the widgets that can be controlled by means of the
 :doc:`Message <message>` widget. Indeed, it can receive in input a message consisting
 of a regular expression list in JSON format
-(see :doc:`JSON im-/export format < json_import_export>`, :doc:`Regular expression list <json_regular_expression_list>`),
+(see :doc:`JSON im-/export format <json_import_export>`, :doc:`Regular expression list <json_regular_expression_list>`),
 in which case the list of regular
 expressions specified in this message replaces those previously specified
 (if any). Note that removing the incoming connection from the **Message**

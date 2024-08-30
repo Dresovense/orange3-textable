@@ -1,5 +1,5 @@
 How to cite Orange Textable
-===========
+=============================
 
 If Orange Textable has been useful in preparing a scientific publication
 of yours, a citation is a great way to say so. Here is the relevant

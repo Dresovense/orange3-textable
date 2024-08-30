@@ -15,6 +15,7 @@ will learn how to go from the ones to the others.
     Counting segment types <counting_segment_types>
     Counting in specific contexts <counting_specific_contexts>
     Tagging table rows with segments and labels <tagging_table_rows_label_segment>
+    Converting between table formats <converting_table_formats>
 
 
 

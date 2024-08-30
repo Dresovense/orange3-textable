@@ -15,11 +15,11 @@ Some text has been imported in Orange Textable (see :doc:`Cookbook: Text input <
 Ingredients
 ---------------
 
-  ==============  ========================================  =================================  ===================================
+  ==============  ================================ ========================== ===================================
    **Widget**      :doc:`Text Field <text_field>`   :doc:`Segment <segment>`   :doc:`Intersect <intersect>`
-   **Icon**        |textfield_icon|                         |segment_icon|                     |intersect_icon|
-   **Quantity**    1                                        1                                  1
-  ==============  ========================================  =================================  ===================================
+   **Icon**        |textfield_icon|                 |segment_icon|             |intersect_icon|
+   **Quantity**    2                                 2                         1
+  ==============  ================================ ========================== ===================================
 
 .. |textfield_icon| image:: figures/TextField_36.png
 .. |segment_icon| image:: figures/Segment_36.png

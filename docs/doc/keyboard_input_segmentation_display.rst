@@ -12,8 +12,9 @@ below):
 .. figure:: figures/text_field_example.png
    :align: center
    :alt: Example usage of text field
+   :scale: 75%
 
-    Figure 1: Typing text in widget :doc:`Text Field <text_field>`.
+   Figure 1: Typing text in widget :doc:`Text Field <text_field>`.
 
 Each segmentation is identified by a label which is the name of the
 widget that creates the segmentation. It is a good habit to rename
@@ -27,8 +28,8 @@ widget, select **Rename** or press **F2**, then enter the new name.
    :alt: Example Widget Label
    :width: 50%
 
-    Figure 2: Typing an extract of *Romeo and Juliet* in widget :doc:`Text Field <text_field>` and
-    giving it a label (*Romeo and Juliet*).
+   Figure 2: Typing an extract of *Hamlet* in widget :doc:`Text Field <text_field>` and
+   giving it a label (*Hamlet*).
 
 This widget’s simplicity makes it most adequate for pedagogic purposes.
 Later, we will discover other, more powerful ways of importing strings
@@ -45,8 +46,9 @@ segment’s content (see :ref:`figure 3 <keybord_input_fig3>` below).
 .. figure:: figures/text_field_display.png
    :align: center
    :alt: Example usage of widget Display
+   :scale: 75%
 
-    Figure 3 : Viewing *Romeo and Juliet* in widget :doc:`Display <display>`.
+   Figure 3 : Viewing *Hamlet* in widget :doc:`Display <display>`.
 
 The numbers between square brackets after the segment number constitute
 the *address* of the segment, consisting of three elements: 1) string

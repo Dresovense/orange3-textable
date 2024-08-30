@@ -17,7 +17,7 @@ Ingredients
 ---------------
 
  ==============   =================================  =================================
-   **Widget**      :doc:`Segment <segment>`   :doc:`Context <context>`
+   **Widget**      :doc:`Segment <segment>`           :doc:`Context <context>`
    **Icon**        |segment_icon|                     |context_icon|
    **Quantity**    1                                  1
  ==============   =================================  =================================

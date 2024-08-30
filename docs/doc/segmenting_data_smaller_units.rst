@@ -9,7 +9,7 @@ characters, or any kind of text units that will be later counted,
 measured, and so on. This is precisely the purpose of widget
 :doc:`Segment <segment>`.
 
-To try it out, create a new workflow with an instance of :ref:`Text Field <text_field>`
+To try it out, create a new workflow with an instance of :doc:`Text Field <text_field>`
 connected to
 :doc:`Segment <segment>`,
 itself connected to

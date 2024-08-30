@@ -41,8 +41,8 @@ Several parallel paths can be constructed, as demonstrated here by the
 
 Widget instances can be individually parameterized in order to
 “fine-tune” their operation. For example, double-clicking on the
-:doc:`Recode <recode>` instance of :ref:`figure 1 <illustration-fig1>`
-above displays the interface shown on :ref:`figure 2 <illustration-fig2>`
+:doc:`Recode <recode>` instance of :ref:`figure 1 <illustration_fig1>`
+above displays the interface shown on :ref:`figure 2 <illustration_fig2>`
 below. What this particular configuration means is that every line
 beginning with symbol \| or >
 (:doc:`Regex <note_regular_expressions>` field) should be replaced with 
