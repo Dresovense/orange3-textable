@@ -54,4 +54,4 @@ rest of the play.
 
     Figure 2: Act 1 Scene 1 is a consistent stylistic outlier in Shakespeare's play.   
 
-.. [#] The workflow can be downloaded from :download:`here <schemas/titus_andronicus_for_textable_v3.1.3.ows>`.
+.. [#] The workflow can be downloaded from :download:`here <schemas/titus_andronicus_for_textable_v3.37.0.ows.zip>`.

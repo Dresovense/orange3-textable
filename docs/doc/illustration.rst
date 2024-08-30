@@ -57,6 +57,7 @@ several of them and Orange Textable’s flexibility owes a lot to them.
 .. figure:: figures/mining_humanist_recode.png
     :align: center
     :alt: Interface of Recode widget in the Humanist example
+    :scale: 75%
 
     Figure 2: Interface of the :doc:`Recode <recode>` widget.
 
@@ -80,6 +81,7 @@ construction of text analysis programs easier; it aims to make
 .. figure:: figures/mining_humanist_results.png
     :align: center
     :alt: Monitoring the frequency of two expressions over time
+    :scale: 75%
 
     Figure 3: Monitoring the frequency of *Humanities Computing* vs.
     *Digital Humanities*.
@@ -90,7 +92,7 @@ construction of text analysis programs easier; it aims to make
        <http://digitalhumanities.org/dhq/vol/3/3/000065/000065.html>`_.
 
 
-.. [#] The schema can be downloaded from :download:`here<schemas/humanist_for_textable_v2.0a3.ows>`. Note that two decades of Humanist archives weigh dozens of megabytes and that retrieving these
+.. [#] The schema can be downloaded from :download:`here<schemas/humanist_for_textable_v3.37.0.ows.zip>`. Note that two decades of Humanist archives weigh dozens of megabytes and that retrieving these
        data from the Internet can take a few minutes depending on bandwidth.
        Please be patient if Orange Textable appears to be stalled when the
        schema is being opened.

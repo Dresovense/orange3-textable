@@ -51,4 +51,4 @@ creating something of an inverse relationship between the two. For the
 literary critic, this relationship offers new evidence with which to
 evaluate the strategy and structure of Melville’s novel.
 
-.. [#] The workflow can be downloaded from :download:`here <schemas/moby_dick_for_textable_v3.1.3.ows>`.
+.. [#] The workflow can be downloaded from :download:`here <schemas/moby_dick_for_textable_v3.37.0.ows.zip>`.

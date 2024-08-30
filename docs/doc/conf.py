@@ -173,6 +173,11 @@ html_title = title
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Add any CSS files here, relative to this directory.
+# These CSS files are included after the default Sphinx CSS files,
+# so they can be used to override the default styling.
+# For example, custom.css is used here to add custom styles, such as
+# rounding the corners of images.
 html_css_files = ['custom.css', ]
 
 # Add any extra paths that contain custom files (such as robots.txt or
